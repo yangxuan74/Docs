@@ -1,10 +1,9 @@
-﻿[![sites](docs/os-q.png)](http://www.os-q.com)
-
-# [OS-Q虚拟系统](https://github.com/OS-Q/OS-Q) 
-
+﻿
+# [OS-Q 垂直系统](https://github.com/OS-Q/OS-Q) 
 
 虚拟系统Q，构建于传统系统之上，垂直整合的数据生态链，更好的执行数据的采集-传输-分析-存储的过程
 
+[![sites](docs/os-q.png)](http://www.os-q.com)
 
 ## 简介
 
@@ -24,7 +23,7 @@ https://github.com/OS-Q/linux.git
 
 #### 功能调用
 
-在基础环境中可能调用各种函数功能：
+基于Q系统对外提供的各种功能接口：
 
 https://github.com/OS-Q/FaaS.git
 
@@ -45,13 +44,14 @@ https://github.com/OS-Q/web-Q.git
 对原始素材数据和制成数据的归档存储：
 
 https://github.com/OS-Q/DB-Q.git
+
 ---
 
-## 节点通信连接
+## 节点连接
 
 ####  Q1
 
-针对嵌入式边缘控制节点：
+针对边缘控制节点：
 
 https://github.com/OS-Q/Q1.git
 
@@ -59,7 +59,7 @@ https://github.com/OS-Q/Q1.git
 
 ####  Q2
 
-针对嵌入式网络节点：
+针对边缘网络节点：
 
 https://github.com/OS-Q/Q2.git
 
@@ -84,4 +84,4 @@ https://github.com/OS-Q/Q4.git
 
 ---
 
-
+##  www.OS-Q.com
