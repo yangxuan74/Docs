@@ -12,7 +12,7 @@
 
 * [EDGE-Q](https://github.com/OS-Q/EDGE-Q)
 * [DATA-Q](https://github.com/OS-Q/DATA-Q)
-* [FASS-Q](https://github.com/OS-Q/FASS-Q)
+* [FAAS-Q](https://github.com/OS-Q/FAAS-Q)
 * [DOCK-Q](https://github.com/OS-Q/DOCK-Q)
 * [SHOW-Q](https://github.com/OS-Q/SHOW-Q)
 
