@@ -1,8 +1,22 @@
 ﻿# [OS-Q](https://github.com/OS-Q/OS-Q) 
-
 [![sites](OS-Q/OS-Q.png)](http://www.OS-Q.com)
+## [OS-Q释义](https://github.com/OS-Q/OS-Q/wiki) 
 
-## [OS-Q简介](https://github.com/OS-Q/OS-Q/wiki) 
+### [OS-Q : Open Source](http://www.OS-Q.com)
+
+相应的资源在[GitHub](https://github.com/OS-Q/OS-Q) 平台下开源，相应规范逐步完善
+
+### [OS-Q : Open Solution](http://www.OS-Q.com)
+
+工程包括各种场景下的功能单元，主要组成包括：
+
+* [EDGE-Q](https://github.com/OS-Q/EDGE-Q)
+* [DATA-Q](https://github.com/OS-Q/DATA-Q)
+* [FASS-Q](https://github.com/OS-Q/FASS-Q)
+* [DOCK-Q](https://github.com/OS-Q/DOCK-Q)
+* [SHOW-Q](https://github.com/OS-Q/SHOW-Q)
+
+### [OS-Q : Operation System](http://www.OS-Q.com)
 
 Q系统核心思想是强化边缘设备的作用，以云端为指挥中心，所有的数据通过云端导流到指定的设备上，降低对云端的处理性能需求，通过通过丰富的边缘端设备实现丰富的功能
 
@@ -17,21 +31,8 @@ Q系统的核心宗旨：角色分配，功能增强，裂变增生
 
 - 每个个体都可以自动复制部署相同的设备或则需要的设备，从而实现在更大范围和视角下的群体效应
 
-
-### [系统组成](https://github.com/OS-Q/)
-
-* 边缘设备：[Edge-Q](https://github.com/OS-Q/Edge-Q)
-* 网络平台：[IP-Q](https://github.com/OS-Q/MQ-Q)
-* 数据管理：[DB-Q](https://github.com/OS-Q/DB-Q)
-* 信息呈现：[UI-Q](https://github.com/OS-Q/UI-Q)
-* 功能服务：[QaaS](https://github.com/OS-Q/QaaS)
-
-
-### [底层基础](OS-Q/)
-
 * [RTQ](https://github.com/OS-Q/RTQ)
 * [Linux](https://github.com/OS-Q/Linux)
 * [Docker](https://github.com/OS-Q/Docker)
 
-### [Q : Operation System for edge devices](http://www.OS-Q.com)
-####  2019-6-13
+
