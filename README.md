@@ -1,38 +1,23 @@
 ﻿# [OS-Q](https://github.com/OS-Q/OS-Q) 
+
 [![sites](OS-Q/OS-Q.png)](http://www.OS-Q.com)
-## [OS-Q释义](https://github.com/OS-Q/OS-Q/wiki) 
+
+### [OS-Q : Open Solutions ](http://www.OS-Q.com)
+
+[OS-Q](https://github.com/OS-Q/OS-Q) 通过整合开源资源完成相应的解决方案，实现最大效率的定制解决方案
+
+* [EDGE-Q](https://github.com/OS-Q/EDGE-Q) 边缘设备体系
+* [DATA-Q](https://github.com/OS-Q/DATA-Q) 数据管理体系
+* [FAAS-Q](https://github.com/OS-Q/FAAS-Q) 功能服务体系
+* [DOCK-Q](https://github.com/OS-Q/DOCK-Q) 中心节点体系
+* [SHOW-Q](https://github.com/OS-Q/SHOW-Q) 信息传达体系
 
 ### [OS-Q : Open Source](http://www.OS-Q.com)
 
-相应的资源在[GitHub](https://github.com/OS-Q/OS-Q) 平台下开源，相应规范逐步完善
-
-### [OS-Q : Open Solution](http://www.OS-Q.com)
-
-工程包括各种场景下的功能单元，主要组成包括：
-
-* [EDGE-Q](https://github.com/OS-Q/EDGE-Q)
-* [DATA-Q](https://github.com/OS-Q/DATA-Q)
-* [FAAS-Q](https://github.com/OS-Q/FAAS-Q)
-* [DOCK-Q](https://github.com/OS-Q/DOCK-Q)
-* [SHOW-Q](https://github.com/OS-Q/SHOW-Q)
+[OS-Q](https://github.com/OS-Q/OS-Q) 相应组件来源于开源社区，同样分享在开源社区
 
 ### [OS-Q : Operation System](http://www.OS-Q.com)
 
-Q系统核心思想是强化边缘设备的作用，以云端为指挥中心，所有的数据通过云端导流到指定的设备上，降低对云端的处理性能需求，通过通过丰富的边缘端设备实现丰富的功能
+[OS-Q](https://github.com/OS-Q/OS-Q) 整合大量分布的设备形成新形态的操作系统和逻辑关系
 
-是一个有应用层软件构成的大系统工程，通过积木组合实现任意的业务逻辑。
-
-
-Q系统的核心宗旨：角色分配，功能增强，裂变增生
-
-- 对于系统初始状态具有完备性，设备的角色可以有多重延伸，而每种“进化的方向”取决于现有群体的需求
-
-- 对于角色完备的群体，可以通过数量补足或提高短板性能，所有的取向宗旨是最高能效提高群体的效率
-
-- 每个个体都可以自动复制部署相同的设备或则需要的设备，从而实现在更大范围和视角下的群体效应
-
-* [RTQ](https://github.com/OS-Q/RTQ)
-* [Linux](https://github.com/OS-Q/Linux)
-* [Docker](https://github.com/OS-Q/Docker)
-
-
+### [OS-Q = Open Solutions | Open Source |  Operating System ](http://www.OS-Q.com/OS-Q)
