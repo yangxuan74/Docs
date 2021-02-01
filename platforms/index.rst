@@ -42,34 +42,38 @@ If a new board uses an architecture not in this list, a custom
 development platform can be created; see :ref:`platform_creating`.
 
 
-Embedded
+控制
+--------
+
+.. toctree::
+    :maxdepth: 1
+
+    ststm32
+    ststm8
+    intel_mcs51
+    atmelavr
+    wiznet7500
+    gd32v
+    nordicnrf52
+
+通信
 --------
 
 .. toctree::
     :maxdepth: 1
 
     asrmicro650x
-    atmelavr
     espressif32
     espressif8266
-    gd32v
-    intel_mcs51
-    kendryte210
-    lattice_ice40
-    nordicnrf52
-    nuclei
-    nxpimxrt
-    ststm32
-    ststm8
-    wiznet7500
 
-Desktop
+
+计算
 -------
 
 .. toctree::
     :maxdepth: 1
 
-    native
+    kendryte210
     linux_arm
     linux_i686
     linux_x86_64

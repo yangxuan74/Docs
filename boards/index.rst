@@ -11,7 +11,7 @@
 
 .. _boards:
 
-Boards
+核心板
 ======
 
 Rapid Embedded Development, Continuous and IDE integration in a few
@@ -29,11 +29,6 @@ ASR Microelectronics ASR650x
 .. toctree::
     :maxdepth: 1
 
-    asrmicro650x/cubecell_capsule_solar_sensor
-    asrmicro650x/cubecell_node
-    asrmicro650x/cubecell_board
-    asrmicro650x/cubecell_board_plus
-    asrmicro650x/cubecell_capsule
     asrmicro650x/cubecell_gps
     asrmicro650x/cubecell_module
     asrmicro650x/cubecell_module_plus
@@ -44,31 +39,10 @@ Atmel AVR
 .. toctree::
     :maxdepth: 1
 
-    atmelavr/AT90CAN128
-    atmelavr/AT90CAN32
-    atmelavr/AT90CAN64
-    atmelavr/ATmega128
-    atmelavr/ATmega1280
-    atmelavr/ATmega1281
-    atmelavr/ATmega1284
-    atmelavr/ATmega1284P
-    atmelavr/ATmega16
-    atmelavr/ATmega162
-    atmelavr/ATmega164A
-    atmelavr/ATmega164P
-    atmelavr/ATmega168
     atmelavr/ATmega168P
-    atmelavr/ATmega168PB
     atmelavr/ATmega2560
-    atmelavr/ATmega2561
-    atmelavr/ATmega32
-    atmelavr/ATmega324A
-    atmelavr/ATmega324P
-    atmelavr/ATmega324PA
-    atmelavr/ATmega324PB
     atmelavr/ATmega328
     atmelavr/ATmega328P
-    atmelavr/ATmega328PB
     atmelavr/ATmega48
     atmelavr/ATmega48P
     atmelavr/ATmega48PB
@@ -112,187 +86,20 @@ Atmel AVR
     atmelavr/diecimilaatmega328
     atmelavr/esplora
     atmelavr/ethernet
-    atmelavr/fio
-    atmelavr/chiwawa
-    atmelavr/leonardo
-    atmelavr/leonardoeth
-    atmelavr/lilypadatmega168
-    atmelavr/lilypadatmega328
-    atmelavr/LilyPadUSB
-    atmelavr/megaADK
     atmelavr/megaatmega1280
     atmelavr/megaatmega2560
-    atmelavr/micro
-    atmelavr/miniatmega168
-    atmelavr/miniatmega328
-    atmelavr/atmegangatmega168
-    atmelavr/atmegangatmega8
-    atmelavr/nanoatmega168
-    atmelavr/nanoatmega328
-    atmelavr/nanoatmega328new
-    atmelavr/pro8MHzatmega168
-    atmelavr/pro16MHzatmega168
-    atmelavr/pro8MHzatmega328
-    atmelavr/pro16MHzatmega328
-    atmelavr/robotControl
-    atmelavr/robotMotor
     atmelavr/uno
     atmelavr/yun
-    atmelavr/yunmini
-    atmelavr/at90pwm216
-    atmelavr/at90pwm316
-    atmelavr/zumbt328
     atmelavr/raspduino
-    atmelavr/controllino_maxi
-    atmelavr/controllino_maxi_automation
-    atmelavr/controllino_mega
-    atmelavr/controllino_mini
-    atmelavr/digispark-pro
-    atmelavr/digispark-pro64
-    atmelavr/digispark-pro32
-    atmelavr/digispark-tiny
-    atmelavr/dwenguino
-    atmelavr/elektor_uno_r4
-    atmelavr/engduinov3
-    atmelavr/mayfly
-    atmelavr/fysetc_f6_13
-    atmelavr/attiny1634
-    atmelavr/attiny167
-    atmelavr/attiny2313
     atmelavr/attiny24
     atmelavr/attiny25
-    atmelavr/attiny261
-    atmelavr/attiny4313
     atmelavr/attiny43
     atmelavr/attiny44
-    atmelavr/attiny441
     atmelavr/attiny45
-    atmelavr/attiny461
     atmelavr/attiny48
-    atmelavr/attiny828
     atmelavr/attiny84
-    atmelavr/attiny841
     atmelavr/attiny85
-    atmelavr/attiny861
-    atmelavr/attiny87
     atmelavr/attiny88
-    atmelavr/lightblue-bean
-    atmelavr/lightblue-beanplus
-    atmelavr/lightup
-    atmelavr/one
-    atmelavr/smart7688
-    atmelavr/lora32u4II
-    atmelavr/mightyhat
-    atmelavr/moteino
-    atmelavr/moteino8mhz
-    atmelavr/moteinomega
-    atmelavr/168pa16m
-    atmelavr/168pa8m
-    atmelavr/328p16m
-    atmelavr/328p8m
-    atmelavr/32u416m
-    atmelavr/1284p16m
-    atmelavr/1284p8m
-    atmelavr/644pa16m
-    atmelavr/644pa8m
-    atmelavr/emonpi
-    atmelavr/prusa_mm_control
-    atmelavr/panStampAVR
-    atmelavr/pinoccio
-    atmelavr/a-star32U4
-    atmelavr/prusa_rambo
-    atmelavr/quirkbot
-    atmelavr/blend
-    atmelavr/blendmicro16
-    atmelavr/blendmicro8
-    atmelavr/reprap_rambo
-    atmelavr/sodaq_galora
-    atmelavr/sodaq_mbili
-    atmelavr/sodaq_moja
-    atmelavr/sodaq_ndogo
-    atmelavr/sodaq_tatu
-    atmelavr/sanguino_atmega1284p
-    atmelavr/sanguino_atmega1284_8m
-    atmelavr/sanguino_atmega644
-    atmelavr/sanguino_atmega644_8m
-    atmelavr/sanguino_atmega644p
-    atmelavr/sanguino_atmega644p_8m
-    atmelavr/seeeduino
-    atmelavr/sparkfun_satmega128rfa1
-    atmelavr/sparkfun_digitalsandbox
-    atmelavr/sparkfun_fiov3
-    atmelavr/sparkfun_makeymakey
-    atmelavr/sparkfun_megapro8MHz
-    atmelavr/sparkfun_megapro16MHz
-    atmelavr/sparkfun_megamini
-    atmelavr/uview
-    atmelavr/sparkfun_promicro8
-    atmelavr/sparkfun_promicro16
-    atmelavr/sparkfun_qduinomini
-    atmelavr/sparkfun_redboard
-    atmelavr/sparkfun_serial7seg
-    atmelavr/sleepypi
-    atmelavr/whispernode
-    atmelavr/the_things_uno
-    atmelavr/tinyduino
-    atmelavr/tinylily
-    atmelavr/usbasp
-    atmelavr/wildfirev2
-    atmelavr/wildfirev3
-    atmelavr/ftduino
-    atmelavr/bob3
-    atmelavr/nibo2
-    atmelavr/niboburger
-    atmelavr/niboburger_1284
-    atmelavr/nibobee
-    atmelavr/nibobee_1284
-    atmelavr/ardhat
-
-Atmel megaAVR
--------------
-
-.. toctree::
-    :maxdepth: 1
-
-    atmelmegaavr/ATmega1608
-    atmelmegaavr/ATmega1609
-    atmelmegaavr/ATmega3208
-    atmelmegaavr/ATmega3209
-    atmelmegaavr/ATmega4808
-    atmelmegaavr/ATmega4809
-    atmelmegaavr/ATmega808
-    atmelmegaavr/ATmega809
-    atmelmegaavr/ATtiny1604
-    atmelmegaavr/ATtiny1606
-    atmelmegaavr/ATtiny1607
-    atmelmegaavr/ATtiny1614
-    atmelmegaavr/ATtiny1616
-    atmelmegaavr/ATtiny1617
-    atmelmegaavr/ATtiny202
-    atmelmegaavr/ATtiny204
-    atmelmegaavr/ATtiny212
-    atmelmegaavr/ATtiny214
-    atmelmegaavr/ATtiny3216
-    atmelmegaavr/ATtiny3217
-    atmelmegaavr/ATtiny402
-    atmelmegaavr/ATtiny404
-    atmelmegaavr/ATtiny406
-    atmelmegaavr/ATtiny412
-    atmelmegaavr/ATtiny414
-    atmelmegaavr/ATtiny416
-    atmelmegaavr/ATtiny417
-    atmelmegaavr/ATtiny804
-    atmelmegaavr/ATtiny806
-    atmelmegaavr/ATtiny807
-    atmelmegaavr/ATtiny814
-    atmelmegaavr/ATtiny816
-    atmelmegaavr/ATtiny817
-    atmelmegaavr/avr_iot_wg
-    atmelmegaavr/nano_every
-    atmelmegaavr/uno_wifi_rev2
-    atmelmegaavr/curiosity_nano_4809
-    atmelmegaavr/xplained_pro_4809
-
 
 Espressif 32
 ------------
@@ -321,10 +128,6 @@ Espressif 32
     espressif32/esp32dev
     espressif32/firebeetle32
     espressif32/frogboard
-    espressif32/heltec_wifi_kit_32
-    espressif32/heltec_wifi_lora_32
-    espressif32/heltec_wifi_lora_32_V2
-    espressif32/heltec_wireless_stick
     espressif32/hornbill32dev
     espressif32/hornbill32minima
     espressif32/intorobot
@@ -333,11 +136,6 @@ Espressif 32
     espressif32/m5stack-fire
     espressif32/m5stack-grey
     espressif32/m5stick-c
-    espressif32/mhetesp32devkit
-    espressif32/mhetesp32minikit
-    espressif32/magicbit
-    espressif32/nano32
-    espressif32/microduino-core-esp32
     espressif32/node32s
     espressif32/nodemcu-32s
     espressif32/quantum
@@ -349,34 +147,16 @@ Espressif 32
     espressif32/esp32-poe
     espressif32/esp32-poe-iso
     espressif32/oroca_edubot
-    espressif32/onehorse32dev
-    espressif32/pycom_gpy
-    espressif32/lopy
-    espressif32/lopy4
-    espressif32/qchip
-    espressif32/sg-o_airMon
-    espressif32/wesp32
-    espressif32/esp32thing
-    espressif32/sparkfun_lora_gateway_1-channel
     espressif32/ttgo-lora32-v1
     espressif32/ttgo-lora32-v2
     espressif32/ttgo-t-beam
     espressif32/ttgo-t-watch
     espressif32/ttgo-t1
     espressif32/tinypico
-    espressif32/turta_iot_node
-    espressif32/vintlabs-devkit-v1
     espressif32/lolin_d32
     espressif32/lolin_d32_pro
     espressif32/lolin32
     espressif32/wemos_d1_mini32
-    espressif32/wemosbat
-    espressif32/widora-air
-    espressif32/xinabox_cw02
-    espressif32/nscreen-32
-    espressif32/iotbusio
-    espressif32/iotbusproteus
-    espressif32/nina_w10
 
 Espressif 8266
 --------------
@@ -384,49 +164,19 @@ Espressif 8266
 .. toctree::
     :maxdepth: 1
 
-    espressif8266/gen4iod
     espressif8266/huzzah
-    espressif8266/oak
-    espressif8266/espmxdevkit
-    espressif8266/esp_wroom_02
-    espressif8266/espduino
-    espressif8266/espectro
-    espressif8266/espino
-    espressif8266/espresso_lite_v1
-    espressif8266/espresso_lite_v2
     espressif8266/esp12e
     espressif8266/esp01_1m
     espressif8266/esp01
     espressif8266/esp07
     espressif8266/esp07s
     espressif8266/esp8285
-    espressif8266/heltec_wifi_kit_8
-    espressif8266/inventone
     espressif8266/nodemcu
     espressif8266/nodemcuv2
-    espressif8266/modwifi
-    espressif8266/phoenix_v1
-    espressif8266/phoenix_v2
-    espressif8266/eduinowifi
-    espressif8266/sonoff_basic
-    espressif8266/sonoff_s20
-    espressif8266/sonoff_sv
-    espressif8266/sonoff_th
-    espressif8266/sparkfunBlynk
-    espressif8266/thing
-    espressif8266/thingdev
-    espressif8266/esp210
-    espressif8266/espinotee
     espressif8266/d1
     espressif8266/d1_mini
     espressif8266/d1_mini_lite
     espressif8266/d1_mini_pro
-    espressif8266/wifi_slot
-    espressif8266/wifiduino
-    espressif8266/wifinfo
-    espressif8266/wio_link
-    espressif8266/wio_node
-    espressif8266/xinabox_cw01
 
 
 GigaDevice GD32V
@@ -538,17 +288,6 @@ Nordic nRF52
     nordicnrf52/dwm1001_dev
     nordicnrf52/hackaBLE
     nordicnrf52/ublox_evk_nina_b1
-
-Nuclei
-------
-
-.. toctree::
-    :maxdepth: 1
-
-    nuclei/gd32vf103v_eval
-    nuclei/gd32vf103v_rvstar
-    nuclei/hbird_eval
-    nuclei/gd32vf103c_longan_nano
 
 
 NXP i.MX RT
@@ -820,49 +559,6 @@ ST STM8
     ststm8/mb208
     ststm8/s8uno
 
-Teensy
-------
-
-.. toctree::
-    :maxdepth: 1
-
-    teensy/teensy2
-    teensy/teensy30
-    teensy/teensy31
-    teensy/teensy35
-    teensy/teensy36
-    teensy/teensy40
-    teensy/teensy41
-    teensy/teensylc
-    teensy/teensy2pp
-
-TI MSP430
----------
-
-.. toctree::
-    :maxdepth: 1
-
-    timsp430/lpmsp430fr5739
-    timsp430/lpmsp430f5529
-    timsp430/lpmsp430fr2311
-    timsp430/lpmsp430fr2433
-    timsp430/lpmsp430fr4133
-    timsp430/lpmsp430fr5969
-    timsp430/lpmsp430fr5994
-    timsp430/lpmsp430fr6989
-    timsp430/lpmsp430g2231
-    timsp430/lpmsp430g2452
-    timsp430/lpmsp430g2553
-
-TI TIVA
--------
-
-.. toctree::
-    :maxdepth: 1
-
-    titiva/lplm4f120h5qr
-    titiva/lptm4c1230c3pm
-    titiva/lptm4c1294ncpdt
 
 WIZNet W7500
 ------------
@@ -870,6 +566,5 @@ WIZNet W7500
 .. toctree::
     :maxdepth: 1
 
-    wiznet7500/wizwiki_w7500
     wiznet7500/wizwiki_w7500eco
     wiznet7500/wizwiki_w7500p
