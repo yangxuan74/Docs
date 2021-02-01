@@ -23,25 +23,12 @@ popular embedded boards and IDE.
       `PlatformIO Boards Explorer <https://platformio.org/boards>`_
     * For more detailed ``board`` information please scroll tables below by horizontal.
 
-Aceinna IMU
------------
-
-.. toctree::
-    :maxdepth: 1
-        
-    aceinna_imu/LowCostRTK
-    aceinna_imu/OpenIMU300
-    aceinna_imu/OpenIMU300ZA
-    aceinna_imu/OpenIMU330
-    aceinna_imu/OpenRTK
-    aceinna_imu/OpenRTK330L
-
 ASR Microelectronics ASR650x
 ----------------------------
 
 .. toctree::
     :maxdepth: 1
-        
+
     asrmicro650x/cubecell_capsule_solar_sensor
     asrmicro650x/cubecell_node
     asrmicro650x/cubecell_board
@@ -56,7 +43,7 @@ Atmel AVR
 
 .. toctree::
     :maxdepth: 1
-        
+
     atmelavr/AT90CAN128
     atmelavr/AT90CAN32
     atmelavr/AT90CAN64
@@ -266,7 +253,7 @@ Atmel megaAVR
 
 .. toctree::
     :maxdepth: 1
-        
+
     atmelmegaavr/ATmega1608
     atmelmegaavr/ATmega1609
     atmelmegaavr/ATmega3208
@@ -306,105 +293,13 @@ Atmel megaAVR
     atmelmegaavr/curiosity_nano_4809
     atmelmegaavr/xplained_pro_4809
 
-Atmel SAM
----------
-
-.. toctree::
-    :maxdepth: 1
-        
-    atmelsam/adafruit_blm_badge
-    atmelsam/adafruit_circuitplayground_m0
-    atmelsam/adafruit_crickit_m0
-    atmelsam/adafruit_feather_m0
-    atmelsam/adafruit_feather_m0_express
-    atmelsam/adafruit_feather_m4_can
-    atmelsam/adafruit_feather_m4
-    atmelsam/adafruit_gemma_m0
-    atmelsam/adafruit_grandcentral_m4
-    atmelsam/adafruit_hallowing
-    atmelsam/adafruit_hallowing_m4
-    atmelsam/adafruit_itsybitsy_m0
-    atmelsam/adafruit_itsybitsy_m4
-    atmelsam/adafruit_monster_m4sk
-    atmelsam/adafruit_matrix_portal_m4
-    atmelsam/adafruit_metro_m0
-    atmelsam/adafruit_metro_m4
-    atmelsam/adafruit_metro_m4_airliftlite
-    atmelsam/adafruit_pygamer_advance_m4
-    atmelsam/adafruit_pygamer_m4
-    atmelsam/adafruit_pyportal_m4
-    atmelsam/adafruit_pyportal_m4_titano
-    atmelsam/adafruit_qt_py_m0
-    atmelsam/adafruit_trellis_m4
-    atmelsam/adafruit_trinket_m0
-    atmelsam/adafruit_pirkey
-    atmelsam/adafruit_pybadge_airlift_m4
-    atmelsam/adafruit_pybadge_m4
-    atmelsam/due
-    atmelsam/dueUSB
-    atmelsam/mzeroUSB
-    atmelsam/mzeroproUSB
-    atmelsam/mzeropro
-    atmelsam/mkrfox1200
-    atmelsam/mkrgsm1400
-    atmelsam/mkrnb1500
-    atmelsam/mkrwan1300
-    atmelsam/mkrwan1310
-    atmelsam/mkrwifi1010
-    atmelsam/mkr1000USB
-    atmelsam/mkrzero
-    atmelsam/tian
-    atmelsam/zero
-    atmelsam/zeroUSB
-    atmelsam/samr21_xpro
-    atmelsam/samd21g18a
-    atmelsam/samc21_xpro
-    atmelsam/samd21_xpro
-    atmelsam/saml21_xpro_b
-    atmelsam/briki_abc_samd21
-    atmelsam/briki_mbcwb_samd21
-    atmelsam/digix
-    atmelsam/current_ranger
-    atmelsam/mkrvidor4000
-    atmelsam/minitronics20
-    atmelsam/moteino_zero
-    atmelsam/nano_33_iot
-    atmelsam/sodaq_autonomo
-    atmelsam/sodaq_explorer
-    atmelsam/sodaq_one
-    atmelsam/sodaq_sara
-    atmelsam/sodaq_sff
-    atmelsam/sainSmartDue
-    atmelsam/sainSmartDueUSB
-    atmelsam/seeed_femto
-    atmelsam/seeeduino_lorawan
-    atmelsam/seeed_wio_lite_mg126
-    atmelsam/seeed_wio_terminal
-    atmelsam/seeed_xiao
-    atmelsam/seeed_zero
-    atmelsam/sparkfun_samd21_9dof
-    atmelsam/sparkfun_qwiic_micro_samd21e
-    atmelsam/sparkfun_redboard_turbo
-    atmelsam/sparkfun_samd21_dev_usb
-    atmelsam/sparkfun_samd21_mini_usb
-    atmelsam/sparkfun_samd21_proRF
-    atmelsam/sparkfun_samd51_thing_plus
-    atmelsam/tuinozero96
-
-CHIPS Alliance
---------------
-
-.. toctree::
-    :maxdepth: 1
-        
-    chipsalliance/swervolf_nexys
 
 Espressif 32
 ------------
 
 .. toctree::
     :maxdepth: 1
-        
+
     espressif32/esp32cam
     espressif32/alksesp32
     espressif32/az-delivery-devkit-v4
@@ -488,7 +383,7 @@ Espressif 8266
 
 .. toctree::
     :maxdepth: 1
-        
+
     espressif8266/gen4iod
     espressif8266/huzzah
     espressif8266/oak
@@ -533,69 +428,25 @@ Espressif 8266
     espressif8266/wio_node
     espressif8266/xinabox_cw01
 
-Freescale Kinetis
------------------
-
-.. toctree::
-    :maxdepth: 1
-        
-    freescalekinetis/IBMEthernetKit
-    freescalekinetis/frdm_k20d50m
-    freescalekinetis/frdm_k22f
-    freescalekinetis/frdm_k64f
-    freescalekinetis/frdm_k66f
-    freescalekinetis/frdm_k82f
-    freescalekinetis/frdm_kl05z
-    freescalekinetis/frdm_kl25z
-    freescalekinetis/frdm_kl27z
-    freescalekinetis/frdm_kl43z
-    freescalekinetis/frdm_kl46z
-    freescalekinetis/frdm_kl82z
-    freescalekinetis/frdm_kw24d
-    freescalekinetis/frdm_kw41z
-    freescalekinetis/hexiwear
-    freescalekinetis/segger_ip_switch
 
 GigaDevice GD32V
 ----------------
 
 .. toctree::
     :maxdepth: 1
-        
+
     gd32v/gd32vf103v-eval
     gd32v/sipeed-longan-nano
     gd32v/sipeed-longan-nano-lite
     gd32v/wio_lite_risc-v
 
-Infineon XMC
-------------
-
-.. toctree::
-    :maxdepth: 1
-        
-    infineonxmc/xmc1100_boot_kit
-    infineonxmc/xmc1100_h_bridge2go
-    infineonxmc/xmc1100_xmc2go
-    infineonxmc/xmc1300_boot_kit
-    infineonxmc/xmc1300_sense2gol
-    infineonxmc/xmc1400_boot_kit
-    infineonxmc/xmc4200_distance2go
-    infineonxmc/xmc4700_relax_kit
-
-Intel ARC32
------------
-
-.. toctree::
-    :maxdepth: 1
-        
-    intel_arc32/genuino101
 
 Intel MCS-51 (8051)
 -------------------
 
 .. toctree::
     :maxdepth: 1
-        
+
     intel_mcs51/n79e8432
     intel_mcs51/n79e844
     intel_mcs51/n79e845
@@ -613,7 +464,7 @@ Kendryte K210
 
 .. toctree::
     :maxdepth: 1
-        
+
     kendryte210/sipeed-maix-bit
     kendryte210/sipeed-maix-bit-mic
     kendryte210/sipeed-maix-go
@@ -626,7 +477,7 @@ Lattice iCE40
 
 .. toctree::
     :maxdepth: 1
-        
+
     lattice_ice40/icezum
     lattice_ice40/icestick
 
@@ -635,111 +486,19 @@ Linux ARM
 
 .. toctree::
     :maxdepth: 1
-        
+
     linux_arm/raspberrypi_1b
     linux_arm/raspberrypi_2b
     linux_arm/raspberrypi_3b
     linux_arm/raspberrypi_zero
 
-Maxim 32
---------
-
-.. toctree::
-    :maxdepth: 1
-        
-    maxim32/max32620fthr
-    maxim32/max32625mbed
-    maxim32/max32625nexpaq
-    maxim32/max32625pico
-    maxim32/max32600mbed
-    maxim32/max32620hsp
-    maxim32/max32630fthr
-    maxim32/maxwsnenv
-    maxim32/sdt32620b
-    maxim32/sdt32625b
-
-Microchip PIC32
----------------
-
-.. toctree::
-    :maxdepth: 1
-        
-    microchippic32/picadillo_35t
-    microchippic32/dsmini
-    microchippic32/cerebot32mx4
-    microchippic32/cerebot32mx7
-    microchippic32/openscope
-    microchippic32/chipkit_cmod
-    microchippic32/chipkit_dp32
-    microchippic32/mega_pic32
-    microchippic32/chipkit_mx3
-    microchippic32/chipkit_pro_mx4
-    microchippic32/chipkit_pro_mx7
-    microchippic32/uno_pic32
-    microchippic32/chipkit_wf32
-    microchippic32/chipkit_wifire
-    microchippic32/chipkit_uc32
-    microchippic32/chipkit_pi
-    microchippic32/fubarino_mini
-    microchippic32/fubarino_sd
-    microchippic32/helvepic32
-    microchippic32/helvepic32_breadboardside
-    microchippic32/helvepic32_smd
-    microchippic32/helvepic32_mx270
-    microchippic32/helvepic32_robot
-    microchippic32/helvepic32_smd_mx270
-    microchippic32/clicker2
-    microchippic32/flipnclickmz
-    microchippic32/fubarino_mini_20
-    microchippic32/pinguino32
-    microchippic32/openbci
-    microchippic32/usbono_pic32
-    microchippic32/cui32
-    microchippic32/nofire
-    microchippic32/quick240_usb
-    microchippic32/rgb_station
-    microchippic32/cui32stem
-    microchippic32/ubw32_mx460
-    microchippic32/ubw32_mx795
-    microchippic32/lenny
-    microchippic32/chipkit_wifire_revc
-
-Nordic nRF51
-------------
-
-.. toctree::
-    :maxdepth: 1
-        
-    nordicnrf51/bbcmicrobit
-    nordicnrf51/bluz_dk
-    nordicnrf51/calliope_mini
-    nordicnrf51/dfcm_nnn40
-    nordicnrf51/delta_dfcm_nnn50
-    nordicnrf51/wallbot_ble
-    nordicnrf51/nrf51_beacon
-    nordicnrf51/nrf51_dongle
-    nordicnrf51/nrf51_mkit
-    nordicnrf51/nrf51_dk
-    nordicnrf51/oshchip
-    nordicnrf51/redBearLabBLENano
-    nordicnrf51/redBearLab
-    nordicnrf51/seeedArchBLE
-    nordicnrf51/seeedArchLink
-    nordicnrf51/seeedTinyBLE
-    nordicnrf51/Sinobit
-    nordicnrf51/hrm1017
-    nordicnrf51/ty51822r3
-    nordicnrf51/vbluno51
-    nordicnrf51/waveshare_ble400
-    nordicnrf51/ng_beacon
-    nordicnrf51/nrf51822_y5_mbug
 
 Nordic nRF52
 ------------
 
 .. toctree::
     :maxdepth: 1
-        
+
     nordicnrf52/96b_nitrogen
     nordicnrf52/adafruit_feather_nrf52832
     nordicnrf52/adafruit_clue_nrf52840
@@ -785,18 +544,19 @@ Nuclei
 
 .. toctree::
     :maxdepth: 1
-        
+
     nuclei/gd32vf103v_eval
     nuclei/gd32vf103v_rvstar
     nuclei/hbird_eval
     nuclei/gd32vf103c_longan_nano
+
 
 NXP i.MX RT
 -----------
 
 .. toctree::
     :maxdepth: 1
-        
+
     nxpimxrt/mimxrt1010_evk
     nxpimxrt/mimxrt1015_evk
     nxpimxrt/mimxrt1020_evk
@@ -804,101 +564,13 @@ NXP i.MX RT
     nxpimxrt/mimxrt1060_evk
     nxpimxrt/mimxrt1064_evk
 
-NXP LPC
--------
-
-.. toctree::
-    :maxdepth: 1
-        
-    nxplpc/lpc11u24_301
-    nxplpc/lpc4330_m4
-    nxplpc/lpc11u35_501
-    nxplpc/elektor_cocorico
-    nxplpc/lpc1347
-    nxplpc/lpc11u35
-    nxplpc/lpc4088_dm
-    nxplpc/lpc4088
-    nxplpc/lpc11u68
-    nxplpc/lpc824
-    nxplpc/micronfcboard
-    nxplpc/blueboard_lpc11u24
-    nxplpc/lpc11c24
-    nxplpc/lpc11u34_421
-    nxplpc/lpc11u37_501
-    nxplpc/lpc812
-    nxplpc/lpc1549
-    nxplpc/lpc54114
-    nxplpc/lpc546xx
-    nxplpc/lpcxpresso55s16
-    nxplpc/lpcxpresso55s69
-    nxplpc/lpc11u24
-    nxplpc/lpc1768
-    nxplpc/mbuino
-    nxplpc/seeedArchGPRS
-    nxplpc/seeedArchPro
-    nxplpc/xadow_m0
-    nxplpc/xbed_lpc1768
-    nxplpc/dipcortexm0
-    nxplpc/lpc1114fn28
-    nxplpc/ssci824
-    nxplpc/oc_mbuino
-    nxplpc/ubloxc027
-    nxplpc/lpc11u35_y5_mbug
-
-RISC-V GAP
-----------
-
-.. toctree::
-    :maxdepth: 1
-        
-    riscv_gap/gapuino
-
-Shakti
-------
-
-.. toctree::
-    :maxdepth: 1
-        
-    shakti/artix7_35t
-    shakti/artix7_100t
-    shakti/parashu
-    shakti/pinaka
-    shakti/vajra
-
-SiFive
-------
-
-.. toctree::
-    :maxdepth: 1
-        
-    sifive/e310-arty
-    sifive/hifive-unleashed
-    sifive/hifive1
-    sifive/hifive1-revb
-    sifive/sparkfun_redboard_v
-    sifive/sparkfun_thing_plus_v
-
-Silicon Labs EFM32
-------------------
-
-.. toctree::
-    :maxdepth: 1
-        
-    siliconlabsefm32/efm32gg_stk3700
-    siliconlabsefm32/efm32lg_stk3600
-    siliconlabsefm32/efm32wg_stk3800
-    siliconlabsefm32/efm32zg_stk3200
-    siliconlabsefm32/efm32hg_stk3400
-    siliconlabsefm32/efm32pg_stk3401
-    siliconlabsefm32/efm32gg11_stk3701
-    siliconlabsefm32/tb_sense_12
 
 ST STM32
 --------
 
 .. toctree::
     :maxdepth: 1
-        
+
     ststm32/1bitsy_stm32f415rgt
     ststm32/disco_f412zg
     ststm32/disco_f723ie
@@ -1141,7 +813,7 @@ ST STM8
 
 .. toctree::
     :maxdepth: 1
-        
+
     ststm8/stm8sdisco
     ststm8/stm8sblue
     ststm8/stm8sblack
@@ -1153,7 +825,7 @@ Teensy
 
 .. toctree::
     :maxdepth: 1
-        
+
     teensy/teensy2
     teensy/teensy30
     teensy/teensy31
@@ -1169,7 +841,7 @@ TI MSP430
 
 .. toctree::
     :maxdepth: 1
-        
+
     timsp430/lpmsp430fr5739
     timsp430/lpmsp430f5529
     timsp430/lpmsp430fr2311
@@ -1187,7 +859,7 @@ TI TIVA
 
 .. toctree::
     :maxdepth: 1
-        
+
     titiva/lplm4f120h5qr
     titiva/lptm4c1230c3pm
     titiva/lptm4c1294ncpdt
@@ -1197,7 +869,7 @@ WIZNet W7500
 
 .. toctree::
     :maxdepth: 1
-        
+
     wiznet7500/wizwiki_w7500
     wiznet7500/wizwiki_w7500eco
     wiznet7500/wizwiki_w7500p

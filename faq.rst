@@ -24,7 +24,7 @@ Frequently Asked Questions
 General
 -------
 
-What is PlatformIO?
+OS-Q
 ~~~~~~~~~~~~~~~~~~~
 
 Please refer to :ref:`what_is_pio`

@@ -11,7 +11,7 @@
 
 .. _what_is_pio:
 
-What is PlatformIO?
+OS-Q
 ===================
 
 **A place where Developers and Teams have true Freedom! No more vendor lock-in!**
