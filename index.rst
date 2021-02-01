@@ -31,7 +31,7 @@ Contents
 .. toctree::
     :maxdepth: 2
 
-    what-is-platformio
+    OS-Q
 
 .. toctree::
     :caption: Getting Started

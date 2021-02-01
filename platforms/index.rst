@@ -48,37 +48,19 @@ Embedded
 .. toctree::
     :maxdepth: 1
 
-    aceinna_imu
     asrmicro650x
     atmelavr
-    atmelmegaavr
-    atmelsam
-    chipsalliance
     espressif32
     espressif8266
-    freescalekinetis
     gd32v
-    infineonxmc
-    intel_arc32
     intel_mcs51
     kendryte210
     lattice_ice40
-    maxim32
-    microchippic32
-    nordicnrf51
     nordicnrf52
     nuclei
     nxpimxrt
-    nxplpc
-    riscv_gap
-    shakti
-    sifive
-    siliconlabsefm32
     ststm32
     ststm8
-    teensy
-    timsp430
-    titiva
     wiznet7500
 
 Desktop

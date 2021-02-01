@@ -58,7 +58,7 @@ Source files
       ;   Library options: dependencies, extra library storages
       ;
       ; Please visit documentation for the other options and examples
-      ; https://docs.platformio.org/page/projectconf.html
+      ; https://docs.OS-Q.com/page/projectconf.html
 
 
       [env:uno]
