@@ -66,7 +66,7 @@ You do not need to use/buy external debug probe.
       - RAM
     * - :ref:`board_chipsalliance_swervolf_nexys`
       - :ref:`platform_chipsalliance`
-      - 
+      -
       - 320MHz
       - 16MB
       - 1.16MB
@@ -93,7 +93,7 @@ Boards
 
 .. note::
     * You can list pre-configured boards by :ref:`cmd_boards` command or
-      `PlatformIO Boards Explorer <https://platformio.org/boards>`_
+      `PlatformIO Boards Explorer <https://www.os-q.com/boards>`_
     * For more detailed ``board`` information please scroll the tables below by horizontally.
 
 Digilent
@@ -112,7 +112,7 @@ Digilent
     * - :ref:`board_chipsalliance_swervolf_nexys`
       - :ref:`platform_chipsalliance`
       - On-board
-      - 
+      -
       - 320MHz
       - 16MB
       - 1.16MB

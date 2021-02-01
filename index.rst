@@ -9,7 +9,8 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-Professional collaborative platform for embedded development
+
+Open source code integration platform
 ============================================================
 
 **A place where Developers and Teams have true Freedom! No more vendor lock-in!**
@@ -85,5 +86,3 @@ Contents
     articles
     FAQ <faq>
     core/history
-    core/migration
-

@@ -96,7 +96,7 @@ Install dependent library using :ref:`librarymanager`
             # Install the latest stable PlatformIO
             - sudo pip install -U platformio
 
-            # OneWire Library with ID=1 https://platformio.org/lib/show/1/OneWire
+            # OneWire Library with ID=1 https://www.os-q.com/lib/show/1/OneWire
             - pio lib -g install 1
 
     test:
@@ -171,8 +171,8 @@ Examples
             #
             # Libraries from PlatformIO Library Registry:
             #
-            # https://platformio.org/lib/show/416/TinyGPS
-            # https://platformio.org/lib/show/417/SPI4Teensy3
+            # https://www.os-q.com/lib/show/416/TinyGPS
+            # https://www.os-q.com/lib/show/417/SPI4Teensy3
             - pio lib -g install 416 417
 
     test:

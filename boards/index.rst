@@ -20,7 +20,7 @@ popular embedded boards and IDE.
 
 .. note::
     * You can list pre-configured boards by :ref:`cmd_boards` command or
-      `PlatformIO Boards Explorer <https://platformio.org/boards>`_
+      `PlatformIO Boards Explorer <https://www.os-q.com/boards>`_
     * For more detailed ``board`` information please scroll tables below by horizontal.
 
 ASR Microelectronics ASR650x
