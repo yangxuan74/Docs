@@ -422,8 +422,6 @@ Troubleshooting
     **Windows OS**: Please check that you have correctly installed USB driver
     from board manufacturer
 
-For further details, frequently questions, known issues, please
-refer to :ref:`faq`.
 
 If you find any issues with PlatformIO Core Installer Script, please report to
 https://github.com/platformio/platformio-core-installer/issues

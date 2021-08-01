@@ -84,5 +84,4 @@ Contents
     :maxdepth: 1
 
     articles
-    FAQ <faq>
     core/history
