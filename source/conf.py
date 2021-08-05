@@ -192,7 +192,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    ("index", "stop.tex", u"石头铺", u"stopstop", "manual"),
+    ("index", "stop.tex", u"源圈", u"stopstop", "manual"),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
@@ -220,7 +220,7 @@ latex_documents = [
 
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
-man_pages = [("index", "qitas", u"石头铺", [u"SoC"], 1)]
+man_pages = [("index", "qitas", u"源圈", [u"SoC"], 1)]
 
 # If true, show URL addresses after external links.
 # man_show_urls = False
@@ -235,7 +235,7 @@ texinfo_documents = [
     (
         "index",
         "SoC",
-        u"石头铺",
+        u"源圈",
         u"SoC",
         "SoC",
         "One line description of project.",
@@ -265,8 +265,8 @@ linkcheck_anchors = False
 
 html_context = {
     "display_github": True,
-    "github_user": "stopstopstop",
+    "github_user": "OS-Q",
     "github_repo": "Docs",
     "github_version": "master",
-    "conf_py_path": "docs/",
+    "conf_py_path": "source/",
 }
