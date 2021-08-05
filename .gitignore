@@ -1,1 +1,12 @@
-_build
+*.egg-info
+*.pyc
+.pioenvs
+.tox
+source/_build
+dist
+build
+.cache
+coverage.xml
+.coverage
+htmlcov
+.pytest_cache
