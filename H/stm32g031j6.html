@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>CMSIS &mdash; OS-Q 0.1 documentation</title>
+  <title>STM32G031J6 &mdash; OS-Q 0.1 documentation</title>
   
 
   
@@ -25,7 +25,7 @@
   
 
   
-    <link rel="canonical" href="https://docs.OS-Q.com/F/cmsis.html" />
+    <link rel="canonical" href="https://docs.OS-Q.com/H/stm32g031j6.html" />
 
   
   <!--[if lt IE 9]>
@@ -44,8 +44,8 @@
     
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="libopencm3" href="libopencm3.html" />
-    <link rel="prev" title="Arduino" href="arduino.html" />
+    <link rel="next" title="STM32G031K8" href="stm32g031k8.html" />
+    <link rel="prev" title="硬件平台" href="index.html" />
  
 <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
 <script src="../_static/js/bootstrap.min.js"></script>
@@ -97,14 +97,22 @@
               <p class="caption" role="heading"><span class="caption-text">嵌入式资源</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../P/index.html">芯级容器</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../H/index.html">硬件平台</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="index.html">编程框架</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="arduino.html">Arduino</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">CMSIS</a></li>
-<li class="toctree-l2"><a class="reference internal" href="libopencm3.html">libopencm3</a></li>
-<li class="toctree-l2"><a class="reference internal" href="stm32cube.html">STM32Cube</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">硬件平台</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="index.html#stm32g0">STM32G0</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">STM32G031J</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#hardware">Hardware</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#configuration">Configuration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#uploading">Uploading</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#frameworks">Frameworks</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="stm32g031k8.html">STM32G031K</a></li>
+<li class="toctree-l3"><a class="reference internal" href="stm32g071rb.html">STM32G071R</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../F/index.html">编程框架</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../T/index.html">工程模板</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../S/index.html">解决方案</a></li>
 </ul>
@@ -168,16 +176,16 @@
     
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
         
-          <li><a href="index.html">编程框架</a> &raquo;</li>
+          <li><a href="index.html">硬件平台</a> &raquo;</li>
         
-      <li>CMSIS</li>
+      <li>STM32G031J6</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
           
             
-              <a href="https://github.com/OS-Q/Docs/blob/mastersource/F/cmsis.rst" class="fa fa-github"> Edit on GitHub</a>
+              <a href="https://github.com/OS-Q/Docs/blob/mastersource/H/stm32g031j6.rst" class="fa fa-github"> Edit on GitHub</a>
             
           
         
@@ -191,10 +199,118 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="cmsis">
-<span id="framework-cmsis"></span><h1>CMSIS<a class="headerlink" href="#cmsis" title="Permalink to this headline">¶</a></h1>
-<p>The ARM Cortex Microcontroller Software Interface Standard (CMSIS) is a vendor-independent hardware abstraction layer for the Cortex-M processor series and specifies debugger interfaces. The CMSIS enables consistent and simple software interfaces to the processor for interface peripherals, real-time operating systems, and middleware. It simplifies software re-use, reducing the learning curve for new microcontroller developers and cutting the time-to-market for devices</p>
-<p>For more detailed information please visit <a class="reference external" href="https://developer.arm.com/tools-and-software/embedded/cmsis?utm_source=platformio.org&amp;utm_medium=docs">vendor site</a>.</p>
+  <div class="section" id="stm32g031j6">
+<span id="hardware-stm32g031j6"></span><h1><a class="toc-backref" href="#id1">STM32G031J6</a><a class="headerlink" href="#stm32g031j6" title="Permalink to this headline">¶</a></h1>
+<div class="contents topic" id="contents">
+<p class="topic-title">Contents</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#stm32g031j6" id="id1">STM32G031J6</a></p>
+<ul>
+<li><p><a class="reference internal" href="#hardware" id="id2">Hardware</a></p></li>
+<li><p><a class="reference internal" href="#configuration" id="id3">Configuration</a></p></li>
+<li><p><a class="reference internal" href="#uploading" id="id4">Uploading</a></p></li>
+<li><p><a class="reference internal" href="#frameworks" id="id5">Frameworks</a></p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="hardware">
+<h2><a class="toc-backref" href="#id2">Hardware</a><a class="headerlink" href="#hardware" title="Permalink to this headline">¶</a></h2>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Microcontroller</strong></p></td>
+<td><p>STM32G031J6</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Frequency</strong></p></td>
+<td><p>64MHz</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Flash</strong></p></td>
+<td><p>128KB</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>RAM</strong></p></td>
+<td><p>8KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Vendor</strong></p></td>
+<td><p><a class="reference external" href="https://www.st.com/en/evaluation-tools/stm32g0316-disco.html?utm_source=platformio.org&amp;utm_medium=docs">ST</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="configuration">
+<h2><a class="toc-backref" href="#id3">Configuration</a><a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:disco_g031j6]</span>
+<span class="na">platform</span> <span class="o">=</span> <span class="s">ststm32</span>
+<span class="na">board</span> <span class="o">=</span> <span class="s">disco_g031j6</span>
+</pre></div>
+</div>
+<p>You can override default ST STM32G0316-DISCO settings per build environment using
+<code class="docutils literal notranslate"><span class="pre">board_***</span></code> option, where <code class="docutils literal notranslate"><span class="pre">***</span></code> is a JSON object path from
+board manifest <a class="reference external" href="https://github.com/platformio/platform-ststm32/blob/master/boards/disco_g031j6.json">disco_g031j6.json</a>. For example,
+<code class="docutils literal notranslate"><span class="pre">board_build.mcu</span></code>, <code class="docutils literal notranslate"><span class="pre">board_build.f_cpu</span></code>, etc.</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:disco_g031j6]</span>
+<span class="na">platform</span> <span class="o">=</span> <span class="s">ststm32</span>
+<span class="na">board</span> <span class="o">=</span> <span class="s">disco_g031j6</span>
+
+<span class="c1">; change microcontroller</span>
+<span class="na">board_build.mcu</span> <span class="o">=</span> <span class="s">stm32g031j6</span>
+
+<span class="c1">; change MCU frequency</span>
+<span class="na">board_build.f_cpu</span> <span class="o">=</span> <span class="s">64000000L</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="uploading">
+<h2><a class="toc-backref" href="#id4">Uploading</a><a class="headerlink" href="#uploading" title="Permalink to this headline">¶</a></h2>
+<p>ST STM32G0316-DISCO supports the following uploading protocols:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">blackmagic</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">cmsis-dap</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">dfu</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">jlink</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">mbed</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">serial</span></code></p></li>
+</ul>
+<p>Default protocol is <code class="docutils literal notranslate"><span class="pre">mbed</span></code></p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:disco_g031j6]</span>
+<span class="na">platform</span> <span class="o">=</span> <span class="s">ststm32</span>
+<span class="na">board</span> <span class="o">=</span> <span class="s">disco_g031j6</span>
+
+<span class="na">upload_protocol</span> <span class="o">=</span> <span class="s">mbed</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="frameworks">
+<h2><a class="toc-backref" href="#id5">Frameworks</a><a class="headerlink" href="#frameworks" title="Permalink to this headline">¶</a></h2>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../F/arduino.html#framework-arduino"><span class="std std-ref">Arduino</span></a></p></td>
+<td><p>Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../F/cmsis.html#framework-cmsis"><span class="std std-ref">CMSIS</span></a></p></td>
+<td><p>The ARM Cortex Microcontroller Software Interface Standard (CMSIS) is a vendor-independent hardware abstraction layer for the Cortex-M processor series and specifies debugger interfaces. The CMSIS enables consistent and simple software interfaces to the processor for interface peripherals, real-time operating systems, and middleware. It simplifies software re-use, reducing the learning curve for new microcontroller developers and cutting the time-to-market for devices</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../F/stm32cube.html#framework-stm32cube"><span class="std std-ref">STM32Cube</span></a></p></td>
+<td><p>STM32Cube embedded software libraries, including: The HAL hardware abstraction layer, enabling portability between different STM32 devices via standardized API calls; The Low-Layer (LL) APIs, a light-weight, optimized, expert oriented set of APIs designed for both performance and runtime efficiency</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../F/libopencm3.html#framework-libopencm3"><span class="std std-ref">libopencm3</span></a></p></td>
+<td><p>The libOpenCM3 framework aims to create a free and open-source firmware library for various ARM Cortex-M0(+)/M3/M4 microcontrollers, including ST STM32, Ti Tiva and Stellaris, NXP LPC, Atmel SAM3, Energy Micro EFM32 and others</p></td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
 
 
@@ -203,8 +319,8 @@
           </div>
           <footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="libopencm3.html" class="btn btn-neutral float-right" title="libopencm3" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-        <a href="arduino.html" class="btn btn-neutral float-left" title="Arduino" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="stm32g031k8.html" class="btn btn-neutral float-right" title="STM32G031K8" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="index.html" class="btn btn-neutral float-left" title="硬件平台" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
 
   <hr/>
@@ -338,8 +454,8 @@
   <div class="rst-other-versions">
     <dl>
       <dt>On Github</dt>
-        <dd><a href="https://github.com/OS-Q/Docs/blob/master/source/F/cmsis.rst"> View</a></dd>
-        <dd><a href="https://github.com/OS-Q/Docs/edit/master/source/F/cmsis.rst"> Edit</a></dd>
+        <dd><a href="https://github.com/OS-Q/Docs/blob/master/source/H/stm32g031j6.rst"> View</a></dd>
+        <dd><a href="https://github.com/OS-Q/Docs/edit/master/source/H/stm32g031j6.rst"> Edit</a></dd>
     </dl>
   </div>
 </div>

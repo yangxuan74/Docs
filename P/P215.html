@@ -44,8 +44,8 @@
     
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="CoreBoard" href="../B/index.html" />
-    <link rel="prev" title="Platform" href="index.html" />
+    <link rel="next" title="硬件平台" href="../H/index.html" />
+    <link rel="prev" title="芯级平台" href="index.html" />
  
 <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
 <script src="../_static/js/bootstrap.min.js"></script>
@@ -94,25 +94,27 @@
               
             
             
-              <p class="caption" role="heading"><span class="caption-text">开发资源</span></p>
+              <p class="caption" role="heading"><span class="caption-text">嵌入式资源</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="index.html">芯级硬件</a><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">芯级容器</a><ul class="current">
 <li class="toctree-l2 current"><a class="reference internal" href="index.html#mcu">MCU</a><ul class="current">
 <li class="toctree-l3 current"><a class="current reference internal" href="#">STM32G0</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#configuration">Configuration</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#examples">Examples</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#stm32">STM32工程配置</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id2">工程示例</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#stable-and-upstream-versions">Stable and upstream versions</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#packages">Packages</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id2">开发框架</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id3">控制核心板</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id4">关联资源</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id5">控制核心</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id6">开发框架</a></li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../B/index.html">板级硬件</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../F/index.html">开发框架</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../H/index.html">硬件平台</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../F/index.html">编程框架</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../T/index.html">工程模板</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../S/index.html">解决方案</a></li>
 </ul>
 
             
@@ -174,7 +176,7 @@
     
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
         
-          <li><a href="index.html">Platform</a> &raquo;</li>
+          <li><a href="index.html">芯级平台</a> &raquo;</li>
         
       <li>STM32G0</li>
     
@@ -198,22 +200,22 @@
            <div itemprop="articleBody">
             
   <div class="section" id="stm32g0">
-<span id="platform-ststm32"></span><h1>STM32G0<a class="headerlink" href="#stm32g0" title="Permalink to this headline">¶</a></h1>
+<span id="platform-215"></span><h1>STM32G0<a class="headerlink" href="#stm32g0" title="Permalink to this headline">¶</a></h1>
 <p>The STM32 family of 32-bit Flash MCUs based on the ARM Cortex-M processor is designed to offer new degrees of freedom to MCU users. It offers a 32-bit product range that combines very high performance, real-time capabilities, digital signal processing, and low-power, low-voltage operation, while maintaining full integration and ease of development.</p>
 <p>For more detailed information please visit <a class="reference external" href="http://www.st.com/web/en/catalog/mmc/FM141/SC1169?sc=stm32&amp;utm_source=platformio.org&amp;utm_medium=docs">vendor site</a>.</p>
-<div class="contents local topic" id="contents">
-<p class="topic-title">Contents</p>
+<div class="contents local topic" id="id1">
+<p class="topic-title">目录索引</p>
 <ul class="simple">
-<li><p><a class="reference internal" href="#configuration" id="id5">Configuration</a></p></li>
-<li><p><a class="reference internal" href="#examples" id="id6">Examples</a></p></li>
-<li><p><a class="reference internal" href="#stable-and-upstream-versions" id="id7">Stable and upstream versions</a></p></li>
-<li><p><a class="reference internal" href="#packages" id="id8">Packages</a></p></li>
-<li><p><a class="reference internal" href="#id2" id="id9">开发框架</a></p></li>
-<li><p><a class="reference internal" href="#id3" id="id10">控制核心板</a></p></li>
+<li><p><a class="reference internal" href="#stm32" id="id8">STM32工程配置</a></p></li>
+<li><p><a class="reference internal" href="#id2" id="id9">工程示例</a></p></li>
+<li><p><a class="reference internal" href="#stable-and-upstream-versions" id="id10">Stable and upstream versions</a></p></li>
+<li><p><a class="reference internal" href="#id4" id="id11">关联资源</a></p></li>
+<li><p><a class="reference internal" href="#id5" id="id12">控制核心</a></p></li>
+<li><p><a class="reference internal" href="#id6" id="id13">开发框架</a></p></li>
 </ul>
 </div>
-<div class="section" id="configuration">
-<h2><a class="toc-backref" href="#id5">Configuration</a><a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="stm32">
+<h2><a class="toc-backref" href="#id8">STM32工程配置</a><a class="headerlink" href="#stm32" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="switching-between-arduino-cores">
 <h3>Switching between Arduino cores<a class="headerlink" href="#switching-between-arduino-cores" title="Permalink to this headline">¶</a></h3>
 <p>There are three different Arduino cores for STM32 microcontrollers: STM32Duino,
@@ -230,8 +232,8 @@ therefore, have different functionality and set of internal libraries.</p>
 <div class="section" id="stm32duino-configuration-system">
 <h3>STM32Duino configuration system<a class="headerlink" href="#stm32duino-configuration-system" title="Permalink to this headline">¶</a></h3>
 <p>STM32Duino core has several options that can be configured using the next</p>
-<table class="docutils align-default" id="id4">
-<caption><span class="caption-text">C/C++ standard library configuration</span><a class="headerlink" href="#id4" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id7">
+<caption><span class="caption-text">C/C++ standard library configuration</span><a class="headerlink" href="#id7" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -255,8 +257,8 @@ therefore, have different functionality and set of internal libraries.</p>
 </table>
 </div>
 </div>
-<div class="section" id="examples">
-<h2><a class="toc-backref" href="#id6">Examples</a><a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id2">
+<h2><a class="toc-backref" href="#id9">工程示例</a><a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <p>Examples are listed from <a class="reference external" href="https://github.com/platformio/platform-ststm32/tree/master/examples?utm_source=platformio.org&amp;utm_medium=docs">ST STM32 development platform repository</a>:</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://github.com/platformio/platform-ststm32/tree/master/examples/stm32cube-ll-blink?utm_source=platformio.org&amp;utm_medium=docs">stm32cube-ll-blink</a></p></li>
@@ -271,15 +273,17 @@ therefore, have different functionality and set of internal libraries.</p>
 <p>You will need to install debug tool drivers depending on your system.
 Please click on compatible debug tool below for the further instructions.</p>
 </div>
-<div class="section" id="id1">
-<h4>调试工具<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id3">
+<h4>调试工具<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h4>
 <table class="docutils align-default">
 <colgroup>
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
 </colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -287,28 +291,30 @@ Please click on compatible debug tool below for the further instructions.</p>
 <th class="head"><p>jlink</p></th>
 <th class="head"><p>stlink</p></th>
 <th class="head"><p>blackmagic</p></th>
+<th class="head"><p>serial</p></th>
+<th class="head"><p>dfu</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><a class="reference internal" href="../B/st/disco_g031j6.html#board-ststm32-disco-g031j6"><span class="std std-ref">STM32G031J6</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../H/stm32g031j6.html#hardware-stm32g031j6"><span class="std std-ref">STM32G031J6</span></a></p></td>
 <td><p>YES</p></td>
 <td><p>YES</p></td>
-<td><p>YES</p></td>
-<td><p>YES</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../B/st/nucleo_g031k8.html#board-ststm32-nucleo-g031k8"><span class="std std-ref">STM32G031K8</span></a></p></td>
 <td><p>YES</p></td>
 <td><p>YES</p></td>
 <td><p>YES</p></td>
 <td><p>YES</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../B/st/disco_g071rb.html#board-ststm32-disco-g071rb"><span class="std std-ref">STM32G071RB</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../H/stm32g031k8.html#hardware-stm32g031k8"><span class="std std-ref">STM32G031K8</span></a></p></td>
+<td><p>YES</p></td>
+<td><p>YES</p></td>
 <td><p>YES</p></td>
 <td><p>YES</p></td>
 <td><p>YES</p></td>
 <td><p>YES</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../B/st/nucleo_g071rb.html#board-ststm32-nucleo-g071rb"><span class="std std-ref">STM32G071RB</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../H/stm32g071rb.html#hardware-stm32g071rb"><span class="std std-ref">STM32G071RB</span></a></p></td>
+<td><p>YES</p></td>
+<td><p>YES</p></td>
 <td><p>YES</p></td>
 <td><p>YES</p></td>
 <td><p>YES</p></td>
@@ -320,7 +326,7 @@ Please click on compatible debug tool below for the further instructions.</p>
 </div>
 </div>
 <div class="section" id="stable-and-upstream-versions">
-<h2><a class="toc-backref" href="#id7">Stable and upstream versions</a><a class="headerlink" href="#stable-and-upstream-versions" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id10">Stable and upstream versions</a><a class="headerlink" href="#stable-and-upstream-versions" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="stable">
 <h3>Stable<a class="headerlink" href="#stable" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="c1">; Latest stable version</span>
@@ -335,17 +341,9 @@ Please click on compatible debug tool below for the further instructions.</p>
 </pre></div>
 </div>
 </div>
-<div class="section" id="upstream">
-<h3>Upstream<a class="headerlink" href="#upstream" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:upstream_develop]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">https://github.com/platformio/platform-ststm32.git</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">...</span>
-</pre></div>
 </div>
-</div>
-</div>
-<div class="section" id="packages">
-<h2><a class="toc-backref" href="#id8">Packages</a><a class="headerlink" href="#packages" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id4">
+<h2><a class="toc-backref" href="#id11">关联资源</a><a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 50%" />
@@ -357,8 +355,38 @@ Please click on compatible debug tool below for the further instructions.</p>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><a class="reference external" href="https://github.com/STMicroelectronics/cmsis_device_g0.git?utm_source=platformio.org&amp;utm_medium=docs">framework-cmsis-stm32g0</a></p></td>
+<tr class="row-even"><td><p><a class="reference external" href="http://openocd.org?utm_source=platformio.org&amp;utm_medium=docs">tool-openocd</a></p></td>
+<td><p>Open On-Chip Debugger. Free and Open On-Chip Debugging, In-System Programming and Boundary-Scan Testing</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://www.stm32duino.com?utm_source=platformio.org&amp;utm_medium=docs">tool-stm32duino</a></p></td>
+<td><p>STM32Duino Tools</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm?utm_source=platformio.org&amp;utm_medium=docs">toolchain-gccarmnoneeabi</a></p></td>
+<td><p>GNU toolchain for Arm Cortex-M and Cortex-R processors</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://cmake.org?utm_source=platformio.org&amp;utm_medium=docs">tool-cmake</a></p></td>
+<td><p>CMake is an open-source, cross-platform family of tools designed to build, test and package software</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://www.segger.com/downloads/jlink/?utm_source=platformio.org&amp;utm_medium=docs">tool-jlink</a></p></td>
+<td><p>Software and Documentation Pack for SEGGER J-Link debug probes</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://www.st.com/en/development-tools/stm32cubemx.html?utm_source=platformio.org&amp;utm_medium=docs">tool-ldscripts-ststm32</a></p></td>
+<td><p>Linker scripts pack for STMicroelectronics STM32 platform</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/stm32duino/Arduino_Core_STM32.git?utm_source=platformio.org&amp;utm_medium=docs">framework-arduinoststm32</a></p></td>
+<td><p>Arduino Wiring-based Framework for ST STM32 microcontrollers</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="http://www.arm.com/products/processors/cortex-m/cortex-microcontroller-software-interface-standard.php?utm_source=platformio.org&amp;utm_medium=docs">framework-cmsis</a></p></td>
+<td><p>Vendor-independent hardware abstraction layer for the Cortex-M processor series</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="http://www.libopencm3.org/?utm_source=platformio.org&amp;utm_medium=docs">framework-libopencm3</a></p></td>
+<td><p>Open source ARM Cortex-M microcontroller library</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/STMicroelectronics/cmsis_device_g0.git?utm_source=platformio.org&amp;utm_medium=docs">framework-cmsis-stm32g0</a></p></td>
 <td><p>CMSIS component for the STMicroelectronics STM32G0 series</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/STMicroelectronics/STM32CubeG0?utm_source=platformio.org&amp;utm_medium=docs">framework-stm32cubeg0</a></p></td>
+<td><p>STM32Cube is a set of tools and embedded software bricks available free of charge to enable fast and easy development on the STM32 platform (STM32CubeG0 MCU Firmware Package)</p></td>
 </tr>
 </tbody>
 </table>
@@ -378,8 +406,53 @@ manufacturer</p>
 </div></blockquote>
 </div>
 </div>
-<div class="section" id="id2">
-<h2><a class="toc-backref" href="#id9">开发框架</a><a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id5">
+<h2><a class="toc-backref" href="#id12">控制核心</a><a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Package</p></th>
+<th class="head"><p>MCU</p></th>
+<th class="head"><p>Frequency</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>RAM</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../H/stm32g031j6.html#hardware-stm32g031j6"><span class="std std-ref">STM32G031J6</span></a></p></td>
+<td><p>SON8</p></td>
+<td><p>STM32G031J6</p></td>
+<td><p>64MHz</p></td>
+<td><p>32KB</p></td>
+<td><p>8KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../H/stm32g031k8.html#hardware-stm32g031k8"><span class="std std-ref">STM32G031K8</span></a></p></td>
+<td><p>LQFP32</p></td>
+<td><p>STM32G031K8</p></td>
+<td><p>64MHz</p></td>
+<td><p>64KB</p></td>
+<td><p>8KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../H/stm32g071rb.html#hardware-stm32g071rb"><span class="std std-ref">STM32G071RB</span></a></p></td>
+<td><p>LQFP64</p></td>
+<td><p>STM32G071RB</p></td>
+<td><p>64MHz</p></td>
+<td><p>128KB</p></td>
+<td><p>36KB</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id6">
+<h2><a class="toc-backref" href="#id13">开发框架</a><a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 50%" />
@@ -406,58 +479,6 @@ manufacturer</p>
 </tbody>
 </table>
 </div>
-<div class="section" id="id3">
-<h2><a class="toc-backref" href="#id10">控制核心板</a><a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>Name</p></th>
-<th class="head"><p>Debug</p></th>
-<th class="head"><p>MCU</p></th>
-<th class="head"><p>Frequency</p></th>
-<th class="head"><p>Flash</p></th>
-<th class="head"><p>RAM</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><a class="reference internal" href="../B/st/nucleo_g071rb.html#board-ststm32-nucleo-g071rb"><span class="std std-ref">STM32G071RB</span></a></p></td>
-<td><p>On-board</p></td>
-<td><p>STM32G071RBT6</p></td>
-<td><p>64MHz</p></td>
-<td><p>128KB</p></td>
-<td><p>36KB</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../B/st/nucleo_g031k8.html#board-ststm32-nucleo-g031k8"><span class="std std-ref">STM32G031K8</span></a></p></td>
-<td><p>On-board</p></td>
-<td><p>STM32G031K8</p></td>
-<td><p>64MHz</p></td>
-<td><p>64KB</p></td>
-<td><p>8KB</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../B/st/disco_g031j6.html#board-ststm32-disco-g031j6"><span class="std std-ref">STM32G031J6</span></a></p></td>
-<td><p>External</p></td>
-<td><p>STM32G031J6</p></td>
-<td><p>64MHz</p></td>
-<td><p>128KB</p></td>
-<td><p>8KB</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../B/st/disco_g071rb.html#board-ststm32-disco-g071rb"><span class="std std-ref">STM32G071RB</span></a></p></td>
-<td><p>On-board</p></td>
-<td><p>STM32G071RBT6</p></td>
-<td><p>64MHz</p></td>
-<td><p>128KB</p></td>
-<td><p>36KB</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 </div>
 
 
@@ -466,8 +487,8 @@ manufacturer</p>
           </div>
           <footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="../B/index.html" class="btn btn-neutral float-right" title="CoreBoard" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-        <a href="index.html" class="btn btn-neutral float-left" title="Platform" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../H/index.html" class="btn btn-neutral float-right" title="硬件平台" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="index.html" class="btn btn-neutral float-left" title="芯级平台" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
 
   <hr/>
