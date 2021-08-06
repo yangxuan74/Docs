@@ -1,6 +1,6 @@
 .. _board_ststm32_disco_g031j6:
 
-ST STM32G0316-DISCO
+STM32G031J6
 ===================
 
 .. contents::

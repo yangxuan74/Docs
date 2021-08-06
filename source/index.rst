@@ -9,9 +9,9 @@
 
 
 .. toctree::
-    :caption: 资源分布
+    :caption: 开发资源
     :maxdepth: 1
 
-    P/index
-    B/index
-    F/index
+    芯级硬件 <P/index>
+    板级硬件 <B/index>
+    开发框架 <F/index>

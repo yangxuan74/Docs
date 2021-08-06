@@ -1,7 +1,7 @@
 .. _board_ststm32_disco_g071rb:
 
-ST STM32G071B Discovery
-=======================
+STM32G071RB
+================
 
 .. contents::
 
