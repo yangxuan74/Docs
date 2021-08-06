@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>硬件开发 &mdash; stopstop 0.1 documentation</title>
+  <title>Configuration &mdash; stopstop 0.1 documentation</title>
   
 
   
@@ -44,7 +44,6 @@
     
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="prev" title="源圈" href="../index.html" />
  
 <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
 <script src="../_static/js/bootstrap.min.js"></script>
@@ -94,8 +93,10 @@
             
             
               <p class="caption" role="heading"><span class="caption-text">拓扑关系</span></p>
-<ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">平台P21</a></li>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="index.html">Development Platforms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../B/index.html">Boards</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../F/index.html">Frameworks</a></li>
 </ul>
 
             
@@ -157,7 +158,7 @@
     
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li>硬件开发</li>
+      <li>Configuration</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -178,8 +179,48 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="p21">
-<span id="id1"></span><h1>硬件开发<a class="headerlink" href="#p21" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="configuration">
+<h1>Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="switching-between-arduino-cores">
+<h2>Switching between Arduino cores<a class="headerlink" href="#switching-between-arduino-cores" title="Permalink to this headline">¶</a></h2>
+<p>There are three different Arduino cores for STM32 microcontrollers: STM32Duino,
+Arduino STM32 (maple) and STM32L0. All of them have been developed independently,
+therefore, have different functionality and set of internal libraries.</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:hy_tinystm103tb]</span>
+<span class="na">platform</span> <span class="o">=</span> <span class="s">ststm32</span>
+<span class="na">framework</span> <span class="o">=</span> <span class="s">arduino</span>
+<span class="na">board</span> <span class="o">=</span> <span class="s">hy_tinystm103tb</span>
+<span class="na">board_build.core</span> <span class="o">=</span> <span class="s">maple</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="stm32duino-configuration-system">
+<h2>STM32Duino configuration system<a class="headerlink" href="#stm32duino-configuration-system" title="Permalink to this headline">¶</a></h2>
+<p>STM32Duino core has several options that can be configured using the next</p>
+<table class="docutils align-default" id="id1">
+<caption><span class="caption-text">C/C++ standard library configuration</span><a class="headerlink" href="#id1" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">PIO_FRAMEWORK_ARDUINO_STANDARD_LIB</span></code></p></td>
+<td><p>Disable Newlib Nano library</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">PIO_FRAMEWORK_ARDUINO_NANOLIB_FLOAT_PRINTF</span></code></p></td>
+<td><p>Newlib Nano + float printf support</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">PIO_FRAMEWORK_ARDUINO_NANOLIB_FLOAT_SCANF</span></code></p></td>
+<td><p>Newlib Nano + float scanf support</p></td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
 
 
@@ -187,9 +228,6 @@
            
           </div>
           <footer>
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="../index.html" class="btn btn-neutral float-left" title="源圈" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-    </div>
 
   <hr/>
 
