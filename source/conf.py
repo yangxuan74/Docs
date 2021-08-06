@@ -35,8 +35,8 @@ source_suffix = ".rst"
 master_doc = "index"
 
 # General information about the project.
-project = u"stopstop"
-copyright = u"2021, www.stops.top"
+project = u"OS-Q"
+copyright = u"2021, www.OS-Q.com"
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -113,7 +113,7 @@ html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
-# html_logo = '_static/images/stopstop.png'
+# html_logo = '_static/images/OS-Q.png'
 
 # The name of an image file (within the static path) to use as favicon of the
 # docs.  This file should be a Windows icon file (.ico) being 16x16 or 32x32
@@ -172,10 +172,10 @@ html_show_sphinx = False
 # html_file_suffix = None
 
 # The base URL which points to the root of the HTML documentation
-html_baseurl = "https://docs.stops.top"
+html_baseurl = "https://docs.OS-Q.com"
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = "stopstop"
+htmlhelp_basename = "OS-Q"
 
 # -- Options for LaTeX output ---------------------------------------------
 
@@ -192,7 +192,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    ("index", "stop.tex", u"源圈", u"stopstop", "manual"),
+    ("index", "OS-Q.tex", u"源圈", u"OS-Q", "manual"),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of

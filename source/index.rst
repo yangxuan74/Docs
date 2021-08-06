@@ -1,5 +1,5 @@
 
-源圈
+源圈 OS-Q
 ==================
 
 **Social:** `LinkedIn <https://www.linkedin.com/in/qitas/>`_ |
@@ -9,7 +9,7 @@
 
 
 .. toctree::
-    :caption: 拓扑关系
+    :caption: 资源分布
     :maxdepth: 1
 
     P/index

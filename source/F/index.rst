@@ -1,8 +1,8 @@
 
 .. _frameworks:
 
-Frameworks
-==========
+Framework
+============
 
 .. toctree::
     :maxdepth: 1
