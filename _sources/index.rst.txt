@@ -1,5 +1,5 @@
 
-源圈OS-Q
+源圈
 ==================
 
 **Social:** `LinkedIn <https://www.linkedin.com/in/qitas/>`_ |
@@ -9,7 +9,37 @@
 
 
 .. toctree::
-    :caption: 嵌入式资源
+    :caption: 芯级容器
+    :maxdepth: 1
+
+    芯级容器 <P/index>
+    硬件平台 <H/index>
+    编程框架 <F/index>
+    工程模板 <T/index>
+    解决方案 <S/index>
+
+.. toctree::
+    :caption: 原型平台
+    :maxdepth: 1
+
+    芯级容器 <P/index>
+    硬件平台 <H/index>
+    编程框架 <F/index>
+    工程模板 <T/index>
+    解决方案 <S/index>
+
+.. toctree::
+    :caption: 编程框架
+    :maxdepth: 1
+
+    芯级容器 <P/index>
+    硬件平台 <H/index>
+    编程框架 <F/index>
+    工程模板 <T/index>
+    解决方案 <S/index>
+
+.. toctree::
+    :caption: 解决方案
     :maxdepth: 1
 
     芯级容器 <P/index>
