@@ -12,4 +12,6 @@
     :caption: 拓扑关系
     :maxdepth: 1
 
-    平台P21 <P/P21>
+    P/index
+    B/index
+    F/index
