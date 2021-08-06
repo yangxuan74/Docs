@@ -555,12 +555,12 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 }
 
 .nav .nav-pio-tech {
-  background-color: hsl(335, 83%, 53%);
+  background-color: hsl(167, 84%, 52%);
   font-weight: bold;
 }
 
 .nav .nav-pio-tech:hover {
-  background-color: #ee0be3;
+  background-color: #25ee0b;
   font-weight: bold;
 }
 

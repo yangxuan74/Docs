@@ -9,41 +9,31 @@
 
 
 .. toctree::
-    :caption: 芯级容器
+    :caption: 编译体系
     :maxdepth: 1
 
     芯级容器 <P/index>
-    硬件平台 <H/index>
-    编程框架 <F/index>
-    工程模板 <T/index>
-    解决方案 <S/index>
 
 .. toctree::
     :caption: 原型平台
     :maxdepth: 1
 
-    芯级容器 <P/index>
     硬件平台 <H/index>
-    编程框架 <F/index>
-    工程模板 <T/index>
-    解决方案 <S/index>
 
 .. toctree::
-    :caption: 编程框架
+    :caption: 开发框架
     :maxdepth: 1
 
-    芯级容器 <P/index>
-    硬件平台 <H/index>
     编程框架 <F/index>
+
+.. toctree::
+    :caption: 项目模板
+    :maxdepth: 1
+
     工程模板 <T/index>
-    解决方案 <S/index>
 
 .. toctree::
     :caption: 解决方案
     :maxdepth: 1
 
-    芯级容器 <P/index>
-    硬件平台 <H/index>
-    编程框架 <F/index>
-    工程模板 <T/index>
     解决方案 <S/index>

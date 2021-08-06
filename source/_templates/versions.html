@@ -2,7 +2,7 @@
 {# Add rst-badge after rst-versions for small badge style. #}
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="{{ _('Versions') }}">
   <span class="rst-current-version" data-toggle="rst-current-version">
-    <span class="fa fa-book">源圈:嵌入式开源项目认证</span>
+    <span class="fa fa-book">源圈:校验开源项目</span>
     v{{ release }}
     <span class="fa fa-caret-down"></span>
   </span>
@@ -10,8 +10,8 @@
     <dl>
       <img src="../_static/images/weixin.jpg">
       <dt>{{ _('By Qtias') }}</dt>
-        <dd><a href="https://{{ github_host|default("github.com") }}/{{ github_user }}/{{ github_repo }}/blob/{{ github_version }}/{{ conf_py_path }}{{ pagename }}{{ page_source_suffix }}"> {{ _('View') }}</a></dd>
-        <dd><a href="https://{{ github_host|default("github.com") }}/{{ github_user }}/{{ github_repo }}/edit/{{ github_version }}/{{ conf_py_path }}{{ pagename }}{{ page_source_suffix }}"> {{ _('Edit') }}</a></dd>
+        <dd><a href="https://{{ github_host|default("github.com") }}/{{ github_user }}/{{ github_repo }}/blob/{{ github_version }}{{ conf_py_path }}{{ pagename }}{{ page_source_suffix }}"> {{ _('View') }}</a></dd>
+        <dd><a href="https://{{ github_host|default("github.com") }}/{{ github_user }}/{{ github_repo }}/edit/{{ github_version }}{{ conf_py_path }}{{ pagename }}{{ page_source_suffix }}"> {{ _('Edit') }}</a></dd>
     </dl>
   </div>
 </div>

@@ -220,7 +220,7 @@ latex_documents = [
 
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
-man_pages = [("index", "qitas", u"源圈", [u"SoC"], 1)]
+man_pages = [("index", "qitas", u"源圈", [u"OS-Q"], 1)]
 
 # If true, show URL addresses after external links.
 # man_show_urls = False
@@ -234,10 +234,8 @@ man_pages = [("index", "qitas", u"源圈", [u"SoC"], 1)]
 texinfo_documents = [
     (
         "index",
-        "SoC",
+        "OS-Q",
         u"源圈",
-        u"SoC",
-        "SoC",
         "One line description of project.",
         "Miscellaneous",
     ),
@@ -268,5 +266,5 @@ html_context = {
     "github_user": "OS-Q",
     "github_repo": "Docs",
     "github_version": "master",
-    "conf_py_path": "source/",
+    "conf_py_path": "/source/",
 }
