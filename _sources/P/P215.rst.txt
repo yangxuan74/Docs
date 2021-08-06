@@ -1,7 +1,7 @@
 .. _platform_ststm32:
 
-ST STM32
-========
+STM32G0
+==========
 
 
 The STM32 family of 32-bit Flash MCUs based on the ARM Cortex-M processor is designed to offer new degrees of freedom to MCU users. It offers a 32-bit product range that combines very high performance, real-time capabilities, digital signal processing, and low-power, low-voltage operation, while maintaining full integration and ease of development.
@@ -34,53 +34,37 @@ Tools & Debug Probes
     Please click on compatible debug tool below for the further instructions.
 
 
-On-Board Debug Tools
-^^^^^^^^^^^^^^^^^^^^
-
-Boards listed below have on-board debug probe and **ARE READY** for debugging!
-You do not need to use/buy external debug probe.
-
-
-.. list-table::
-    :header-rows:  1
-
-    * - Name
-      - MCU
-      - Frequency
-      - Flash
-      - RAM
-    * - :ref:`board_ststm32_nucleo_g071rb`
-      - STM32G071RBT6
-      - 64MHz
-      - 128KB
-      - 36KB
-    * - :ref:`board_ststm32_nucleo_g031k8`
-      - STM32G031K8
-      - 64MHz
-      - 64KB
-      - 8KB
-    * - :ref:`board_ststm32_disco_g071rb`
-      - STM32G071RBT6
-      - 64MHz
-      - 128KB
-      - 36KB
-
-External Debug Tools
+调试工具
 ^^^^^^^^^^^^^^^^^^^^
 
 .. list-table::
     :header-rows:  1
 
     * - Name
-      - MCU
-      - Frequency
-      - Flash
-      - RAM
+      - cmsis-dap
+      - jlink
+      - stlink
+      - blackmagic
     * - :ref:`board_ststm32_disco_g031j6`
-      - STM32G031J6
-      - 64MHz
-      - 128KB
-      - 8KB
+      - YES
+      - YES
+      - YES
+      - YES
+    * - :ref:`board_ststm32_nucleo_g031k8`
+      - YES
+      - YES
+      - YES
+      - YES
+    * - :ref:`board_ststm32_disco_g071rb`
+      - YES
+      - YES
+      - YES
+      - YES
+    * - :ref:`board_ststm32_nucleo_g071rb`
+      - YES
+      - YES
+      - YES
+      - YES
 
 
 Stable and upstream versions
@@ -112,7 +96,7 @@ Upstream
 
 
 Packages
---------
+-------------
 
 .. list-table::
     :header-rows:  1
@@ -137,7 +121,7 @@ Packages
         manufacturer
 
 
-Frameworks
+开发框架
 ----------
 .. list-table::
     :header-rows:  1
@@ -157,12 +141,8 @@ Frameworks
     * - :ref:`framework_libopencm3`
       - The libOpenCM3 framework aims to create a free and open-source firmware library for various ARM Cortex-M0(+)/M3/M4 microcontrollers, including ST STM32, Ti Tiva and Stellaris, NXP LPC, Atmel SAM3, Energy Micro EFM32 and others
 
-Boards
-------
-
-
-ST
-~~
+控制核心板
+-----------
 
 .. list-table::
     :header-rows:  1
