@@ -14,7 +14,6 @@ ST
 .. toctree::
     :maxdepth: 1
 
-    st/disco_g031j6
-    st/nucleo_g031k8
-    st/nucleo_g071rb
-    st/disco_g071rb
+    st/stm32g031j6
+    st/stm32g031k8
+    st/stm32g071rb

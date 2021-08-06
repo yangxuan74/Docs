@@ -1,5 +1,5 @@
 
-Configuration
+STM32工程配置
 -------------
 
 Switching between Arduino cores

@@ -1,8 +1,7 @@
-.. _platform_ststm32:
+.. _platform_215:
 
 STM32G0
 ==========
-
 
 The STM32 family of 32-bit Flash MCUs based on the ARM Cortex-M processor is designed to offer new degrees of freedom to MCU users. It offers a 32-bit product range that combines very high performance, real-time capabilities, digital signal processing, and low-power, low-voltage operation, while maintaining full integration and ease of development.
 
@@ -14,8 +13,8 @@ For more detailed information please visit `vendor site <http://www.st.com/web/e
 
 .. include:: P21.rst
 
-Examples
---------
+工程示例
+----------------
 
 Examples are listed from `ST STM32 development platform repository <https://github.com/platformio/platform-ststm32/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_:
 
@@ -45,12 +44,18 @@ Tools & Debug Probes
       - jlink
       - stlink
       - blackmagic
-    * - :ref:`board_ststm32_disco_g031j6`
+      - serial
+      - dfu
+    * - :ref:`hardware_stm32g031j6`
       - YES
       - YES
       - YES
       - YES
-    * - :ref:`board_ststm32_nucleo_g031k8`
+      - YES
+      - YES
+    * - :ref:`hardware_stm32g031k8`
+      - YES
+      - YES
       - YES
       - YES
       - YES
@@ -60,12 +65,15 @@ Tools & Debug Probes
       - YES
       - YES
       - YES
-    * - :ref:`board_ststm32_nucleo_g071rb`
+      - YES
+      - YES
+    * - :ref:`hardware_stm32g071rb`
       - YES
       - YES
       - YES
       - YES
-
+      - YES
+      - YES
 
 Stable and upstream versions
 ----------------------------
@@ -85,17 +93,8 @@ Stable
     platform = ststm32@x.y.z
     board = ...
 
-Upstream
-~~~~~~~~
 
-.. code-block:: ini
-
-    [env:upstream_develop]
-    platform = https://github.com/platformio/platform-ststm32.git
-    board = ...
-
-
-Packages
+关联资源
 -------------
 
 .. list-table::
@@ -104,8 +103,38 @@ Packages
     * - Name
       - Description
 
+    * - `tool-openocd <http://openocd.org?utm_source=platformio.org&utm_medium=docs>`__
+      - Open On-Chip Debugger. Free and Open On-Chip Debugging, In-System Programming and Boundary-Scan Testing
+
+    * - `tool-stm32duino <https://www.stm32duino.com?utm_source=platformio.org&utm_medium=docs>`__
+      - STM32Duino Tools
+
+    * - `toolchain-gccarmnoneeabi <https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm?utm_source=platformio.org&utm_medium=docs>`__
+      - GNU toolchain for Arm Cortex-M and Cortex-R processors
+
+    * - `tool-cmake <https://cmake.org?utm_source=platformio.org&utm_medium=docs>`__
+      - CMake is an open-source, cross-platform family of tools designed to build, test and package software
+
+    * - `tool-jlink <https://www.segger.com/downloads/jlink/?utm_source=platformio.org&utm_medium=docs>`__
+      - Software and Documentation Pack for SEGGER J-Link debug probes
+
+    * - `tool-ldscripts-ststm32 <https://www.st.com/en/development-tools/stm32cubemx.html?utm_source=platformio.org&utm_medium=docs>`__
+      - Linker scripts pack for STMicroelectronics STM32 platform
+
+    * - `framework-arduinoststm32 <https://github.com/stm32duino/Arduino_Core_STM32.git?utm_source=platformio.org&utm_medium=docs>`__
+      - Arduino Wiring-based Framework for ST STM32 microcontrollers
+
+    * - `framework-cmsis <http://www.arm.com/products/processors/cortex-m/cortex-microcontroller-software-interface-standard.php?utm_source=platformio.org&utm_medium=docs>`__
+      - Vendor-independent hardware abstraction layer for the Cortex-M processor series
+
+    * - `framework-libopencm3 <http://www.libopencm3.org/?utm_source=platformio.org&utm_medium=docs>`__
+      - Open source ARM Cortex-M microcontroller library
+
     * - `framework-cmsis-stm32g0 <https://github.com/STMicroelectronics/cmsis_device_g0.git?utm_source=platformio.org&utm_medium=docs>`__
       - CMSIS component for the STMicroelectronics STM32G0 series
+
+    * - `framework-stm32cubeg0 <https://github.com/STMicroelectronics/STM32CubeG0?utm_source=platformio.org&utm_medium=docs>`__
+      - STM32Cube is a set of tools and embedded software bricks available free of charge to enable fast and easy development on the STM32 platform (STM32CubeG0 MCU Firmware Package)
 
 
 .. warning::
@@ -120,6 +149,36 @@ Packages
         Please check that you have a correctly installed USB driver from board
         manufacturer
 
+控制核心
+-----------
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Package
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`hardware_stm32g031j6`
+      - SON8
+      - STM32G031J6
+      - 64MHz
+      - 32KB
+      - 8KB
+    * - :ref:`hardware_stm32g031k8`
+      - LQFP32
+      - STM32G031K8
+      - 64MHz
+      - 64KB
+      - 8KB
+    * - :ref:`hardware_stm32g071rb`
+      - LQFP64
+      - STM32G071RB
+      - 64MHz
+      - 128KB
+      - 36KB
 
 开发框架
 ----------
@@ -141,39 +200,3 @@ Packages
     * - :ref:`framework_libopencm3`
       - The libOpenCM3 framework aims to create a free and open-source firmware library for various ARM Cortex-M0(+)/M3/M4 microcontrollers, including ST STM32, Ti Tiva and Stellaris, NXP LPC, Atmel SAM3, Energy Micro EFM32 and others
 
-控制核心板
------------
-
-.. list-table::
-    :header-rows:  1
-
-    * - Name
-      - Debug
-      - MCU
-      - Frequency
-      - Flash
-      - RAM
-    * - :ref:`board_ststm32_nucleo_g071rb`
-      - On-board
-      - STM32G071RBT6
-      - 64MHz
-      - 128KB
-      - 36KB
-    * - :ref:`board_ststm32_nucleo_g031k8`
-      - On-board
-      - STM32G031K8
-      - 64MHz
-      - 64KB
-      - 8KB
-    * - :ref:`board_ststm32_disco_g031j6`
-      - External
-      - STM32G031J6
-      - 64MHz
-      - 128KB
-      - 8KB
-    * - :ref:`board_ststm32_disco_g071rb`
-      - On-board
-      - STM32G071RBT6
-      - 64MHz
-      - 128KB
-      - 36KB

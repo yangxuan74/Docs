@@ -1,4 +1,4 @@
-.. _board_ststm32_disco_g071rb:
+.. _hardware_stm32g071rb:
 
 STM32G071RB
 ================
@@ -19,28 +19,29 @@ Hardware
   * - **RAM**
     - 36KB
   * - **Vendor**
-    - `ST <https://www.st.com/en/evaluation-tools/stm32g071b-disco.html?utm_source=platformio.org&utm_medium=docs>`__
+    - `ST <https://www.st.com/en/evaluation-tools/nucleo-g071rb.html?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
+
 .. code-block:: ini
 
-  [env:disco_g071rb]
+  [env:nucleo_g071rb]
   platform = ststm32
-  board = disco_g071rb
+  board = nucleo_g071rb
 
-You can override default ST STM32G071B Discovery settings per build environment using
+You can override default Nucleo G071RB settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `disco_g071rb.json <https://github.com/platformio/platform-ststm32/blob/master/boards/disco_g071rb.json>`_. For example,
+board manifest `nucleo_g071rb.json <https://github.com/platformio/platform-ststm32/blob/master/boards/nucleo_g071rb.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:disco_g071rb]
+  [env:nucleo_g071rb]
   platform = ststm32
-  board = disco_g071rb
+  board = nucleo_g071rb
 
   ; change microcontroller
   board_build.mcu = stm32g071rbt6
@@ -51,7 +52,7 @@ board manifest `disco_g071rb.json <https://github.com/platformio/platform-ststm3
 
 Uploading
 ---------
-ST STM32G071B Discovery supports the following uploading protocols:
+Nucleo G071RB supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``
@@ -63,12 +64,11 @@ Default protocol is ``stlink``
 
 .. code-block:: ini
 
-  [env:disco_g071rb]
+  [env:nucleo_g071rb]
   platform = ststm32
-  board = disco_g071rb
+  board = nucleo_g071rb
 
   upload_protocol = stlink
-
 
 Frameworks
 ----------
@@ -77,6 +77,9 @@ Frameworks
 
     * - Name
       - Description
+
+    * - :ref:`framework_arduino`
+      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences
 
     * - :ref:`framework_cmsis`
       - The ARM Cortex Microcontroller Software Interface Standard (CMSIS) is a vendor-independent hardware abstraction layer for the Cortex-M processor series and specifies debugger interfaces. The CMSIS enables consistent and simple software interfaces to the processor for interface peripherals, real-time operating systems, and middleware. It simplifies software re-use, reducing the learning curve for new microcontroller developers and cutting the time-to-market for devices

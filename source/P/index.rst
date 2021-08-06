@@ -1,8 +1,8 @@
 
 .. _platforms:
 
-Platform
-=====================
+芯级平台
+================
 
 
 MCU
@@ -11,4 +11,4 @@ MCU
 .. toctree::
     :maxdepth: 1
 
-    P215
+    STM32G0 <P215>
