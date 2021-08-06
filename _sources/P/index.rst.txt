@@ -1,12 +1,12 @@
 
 .. _platforms:
 
-Development Platforms
+Platform
 =====================
 
 
-Embedded
---------
+MCU
+----------------
 
 .. toctree::
     :maxdepth: 1

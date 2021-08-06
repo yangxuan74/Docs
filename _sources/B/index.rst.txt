@@ -1,7 +1,7 @@
 .. _boards:
 
-Boards
-======
+CoreBoard
+===========
 
 Rapid Embedded Development, Continuous and IDE integration in a few
 steps with PlatformIO thanks to built-in project generator for the most
@@ -15,6 +15,6 @@ ST
     :maxdepth: 1
 
     st/disco_g031j6
-    st/disco_g071rb
     st/nucleo_g031k8
     st/nucleo_g071rb
+    st/disco_g071rb
