@@ -1,6 +1,5 @@
-.. _p21:
 
-STM32工程配置
+STM32
 -------------
 
 Switching between Arduino cores
