@@ -4,7 +4,7 @@
 配置文件
 ==================================
 
-每个工程都有一个 ``platformio.ini``的配置文件 `INI-style <http://en.wikipedia.org/wiki/INI_file>`_ .
+每个工程根路径下都有 ``platformio.ini`` 文件，参见 `INI-style <http://en.wikipedia.org/wiki/INI_file>`_ file.
 
 ``platformio.ini`` has sections (each denoted by a ``[header]``) and
 key / value pairs within the sections. Lines beginning with ``;``
