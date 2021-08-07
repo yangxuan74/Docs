@@ -374,10 +374,6 @@ Build System API
     A list of actions to call on a target. It is possible to pass multiple actions as
     a Python list ``["python --version", my_calback]``.
 
-:title:
-    A title of a target. It will be printed when using :ref:`piocore` or :ref:`pioide`.
-    We recommend to keep a title very short, 1-2 words.
-
 :description:
     The same as a ``title`` argument but allows you to provide detailed explanation
     what target does.

@@ -238,14 +238,6 @@ See full example with embedding Amazon AWS certificates:
 Uploading files to file system SPIFFS
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-1. Create new project using :ref:`pioide` or initialize project using
-   :ref:`piocore` and :ref:`cmd_project_init` (if you have not initialized it yet)
-2. Create ``data`` folder (it should be on the same level as ``src`` folder)
-   and put files here. Also, you can specify own location for
-   :ref:`projectconf_pio_data_dir`
-3. Run "Upload File System image" task in :ref:`pioide` or use :ref:`piocore`
-   and :option:`pio run --target` command with ``uploadfs`` target.
-
 
 To upload SPIFFS image using OTA update please specify ``upload_port`` /
 ``--upload-port`` as IP address or mDNS host name (ending with the ``*.local``).
@@ -368,7 +360,7 @@ Using Arduino Framework
 PlatformIO will install the latest Arduino Core for ESP32 from
 https://github.com/espressif/arduino-esp32. The `Git <https://git-scm.com>`_
 should be installed in a system. To update Arduino Core to the latest revision,
-please open :ref:`pioide` and navigate to ``PlatformIO Home > Platforms > Updates``.
+please navigate to ``PlatformIO Home > Platforms > Updates``.
 
     .. code-block:: ini
 

@@ -40,7 +40,7 @@ these options:
 
 .. note::
   :ref:`piodebug` automatically switches to ``debug`` configuration when you do
-  project debugging from :ref:`pioide` or use the :ref:`cmd_debug` command.
+  project debugging.
 
   To avoid having :ref:`piodebug` rebuild the project, please create a
   separate build environment that defines ``build_type = debug``. See

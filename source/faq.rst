@@ -160,9 +160,6 @@ Installation
 'platformio' is not recognized as an internal or external command
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
-If you use :ref:`pioide`, please check in PlatformIO IDE Settings that
-"Use built-in PlatformIO Core" is enabled.
-
 If you modify system environment variable ``PATH`` in your Bash/Fish/ZSH
 profile, please do not override global ``PATH``. This line
 ``export PATH="/my/custom/path"`` is incorrect. Use ``export PATH="/my/custom/path":$PATH``
@@ -243,7 +240,6 @@ and installing them manually again.
 2. Install the latest Python interpreter, see :ref:`faq_install_python` guide
 3. Remove ``C:\Users\YourUserName\.platformio`` and ``C:\.platformio`` folders
    if exist (do not forget to replace "YourUserName" with the real user name)
-4. Restart :ref:`pioide`.
 
 
 .. note::

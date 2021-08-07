@@ -59,9 +59,6 @@ Usage
 
 .. warning::
 
-  If some libraries are not visible in :ref:`pioide` and Code Completion or
-  Code Linting does not work properly, please perform
-
   * **VSCode**: "Menu: View > Command Palette... > PlatformIO: Rebuild C/C++
     Project Index"
 
