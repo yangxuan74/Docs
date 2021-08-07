@@ -25,15 +25,18 @@
     :maxdepth: 1
 
     编程框架 <F/index>
+    编程平台 <core/index>
 
 .. toctree::
     :caption: 项目模板
     :maxdepth: 1
 
     工程模板 <T/index>
+    工程配置 <config/index>
 
 .. toctree::
     :caption: 解决方案
     :maxdepth: 1
 
     解决方案 <S/index>
+    常见问题 <faq>
