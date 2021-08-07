@@ -39,19 +39,3 @@ Boards
 运行平台
 ~~~~~~~~~
 
-.. list-table::
-    :header-rows:  1
-
-    * - Name
-      - Platform
-      - Debug
-      - MCU
-      - Frequency
-      - Flash
-      - RAM
-    * - :ref:`h511`
-      - No
-      - ESP32
-      - 240MHz
-      - 4MB
-      - 320KB
