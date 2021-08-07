@@ -24,8 +24,6 @@ Build options
 
 Type: ``String`` | Multiple: ``No`` | Default: ``release``
 
-See extended documentation for :ref:`build_configurations`.
-
 .. _projectconf_build_flags:
 
 ``build_flags``
@@ -295,30 +293,3 @@ default. You can enter more than one target, if separated by comma+space **", "*
 
 Please follow to :option:`pio run --list-targets` documentation for the other
 targets.
-
-**Examples**
-
-1. Build a project using :ref:`Release Configuration <build_configurations>`,
-   upload the firmware, and start :ref:`Serial Monitor <cmd_device_monitor>`
-   automatically:
-
-    .. code-block:: ini
-
-       [env:upload_and_monitor]
-       targets = upload, monitor
-
-2. Build a project using :ref:`Debug Configuration <build_configurations>`.
-
-
-**Tip!** You can use these targets like an option to
-:option:`pio run --target` command. For example:
-
-.. code-block:: bash
-
-    # clean project
-    pio run -t clean
-
-    # dump current build environment
-    pio run --target envdump
-
-When no targets are defined, *PlatformIO* will build only sources by default.

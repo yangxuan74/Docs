@@ -58,7 +58,6 @@ Configuration
 .. toctree::
   :maxdepth: 2
 
-  build_configurations
   section_env_debug
 
 .. _debugging_tools:
