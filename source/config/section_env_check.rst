@@ -3,7 +3,6 @@
 Check options
 -------------
 
-=
 .. contents::
     :local:
 
