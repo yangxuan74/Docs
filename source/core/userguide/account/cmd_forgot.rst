@@ -26,8 +26,6 @@ Usage
 Description
 -----------
 
-Allows you to reset password for :ref:`pioaccount` using username or email which
-were specified for registration.
 
 Options
 ~~~~~~~

@@ -63,7 +63,3 @@ Examples
     > pio access revoke platformio:developers prn:reg:pkg:8036:platform
     Access for resource "prn:reg:pkg:8036:platform" has been revoked for "platformio:developers"
 
-See Also
---------
-
-* :ref:`cmd_access_grant`

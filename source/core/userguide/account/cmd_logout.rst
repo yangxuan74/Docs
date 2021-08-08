@@ -23,7 +23,3 @@ Usage
 
     pio account logout
 
-Description
------------
-
-Log out of :ref:`pioaccount`.

@@ -207,10 +207,6 @@ target. Possible options:
 
 Type: ``String`` | Multiple: ``Yes``
 
-Allows one to setup a custom debugging server. By default, boards are pre-configured
-with a debugging server that is compatible with "on-board" debugging tool
-(adapter, probe). Also, this option is useful for a
-:ref:`debugging_tool_custom` debugging tool.
 
 **Option format (multi-line)**:
 

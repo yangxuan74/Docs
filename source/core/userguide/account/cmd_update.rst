@@ -26,7 +26,6 @@ Usage
 Description
 -----------
 
-Update :ref:`pioaccount` profile.
 
 Options
 ~~~~~~~

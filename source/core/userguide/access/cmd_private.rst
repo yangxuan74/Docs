@@ -50,8 +50,3 @@ Examples
 
     > pio access private prn:reg:pkg:8036:platform
     The resource "prn:reg:pkg:8036:platform" has been successfully updated.
-
-See Also
---------
-
-* :ref:`cmd_access_public`

@@ -19,9 +19,6 @@ Library options
 
 Type: ``String`` | Multiple: ``Yes``
 
-Specify project dependencies that should be installed automatically to
-:ref:`projectconf_pio_libdeps_dir` before environment processing.
-
 **Valid forms**
 
 .. code-block:: ini
