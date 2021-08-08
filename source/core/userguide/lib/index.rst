@@ -26,10 +26,6 @@ Options
 .. option::
     -e, --environment
 
-Manage libraries for the specific project build environments declared in
-:ref:`projectconf`. Works for ``--storage-dir`` which is valid PlatformIO
-project.
-
 
 Commands
 --------

@@ -22,8 +22,3 @@ sections and their allowed contents:
     section_platformio
     section_env
     examples
-
-**Example**
-
-For more examples, see :ref:`projectconf_examples`.
-

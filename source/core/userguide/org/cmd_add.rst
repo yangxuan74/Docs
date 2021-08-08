@@ -30,7 +30,6 @@ Description
 
 Add a user as an owner to an organization.
 
-If you need to create a new organization, please use :ref:`cmd_org_create` command.
 
 Examples
 --------

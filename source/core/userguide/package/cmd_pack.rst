@@ -28,16 +28,6 @@ Usage
 Description
 -----------
 
-Create a tarball from a package (library, :ref:`platforms`, or tool).
-
-If no arguments are supplied, then platformio packs the current package folder.
-
-A source of a package must contain a manifest (should be located in a root of a package)
-depending on a package type:
-
-:Library:
-  A :ref:`library_json` is a manifest file of a library package.
-
 
 :Tool:
   A ``package.json`` is a manifest file of a tool package. It is intended for toolchains,

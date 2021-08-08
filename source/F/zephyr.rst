@@ -23,10 +23,6 @@ Debugging
 Tools & Debug Probes
 ~~~~~~~~~~~~~~~~~~~~
 
-Supported debugging tools are listed in "Debug" column. For more detailed
-information, please scroll table by horizontal.
-You can switch between debugging :ref:`debugging_tools` using
-:ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
 .. warning::
     You will need to install debug tool drivers depending on your system.

@@ -49,10 +49,6 @@ See available tools in :ref:`check_tools`.
 
 Type: ``String (Pattern)`` | Multiple: ``Yes``
 
-This option allows specifying which source files or folders should be
-included/excluded from the check process. `GLOB Patterns <http://en.wikipedia.org/wiki/Glob_(programming)>`_ are allowed.
-:ref:`projectconf_pio_src_dir` and :ref:`projectconf_pio_include_dir` folders are checked
-by default.
 
 Another option for filtering source files is :option:`pio check --pattern` command.
 

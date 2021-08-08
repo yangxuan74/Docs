@@ -41,10 +41,3 @@ Add Bob to the "developers" team of "platformio" organization
 
     > pio team add platformio:developers bob
     The new member "bob" has been successfully added to the "developers" team.
-
-See Also
---------
-
-* :ref:`cmd_team_create`
-* :ref:`cmd_team_list`
-* :ref:`cmd_team_remove`

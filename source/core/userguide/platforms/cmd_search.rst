@@ -26,7 +26,6 @@ Usage
 Description
 -----------
 
-Search for development :ref:`platforms`
 
 Options
 ~~~~~~~

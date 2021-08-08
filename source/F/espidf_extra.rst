@@ -90,13 +90,6 @@ A typical PlatformIO project for the ESP-IDF framework must have the following s
         board = esp32dev
 
 
-Besides the files related to PlatformIO project, there are several additional
-ESP-IDF-specific files: the main ``CMakeLists.txt``, project-specific ``CMakeLists.txt``
-in :ref:`projectconf_pio_src_dir` and optional default configuration file ``sdkconfig.defaults``.
-``CMakeLists.txt`` files enable features supported by the ESP-IDF's build system, e.g.
-ULP configuration, adding extra components, etc. A typical ``CMakeLists.txt`` file in
-the root folder has the following content:
-
 .. code-block:: cmake
 
     # The following lines of boilerplate have to be in your project's CMakeLists
@@ -106,10 +99,6 @@ the root folder has the following content:
     include($ENV{IDF_PATH}/tools/cmake/project.cmake)
     project(project-name)
 
-The second ``CMakeLists.txt`` in :ref:`projectconf_pio_src_dir` is responsible for
-controlling the build process of the component and its integration into the overall
-project. The minimal component ``CMakeLists.txt`` file simply registers the component to
-the build system using ``idf_component_register``:
 
 .. code-block:: cmake
 
@@ -176,10 +165,6 @@ An example of specifying ``esp-aws-iot`` as an extra component:
     list(APPEND EXTRA_COMPONENT_DIRS esp-aws-iot)
     project(subscribe_publish)
 
-.. warning::
-    Since :ref:`projectconf_pio_src_dir` is also passed to CMake as an extra component,
-    you should only append to ``EXTRA_COMPONENT_DIRS`` variable in order not to override
-    the default package.
 
 Since the build may not work correctly if the full path to sources is greater than 250
 characters (see ``CMAKE_OBJECT_PATH_MAX``) it might be a good idea to keep modules close

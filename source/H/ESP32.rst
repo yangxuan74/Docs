@@ -27,8 +27,6 @@ Platform :ref:`p511`: Espressif Systems is a privately held fabless semiconducto
 Configuration
 -------------
 
-Please use ``nano32`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
-
 .. code-block:: ini
 
   [env:nano32]

@@ -71,7 +71,6 @@ Reinstall/redownload development platform and its packages if they exist
 Description
 -----------
 
-Install :ref:`platforms` and dependent packages.
 
 The ``version`` supports `Semantic Versioning <https://devhints.io/semver>`_ (
 ``<major>.<minor>.<patch>``) and can take any of the following forms:

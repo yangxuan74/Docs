@@ -68,8 +68,6 @@ The ``version`` supports `Semantic Versioning <https://devhints.io/semver>`_ (
 Storage Options
 ---------------
 
-See base options for :ref:`cmd_lib`.
-
 Options
 -------
 
@@ -77,9 +75,6 @@ Options
 
 .. option::
     --save / --no-save
-
-Remove libraries from the :ref:`projectconf` dependency list
-(:ref:`projectconf_lib_deps`) and save changes. Default value is to save.
 
 
 .. option::

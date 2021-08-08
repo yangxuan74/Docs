@@ -52,9 +52,3 @@ Possible values are ``library``, ``platform``, or ``tool``. The default is set t
 
 Undo a remove, putting a version back into the registry.
 
-See Also
---------
-
-* :ref:`library_json`
-* :ref:`cmd_package_pack`
-* :ref:`cmd_package_publish`
