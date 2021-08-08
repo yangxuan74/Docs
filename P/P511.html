@@ -44,7 +44,7 @@
     
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="硬件平台" href="../H/index.html" />
+    <link rel="next" title="Rust" href="../R/index.html" />
     <link rel="prev" title="STM32G0" href="P215.html" />
  
 <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
@@ -96,7 +96,8 @@
             
               <p class="caption" role="heading"><span class="caption-text">编译体系</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="index.html">芯级容器</a><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../A/index.html">Arduino</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">PlatformIO</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="index.html#mcu">MCU</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="index.html#soc">SoC</a><ul class="current">
 <li class="toctree-l3 current"><a class="current reference internal" href="#">ESP32</a><ul>
@@ -114,25 +115,27 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../R/index.html">RUST</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">原型平台</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../H/index.html">硬件平台</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../B/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../H/index.html">BluePill</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">开发框架</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../F/index.html">编程框架</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../core/index.html">编程平台</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../F/index.html">FreeRTOS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../M/index.html">MicroPython</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">项目模板</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../T/index.html">工程模板</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../config/index.html">工程配置</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../lib/index.html">工程依赖</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../C/index.html">工程配置</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../L/index.html">工程依赖</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">解决方案</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../S/index.html">解决方案</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../S/index.html">产品方案</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../faq.html">常见问题</a></li>
 </ul>
 
@@ -363,7 +366,7 @@ Please scroll to <code class="docutils literal notranslate"><span class="pre">es
 </div>
 <div class="section" id="erase-flash">
 <h3><a class="toc-backref" href="#id18">Erase Flash</a><a class="headerlink" href="#erase-flash" title="Permalink to this headline">¶</a></h3>
-<p>Please <a class="reference internal" href="../core/userguide/cmd_run.html#cmdoption-pio-run-t"><code class="xref std std-option docutils literal notranslate"><span class="pre">pio</span> <span class="pre">run</span> <span class="pre">--target</span></code></a> the next command to erase the entire
+<p>Please <a class="reference internal" href="../M/userguide/cmd_run.html#cmdoption-pio-run-t"><code class="xref std std-option docutils literal notranslate"><span class="pre">pio</span> <span class="pre">run</span> <span class="pre">--target</span></code></a> the next command to erase the entire
 flash chip (all data replaced with 0xFF bytes):</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="n">pio</span> <span class="n">run</span> <span class="o">--</span><span class="n">target</span> <span class="n">erase</span>
 
@@ -472,13 +475,13 @@ in the symbol name is added by “objcopy” and is the same for both text and b
 </ul>
 <p>There are 2 options:</p>
 <ul class="simple">
-<li><p>Directly specify <a class="reference internal" href="../core/userguide/cmd_run.html#cmdoption-pio-run-upload-port"><code class="xref std std-option docutils literal notranslate"><span class="pre">pio</span> <span class="pre">run</span> <span class="pre">--upload-port</span></code></a> in command line</p></li>
+<li><p>Directly specify <a class="reference internal" href="../M/userguide/cmd_run.html#cmdoption-pio-run-upload-port"><code class="xref std std-option docutils literal notranslate"><span class="pre">pio</span> <span class="pre">run</span> <span class="pre">--upload-port</span></code></a> in command line</p></li>
 </ul>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pio run --target upload --upload-port IP_ADDRESS_HERE or mDNS_NAME.local
 </pre></div>
 </div>
 <ul class="simple">
-<li><p>Specify <code class="docutils literal notranslate"><span class="pre">upload_port</span></code> option in <a class="reference internal" href="../config/index.html#projectconf"><span class="std std-ref">配置文件</span></a></p></li>
+<li><p>Specify <code class="docutils literal notranslate"><span class="pre">upload_port</span></code> option in <a class="reference internal" href="../C/index.html#projectconf"><span class="std std-ref">配置文件</span></a></p></li>
 </ul>
 <div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span>
 <span class="na">upload_protocol</span> <span class="o">=</span> <span class="s">espota</span>
@@ -493,7 +496,7 @@ in the symbol name is added by “objcopy” and is the same for both text and b
 <div class="section" id="authentication-and-upload-options">
 <h5><a class="toc-backref" href="#id25">Authentication and upload options</a><a class="headerlink" href="#authentication-and-upload-options" title="Permalink to this headline">¶</a></h5>
 <p>You can pass additional options/flags to OTA uploader using
-<code class="docutils literal notranslate"><span class="pre">upload_flags</span></code> option in <a class="reference internal" href="../config/index.html#projectconf"><span class="std std-ref">配置文件</span></a></p>
+<code class="docutils literal notranslate"><span class="pre">upload_flags</span></code> option in <a class="reference internal" href="../C/index.html#projectconf"><span class="std std-ref">配置文件</span></a></p>
 <div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span>
 <span class="na">upload_protocol</span> <span class="o">=</span> <span class="s">espota</span>
 <span class="c1">; each flag in a new line</span>
@@ -701,7 +704,7 @@ Please click on compatible debug tool below for the further instructions.</p>
 <h2><a class="toc-backref" href="#id8">Stable and upstream versions</a><a class="headerlink" href="#stable-and-upstream-versions" title="Permalink to this headline">¶</a></h2>
 <p>You can switch between <a class="reference external" href="https://github.com/platformio/platform-espressif32/releases">stable releases</a>
 of Espressif 32 development platform and the latest upstream version using
-<a class="reference internal" href="../config/section_env_platform.html#projectconf-env-platform"><span class="std std-ref">platform</span></a> option in <a class="reference internal" href="../config/index.html#projectconf"><span class="std std-ref">配置文件</span></a> as described below.</p>
+<a class="reference internal" href="../C/section_env_platform.html#projectconf-env-platform"><span class="std std-ref">platform</span></a> option in <a class="reference internal" href="../C/index.html#projectconf"><span class="std std-ref">配置文件</span></a> as described below.</p>
 <div class="section" id="stable">
 <h3>Stable<a class="headerlink" href="#stable" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="c1">; Latest stable version</span>
@@ -890,7 +893,7 @@ horizontally.</p></li>
           </div>
           <footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="../H/index.html" class="btn btn-neutral float-right" title="硬件平台" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../R/index.html" class="btn btn-neutral float-right" title="Rust" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
         <a href="P215.html" class="btn btn-neutral float-left" title="STM32G0" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
 
@@ -1016,7 +1019,7 @@ horizontally.</p></li>
 
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
-    <span class="fa fa-book">源圈:开源项目校验</span>
+    <span class="fa fa-book">源圈:开源项目集锦</span>
     v0.1
     <span class="fa fa-caret-down"></span>
   </span>
