@@ -24,7 +24,7 @@ Library Dependency Finder can be configured from :ref:`projectconf`:
 .. toctree::
   :maxdepth: 2
 
-  ../projectconf/section_env_library
+  ../config/section_env_library
 
 .. _ldf_storage:
 
