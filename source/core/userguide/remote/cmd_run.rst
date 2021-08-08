@@ -1,14 +1,3 @@
-..  Copyright (c) 2014-present PlatformIO <contact@platformio.org>
-    Licensed under the Apache License, Version 2.0 (the "License");
-    you may not use this file except in compliance with the License.
-    You may obtain a copy of the License at
-       http://www.apache.org/licenses/LICENSE-2.0
-    Unless required by applicable law or agreed to in writing, software
-    distributed under the License is distributed on an "AS IS" BASIS,
-    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-    See the License for the specific language governing permissions and
-    limitations under the License.
-
 .. _cmd_remote_run:
 
 pio remote run
@@ -31,15 +20,6 @@ Usage
 Description
 -----------
 
-Process environments which are defined in :ref:`projectconf` file remotely.
-By default, :ref:`pioremote` builds project on a host machine and deploy
-final firmware (program) to a remote device (embedded board).
-
-If you need to process project on a remote machine, please use
-:option:`pio remote run --force-remote` option. In this case,
-:ref:`pioremote` will automatically synchronize your project with remote machine,
-install required toolchains, frameworks, SDKs, etc., and process project.
-
 
 Options
 -------
@@ -51,10 +31,6 @@ Options
 
 Process specified environments.
 
-You can also specify which environments should be processed by default using
-:ref:`projectconf_pio_default_envs` option from :ref:`projectconf`.
-
-
 .. option::
     -t, --target
 
@@ -63,9 +39,6 @@ for available targets.
 
 .. option::
     --upload-port
-
-Custom upload port of embedded board. To print all available ports use
-:ref:`cmd_remote_device` command.
 
 If upload port is not specified, PlatformIO will try to detect it automatically.
 
@@ -80,25 +53,12 @@ to current working directory (``CWD``).
 
 Shows detailed information when processing environments.
 
-This option can also be set globally using :ref:`setting_force_verbose` setting
-or by environment variable :envvar:`PLATFORMIO_SETTING_FORCE_VERBOSE`.
-
 .. option::
     --disable-auto-clean
 
-Disable auto-clean of :ref:`projectconf_pio_build_dir` when :ref:`projectconf`
-or :ref:`projectconf_pio_src_dir` (project structure) have been modified.
 
 .. option::
     -r, --force-remote
-
-By default, :ref:`pioremote` builds project on a host machine and deploy
-final firmware (program) to remote device (embedded board).
-
-If you need to process project on remote machine, please use
-:option:`pio remote run --force-remote` option. In this case,
-:ref:`pioremote` will automatically synchronize your project with remote machine,
-install required toolchains, frameworks, SDKs, etc., and process project.
 
 Example
 -------

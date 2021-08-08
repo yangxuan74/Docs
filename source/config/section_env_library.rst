@@ -182,9 +182,6 @@ Example:
 
 Type: ``String`` | Multiple: ``No`` | Default: ``soft``
 
-Library compatibility mode allows one to control strictness of Library Dependency
-Finder. See :ref:`ldf_compat_mode` for details and available options..
-
 By default, this value is set to ``lib_compat_mode = soft`` and means that LDF
 will check only for framework compatibility.
 
@@ -210,9 +207,6 @@ into a firmware (program). This is default behavior of PlatformIO Build System
 Setting ``lib_archive = no`` will instruct PlatformIO Build System to link object
 files directly (in-line). This could be useful if you need to override ``weak``
 symbols defined in framework or other libraries.
-
-You can disable library archiving per a custom library using
-:ref:`libjson_archive` field in :ref:`library_json` manifest.
 
 Example:
 

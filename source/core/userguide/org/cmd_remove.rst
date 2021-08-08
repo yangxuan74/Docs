@@ -30,7 +30,6 @@ Description
 
 Remove a user from an organization.
 
-If you need to destroy an existing organization, please use :ref:`cmd_org_destroy` command.
 
 Examples
 --------
@@ -42,8 +41,3 @@ Remove Bob from "platformio" organization:
     > pio org remove platformio bob
     The `bob` owner has been successfully removed from the `platformio` organization.
 
-See Also
---------
-
-* :ref:`cmd_org_add`
-* :ref:`cmd_org_list`

@@ -1,20 +1,7 @@
-..  Copyright (c) 2014-present PlatformIO <contact@platformio.org>
-    Licensed under the Apache License, Version 2.0 (the "License");
-    you may not use this file except in compliance with the License.
-    You may obtain a copy of the License at
-       http://www.apache.org/licenses/LICENSE-2.0
-    Unless required by applicable law or agreed to in writing, software
-    distributed under the License is distributed on an "AS IS" BASIS,
-    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-    See the License for the specific language governing permissions and
-    limitations under the License.
-
 .. _cmd_remote_test:
 
 pio remote test
 ===============
-
-Helper command for remote :ref:`unit_testing`.
 
 .. contents::
 
@@ -101,15 +88,6 @@ to current working directory (``CWD``).
 .. option::
     -r, --force-remote
 
-By default, :ref:`pioremote` processes project on a host machine and deploy
-final testing firmware (program) to remote device (embedded board).
-
-If you need to process project on remote machine, please use
-:option:`pio remote test --force-remote` option. In this case,
-:ref:`pioremote` will automatically synchronize your project with remote machine,
-install required toolchains, frameworks, SDKs, etc., and process project.
-
-
 .. option::
     --without-building
 
@@ -123,12 +101,3 @@ Skip uploading stage
 .. option::
     -v, --verbose
 
-Shows detailed information when processing environments.
-
-This option can also be set globally using :ref:`setting_force_verbose` setting
-or by environment variable :envvar:`PLATFORMIO_SETTING_FORCE_VERBOSE`.
-
-Examples
---------
-
-For the examples please follow to :ref:`unit_testing` page.

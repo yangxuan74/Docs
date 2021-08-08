@@ -62,8 +62,6 @@ MakerAsia Nano32 supports the following uploading protocols:
 
 Default protocol is ``esptool``
 
-You can change upload protocol using :ref:`projectconf_upload_protocol` option:
-
 .. code-block:: ini
 
   [env:nano32]

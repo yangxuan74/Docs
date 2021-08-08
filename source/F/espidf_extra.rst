@@ -79,11 +79,6 @@ A typical PlatformIO project for the ESP-IDF framework must have the following s
     ├── CMakeLists.txt
     └── platformio.ini
 
-.. tip::
-    It's also possible to use the default ESP-IDF project structure with ``main`` folder.
-    To specify ``main`` as the folder with source files use :ref:`projectconf_pio_src_dir`
-    option, for example:
-
     .. code-block:: ini
 
         [platformio]
@@ -314,10 +309,6 @@ A typical PlatformIO project for ESP-IDF v3.x must have the following structure:
 
 Enable C++ exceptions
 ^^^^^^^^^^^^^^^^^^^^^
-
-to enable C++ exceptions for :ref:`framework_espidf` add
-``-D PIO_FRAMEWORK_ESP_IDF_ENABLE_EXCEPTIONS`` to :ref:`projectconf_build_flags` of
-:ref:`projectconf`.
 
 See `project example <https://github.com/platformio/platform-espressif32/tree/v1.10.0/examples/espidf-exceptions>`_
 with enabled exceptions.

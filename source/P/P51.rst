@@ -13,8 +13,6 @@ Configuration
 CPU Frequency
 ~~~~~~~~~~~~~
 
-See :ref:`projectconf_board_build.f_cpu` option from :ref:`projectconf`
-
 .. code-block:: ini
 
     [env:myenv]
@@ -23,9 +21,6 @@ See :ref:`projectconf_board_build.f_cpu` option from :ref:`projectconf`
 
 FLASH Frequency
 ~~~~~~~~~~~~~~~
-
-Please use ``board_build.f_flash`` option from :ref:`projectconf` to change
-a value. Possible values:
 
 * ``40000000L`` (default)
 * ``80000000L``
@@ -44,13 +39,6 @@ header, along with the flash size and flash frequency. The ROM bootloader
 in the ESP chip uses the value of these parameters in order to know how to
 talk to the flash chip.
 
-Please use ``board_build.flash_mode`` option from :ref:`projectconf` to change
-a value. Possible values:
-
-* ``qio``
-* ``qout``
-* ``dio``
-* ``dout``
 
 .. code-block:: ini
 
@@ -59,9 +47,6 @@ a value. Possible values:
 
 External RAM (PSRAM)
 ~~~~~~~~~~~~~~~~~~~~
-
-You can enable external RAM using the next extra :ref:`projectconf_build_flags`
-in :ref:`projectconf` depending on a framework type.
 
 Framework :ref:`framework_arduino`:
 
@@ -92,10 +77,6 @@ More details are located in the official ESP-IDF documentation -
 Debug Level
 ~~~~~~~~~~~
 
-Please use one of the next :ref:`projectconf_build_flags` to change debug level.
-A :ref:`projectconf_build_flags` option could be used only the one time per
-build environment. If you need to specify more flags, please separate them
-with a new line or space.
 
 Actual information is available in `Arduino for ESP32 Board Manifest <https://github.com/espressif/arduino-esp32/blob/master/boards.txt#L80>`_.
 Please scroll to ``esp32.menu.DebugLevel`` section.
@@ -131,9 +112,6 @@ Please scroll to ``esp32.menu.DebugLevel`` section.
 Upload Speed
 ~~~~~~~~~~~~
 
-You can set custom upload speed using  :ref:`projectconf_upload_speed` option
-from :ref:`projectconf`
-
 .. code-block:: ini
 
     [env:myenv]
@@ -155,17 +133,11 @@ flash chip (all data replaced with 0xFF bytes):
 
 Partition Tables
 ~~~~~~~~~~~~~~~~
-You can create a custom partitions table (CSV) following `ESP32 Partition Tables <https://docs.espressif.com/projects/esp-idf/en/latest/api-guides/partition-tables.html>`_
-documentation. PlatformIO uses **default partition tables** depending on a
-:ref:`projectconf_env_framework` type:
 
 * ``default.csv`` for :ref:`framework_arduino`
   (`show pre-configured partition tables <https://github.com/espressif/arduino-esp32/blob/master/tools/partitions>`__)
 * ``partitions_singleapp.csv`` for :ref:`framework_espidf`
   (`show pre-configured partition tables <https://github.com/espressif/esp-idf/blob/master/components/partition_table>`__)
-
-To override default table please use ``board_build.partitions`` option in
-:ref:`projectconf`.
 
 .. warning::
     SPIFFS partition **MUST** have configured "Type" as "data" and "SubType"
@@ -275,8 +247,6 @@ There are 2 options:
 
 * Specify ``upload_port`` option in :ref:`projectconf`
 
-
-You also need to set :ref:`projectconf_upload_protocol` to ``espota``.
 
 .. code-block:: ini
 

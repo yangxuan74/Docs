@@ -29,23 +29,6 @@ Usage
 Description
 -----------
 
-Publish a package to the registry so that it can be installed by name.
-All files in the package directory are included if ``export`` field is not declared
-in a package manifest (for example, see :ref:`libjson_export`).
-The `next items <https://github.com/platformio/platformio-core/blob/develop/platformio/package/pack.py#L33>`__ are
-automatically excluded.
-
-Please check which files will be included in the final package using the
-:ref:`cmd_package_pack` command.
-
-Once a package is published with a given name and version, that specific name and
-version combination can never be used again, even if it is removed with the
-:ref:`cmd_package_unpublish` command.
-
-If no arguments are supplied, then PlatformIO packs the current package folder.
-
-To list published packages, please use :ref:`cmd_access_list` command.
-
 Options
 ~~~~~~~
 
@@ -53,9 +36,6 @@ Options
 
 .. option::
     --owner
-
-:ref:`pioaccount` username (can be organization username). The default is set to a
-username of the authorized :ref:`pioaccount`.
 
 .. option::
     --released-at
@@ -81,9 +61,3 @@ Do not notify by email when package is processed. The default behavior is to not
 
 Do not show interactive prompt.
 
-See Also
---------
-
-* :ref:`library_json`
-* :ref:`cmd_package_pack`
-* :ref:`cmd_package_unpublish`

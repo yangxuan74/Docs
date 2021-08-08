@@ -59,8 +59,3 @@ Examples
     > pio org update platformio --email contact@platformio.org --displayname PlatformIO
     The organization "platformio" has been successfully updated.
 
-See Also
---------
-
-* :ref:`cmd_org_list`
-* :ref:`cmd_org_remove`

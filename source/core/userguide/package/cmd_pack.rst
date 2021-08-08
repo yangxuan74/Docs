@@ -38,8 +38,6 @@ depending on a package type:
 :Library:
   A :ref:`library_json` is a manifest file of a library package.
 
-:Platform:
-  A ``platform.json`` is a manifest file of a development platform package. See :ref:`platform_creating_manifest_file`.
 
 :Tool:
   A ``package.json`` is a manifest file of a tool package. It is intended for toolchains,
@@ -57,9 +55,3 @@ Options
 
 Specify a destination path (folder or a full path to file) where to store a tarball.
 The default is to create a tarball in the current working directory.
-
-See Also
---------
-
-* :ref:`library_json`
-* :ref:`cmd_package_publish`

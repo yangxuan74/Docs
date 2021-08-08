@@ -55,8 +55,3 @@ Examples
     > pio team update platformio:dev --description "Developers team"
     The team "dev" has been successfully updated.
 
-See Also
---------
-
-* :ref:`cmd_team_list`
-* :ref:`cmd_team_remove`

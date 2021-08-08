@@ -58,9 +58,6 @@ Configuration
 Tools & Debug Probes
 --------------------
 
-You can switch between debugging tools using :ref:`projectconf_debug_tool`
-option.
-
 .. warning::
   You will need to install debug tool drivers depending on your operating
   system. Please check "Drivers" section for debugging tool below.

@@ -139,24 +139,10 @@ Examples:
     ; PlatformIO will not cache objects
     build_flags = -DLAST_BUILD_TIME=$UNIX_TIME
 
-.. note::
-  If you need to control build flags that are specific for debug configuration please
-  refer to :ref:`projectconf_debug_build_flags`.
 
 Built-in Variables
 ''''''''''''''''''
 
-You can inject the built-in variables into your build flags, such as:
-
-* ``$PYTHONEXE``, full path to current Python interpreter
-* ``$UNIX_TIME``, current time in Unix format
-* ``$PIOENV``, name of build environment from :ref:`projectconf`
-* ``$PIOPLATFORM``, name of development platform
-* ``$PIOFRAMEWORK``, a list of frameworks
-* ``$PROJECT_DIR``, project directory
-* ``$PROJECT_CORE_DIR``, PlatformIO Core directory, see :ref:`projectconf_pio_core_dir`
-* ``$PROJECT_BUILD_DIR``, project build directory per all environments
-* ``$BUILD_DIR``, build directory per current environment
 
 See the `full list of PlatformIO variables <https://github.com/platformio/platformio-core/blob/develop/platformio/builder/main.py#L99:L120>`_.
 
@@ -187,7 +173,7 @@ Use cases:
 
 .. note::
   If you need more advanced control and would like to apply changes to
-  a PlatformIO Build System environment, please refer to :ref:`projectconf_advanced_scripting`.
+  a PlatformIO Build System environment.
 
 Example:
 
@@ -232,10 +218,6 @@ in the same directory as ``platformio.ini``.
 ^^^^^^^^^^^^^^^^^^^
 
 Type: ``String`` | Multiple: ``Yes``
-
-An option ``src_build_flags`` has the same behavior as ``build_flags``
-but will be applied only for project source files in the
-:ref:`projectconf_pio_src_dir` directory.
 
 This option can also be set by the global environment variable
 :envvar:`PLATFORMIO_SRC_BUILD_FLAGS`.

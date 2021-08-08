@@ -1,14 +1,3 @@
-..  Copyright (c) 2014-present PlatformIO <contact@platformio.org>
-    Licensed under the Apache License, Version 2.0 (the "License");
-    you may not use this file except in compliance with the License.
-    You may obtain a copy of the License at
-       http://www.apache.org/licenses/LICENSE-2.0
-    Unless required by applicable law or agreed to in writing, software
-    distributed under the License is distributed on an "AS IS" BASIS,
-    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-    See the License for the specific language governing permissions and
-    limitations under the License.
-
 .. _projectconf_section_env_monitor:
 
 Monitor options
@@ -16,8 +5,6 @@ Monitor options
 
 .. contents::
     :local:
-
-Custom options for :ref:`cmd_device_monitor` command.
 
 .. _projectconf_monitor_port:
 
@@ -125,13 +112,6 @@ A monitor initial ``DTR`` line state. See :option:`pio device monitor --dtr`.
 ^^^^^^^^^^^^^^^^^
 
 Type: ``String`` | Multiple: ``Yes``
-
-Pass extra flags and options to :ref:`cmd_device_monitor` command. Please note
-that each flag, option or its value should be passed in a new line. See
-example below.
-
-Available flags and options are the same which are documented for
-:ref:`cmd_device_monitor` command.
 
 Example:
 

@@ -20,16 +20,8 @@ Options
 .. option::
     -d, --storage-dir
 
-Manage custom library storage. It can be used later for the
-:ref:`projectconf_lib_extra_dirs` option from :ref:`projectconf`.
-Multiple options are allowed.
-
 .. option::
     -g, --global
-
-Manage global PlatformIO's library storage (
-":ref:`projectconf_pio_core_dir`/lib") where :ref:`ldf` will look for
-dependencies by default.
 
 .. option::
     -e, --environment

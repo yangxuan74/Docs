@@ -8,11 +8,6 @@ Library Dependency Finder is a core part of PlatformIO Build System that
 operates with the C/C++ source files and looks for ``#include ...``
 directives to know what header directories to include for the compiler.
 
-In spite of the fact that Library Dependency Finder is written in pure Python,
-it evaluates :ref:`ldf_c_cond_syntax` (``#ifdef``, ``if``, ``defined``,
-``else``, and ``elif``) without calling ``gcc -E``. This approach allows
-to significantly reduce the total compilation time. See :ref:`ldf_mode` for more
-details.
 
 .. contents::
 
@@ -31,58 +26,11 @@ Library Dependency Finder can be configured from :ref:`projectconf`:
 Storage
 -------
 
-There are different storages where Library Dependency Finder looks for
-libraries. These storages (folders) have priority and LDF operates in the next
-order:
-
-1. :ref:`projectconf_lib_extra_dirs` - extra storages per build environment
-2. :ref:`projectconf_pio_lib_dir` - own/private library storage per project
-3. :ref:`projectconf_pio_libdeps_dir` - project dependency storage used by
-   :ref:`librarymanager`
-4. ":ref:`projectconf_pio_core_dir`/lib" - global storage per all projects.
-5. Library storages built into frameworks, SDKs.
 
 .. _ldf_mode:
 
 Dependency Finder Mode
 ----------------------
-
-Library Dependency Finder starts work from analyzing source files of the
-project (:ref:`projectconf_pio_src_dir`) and can work in the next modes:
-
-:``off``:
-    "Manual mode", does not process source files of a project and dependencies.
-    Builds only the libraries that are specified in manifests
-    (:ref:`library_json`, ``module.json``) or using :ref:`projectconf_lib_deps`
-    option.
-
-:``chain``:
-    [**DEFAULT**] Parses ALL C/C++ source files of the project and follows
-    only by nested includes (``#include ...``, chain...) from the libraries.
-    It also parses C, CC, CPP files from libraries which have the same name as
-    included header file. **Does not evaluate** :ref:`ldf_c_cond_syntax`.
-
-:``deep``:
-    Parses ALL C/C++ source files of the project and parses ALL C/C++ source
-    files of the each found dependency (recursively).
-    **Does not evaluate** :ref:`ldf_c_cond_syntax`.
-
-:``chain+``:
-    The same behavior as for the ``chain`` but **evaluates** :ref:`ldf_c_cond_syntax`.
-
-:``deep+``:
-    The same behavior as for the ``deep`` but **evaluates** :ref:`ldf_c_cond_syntax`.
-
-The mode can be changed using :ref:`projectconf_lib_ldf_mode` option in
-:ref:`projectconf`. Default value is set to ``chain``.
-
-.. note::
-  Usually, when the LDF appears to fail to identify a dependency of a library,
-  it is because the dependency is only referenced from a library source file,
-  and not a library header file (see example below). In this case, it is
-  necessary to either explicitly reference the dependency from the project
-  source or :ref:`projectconf` (:ref:`projectconf_lib_deps` option), or change
-  the LDF mode to "deep" (not generally recommended).
 
 A difference between ``chain/chain+`` and ``deep/deep+`` modes. For example,
 there are 2 libraries:
@@ -141,16 +89,6 @@ library with real build environment. Available compatibility modes:
 :``off``:
     Does not check for compatibility (is not recommended)
 
-:``soft``:
-    [**DEFAULT**] Checks for the compatibility with :ref:`projectconf_env_framework` from
-    build environment
-
-:``strict``:
-    Checks for the compatibility with :ref:`projectconf_env_framework`
-    and :ref:`projectconf_env_platform` from build environment.
-
-This mode can be changed using :ref:`projectconf_lib_compat_mode` option in
-:ref:`projectconf`. Default value is set to ``soft``.
 
 .. _ldf_c_cond_syntax:
 

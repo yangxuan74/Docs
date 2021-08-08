@@ -29,9 +29,6 @@ Usage
 Description
 -----------
 
-Check or update installed :ref:`platforms` and global
-:ref:`Libraries <librarymanager>` on the remote machine.
-
 Options
 -------
 

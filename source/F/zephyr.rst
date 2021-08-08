@@ -3,9 +3,6 @@
 Zephyr RTOS
 ===============
 
-:Configuration:
-  :ref:`projectconf_env_framework` = ``zephyr``
-
 The Zephyr Project is a scalable real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with safety and security in mind
 
 For more detailed information please visit `vendor site <https://www.zephyrproject.org?utm_source=platformio.org&utm_medium=docs>`_.
@@ -18,8 +15,6 @@ For more detailed information please visit `vendor site <https://www.zephyrproje
 
 Debugging
 ---------
-
-:ref:`piodebug` - "1-click" solution for debugging with a zero configuration.
 
 .. contents::
     :local:

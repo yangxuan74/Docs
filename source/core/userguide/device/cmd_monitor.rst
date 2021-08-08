@@ -56,8 +56,6 @@ Options
 
 Port, a number or a device name, or valid `URL Handlers <https://pyserial.readthedocs.io/en/latest/url_handlers.html#urls>`__.
 
-Can be customized in :ref:`projectconf` using :ref:`projectconf_monitor_port`
-option.
 
 **URL Handlers**
 
@@ -73,8 +71,6 @@ option.
 
 Set baud rate, default ``9600``.
 
-Can be customized in :ref:`projectconf` using :ref:`projectconf_monitor_speed`
-option.
 
 .. option::
     --parity
@@ -97,16 +93,11 @@ Enable software flow control, default ``Off``
 
 Set initial ``RTS`` line state (``0`` or ``1``).
 
-Can be customized in :ref:`projectconf` using :ref:`projectconf_monitor_rts`
-option.
-
 .. option::
     --dtr
 
 Set initial ``DTR`` line state (``0`` or ``1``).
 
-Can be customized in :ref:`projectconf` using :ref:`projectconf_monitor_dtr`
-option.
 
 .. option::
     --echo
@@ -122,7 +113,6 @@ default ``UTF-8``.
 .. option::
     -f, --filter
 
-Add text transformation. See available filters at :ref:`cmd_device_monitor_filters`.
 
 .. option::
     --eol
@@ -167,16 +157,10 @@ to current working directory (``CWD``).
 
 Process specified environments.
 
-You can also specify which environments should be processed by default using
-:ref:`projectconf_pio_default_envs` option from :ref:`projectconf`.
-
 .. _cmd_device_monitor_filters:
 
 Filters
 -------
-
-A list of filters that can be applied for monitor output using :option:`pio device monitor --filter` or :ref:`projectconf` and :ref:`projectconf_monitor_filters` options.
-option.
 
 .. list-table::
     :header-rows:  1
@@ -205,20 +189,13 @@ option.
       - Send a text to device on ENTER
     * - ``esp32_exception_decoder``
       - Custom filter for :ref:`h511` which decodes crash exception
-    * - ``esp8266_exception_decoder``
-      - Custom filter for :ref:`platform_espressif8266` which decodes crash exception
 
 Capture output to a file
 ------------------------
 
-You need to use a ``log2file`` filter from :ref:`cmd_device_monitor_filters`:
-
 .. code-block:: bash
 
     > pio device monitor -f log2file -f default
-
-
-or using :ref:`projectconf` and :ref:`projectconf_monitor_filters`
 
 .. code-block:: ini
 
@@ -231,8 +208,6 @@ or using :ref:`projectconf` and :ref:`projectconf_monitor_filters`
 Device Monitor Filter API
 -------------------------
 
-:ref:`piocore` provides an API to extend device monitor with a custom filter declared
-in "monitor" folder of :ref:`platforms`. See examples:
 
 - https://github.com/platformio/platform-espressif32/tree/develop/monitor
 - https://github.com/platformio/platform-espressif8266/tree/develop/monitor

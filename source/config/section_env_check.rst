@@ -104,8 +104,6 @@ Another option for adding flags is :option:`pio check --flags` command.
 
 Type: ``String`` | Multiple: ``Yes`` | Default: ``low, medium, high``
 
-This option allows specifying the :ref:`check_severity` types which will
-be reported by the :ref:`check_tools`.
 
 Another option for filtering source files is :option:`pio check --severity` command.
 

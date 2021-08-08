@@ -83,10 +83,6 @@ information, please scroll table by horizontal.
 External Debug Tools
 ^^^^^^^^^^^^^^^^^^^^
 
-Boards listed below are compatible with :ref:`piodebug` but **DEPEND ON**
-external debug probe. They **ARE NOT READY** for debugging.
-Please click on board name for the further details.
-
 
 .. list-table::
     :header-rows:  1

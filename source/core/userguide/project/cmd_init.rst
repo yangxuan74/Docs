@@ -29,17 +29,6 @@ Description
 
 Initialize a new PlatformIO based project or update existing with new data.
 
-This command will create:
-
-* :ref:`projectconf`
-* :ref:`projectconf_pio_include_dir`, put project header files here
-* :ref:`projectconf_pio_src_dir`, put project source files here
-  (``*.h, *.c, *.cpp, *.S, *.ino, etc.``)
-* :ref:`projectconf_pio_lib_dir`, put project specific (private) libraries here.
-  See also :ref:`ldf`
-* :ref:`projectconf_pio_test_dir`, put project tests here. More details :ref:`unit_testing`
-* Miscellaneous files for VCS and :ref:`ci` support.
-
 Options
 -------
 
@@ -56,10 +45,6 @@ A path to a directory where *PlatformIO* will initialize new project.
 If you specify board ``ID`` (you can pass multiple ``--board`` options), then
 *PlatformIO* will automatically generate environment for :ref:`projectconf` and
 pre-fill these data:
-
-* :ref:`projectconf_env_platform`
-* :ref:`projectconf_env_framework`
-* :ref:`projectconf_env_board`
 
 The full list with pre-configured boards is available here :ref:`platforms`.
 
@@ -81,17 +66,6 @@ Update project using existing environment.
 
 .. option::
     -O, --project-option
-
-Initialize project with additional options from :ref:`projectconf`. For example,
-``pio project init --project-option="lib_deps=ArduinoJSON"``.
-Multiple options are allowed.
-
-.. option::
-    --env-prefix
-
-An environment prefix which will be used with pair in :ref:`projectconf_env_board` ID.
-For example, the default environment name for :ref:`board_teensy_teensy31`
-board will be ``[env:teensy31]``.
 
 .. option::
     -s, --silent
@@ -141,25 +115,4 @@ Examples
     The current working directory *** will be used for the new project.
     You can specify another project directory via
     `pio project init -d %PATH_TO_THE_PROJECT_DIR%` command.
-    ...
-
-4. Initialize project for Teensy 3.1 board with custom :ref:`framework_mbed`
-
-.. code::
-
-    > pio project init --board teensy31 --project-option "framework=mbed"
-
-    The current working directory *** will be used for the new project.
-    You can specify another project directory via
-    `pio project init -d %PATH_TO_THE_PROJECT_DIR%` command.
-
-    ...
-
-5. Initialize a new project passing working environment name and its options
-
-.. code::
-
-    > pio project init --environment native --project-option="platform=native" --project-option="build_flags=-DRELEASE=1"
-
-    The current working directory *** will be used for the new project.
     ...

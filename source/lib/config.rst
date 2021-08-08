@@ -15,7 +15,6 @@ via `associative array <http://en.wikipedia.org/wiki/Associative_array>`_
 (name/value pairs). The order doesn't matter. The allowable fields
 (names from pairs) are described below.
 
-You can validate ``library.json`` manifest file using the :ref:`cmd_package_pack` command.
 
 .. contents:: Fields
     :local:
@@ -151,10 +150,6 @@ Examples:
     ]
 
 
-.. note::
-    If :ref:`libjson_authors` field is not defined, PlatformIO will try to fetch data
-    from VCS provider (Github, Gitlab, etc) if :ref:`libjson_repository` is declared.
-
 ``license``
 -----------
 
@@ -171,7 +166,6 @@ A SPDX license ID of the library. You can check `the full list of SPDX license I
 
 *Optional* | Type: ``String`` | Max. Length: 255
 
-Home page of a library (if is different from :ref:`libjson_repository` url).
 
 .. _libjson_export:
 
@@ -182,9 +176,6 @@ Home page of a library (if is different from :ref:`libjson_repository` url).
 
 This option is useful if you need to exclude extra data (test code, docs, images, PDFs, etc).
 It allows one to reduce the size of the final archive.
-
-To check which files will be included in the final packages, please use
-:ref:`cmd_package_pack` command.
 
 Possible options:
 
@@ -281,10 +272,6 @@ use ``*`` symbol:
 
     "platforms": "*"
 
-.. note::
-    PlatformIO does not check platforms for compatibility in default mode.
-    See :ref:`ldf_compat_mode` for details. If you need a strict checking for compatible
-    platforms for a library, please set :ref:`libjons_compatmode` to ``strict``.
 
 .. _libjson_dependencies:
 
@@ -293,16 +280,12 @@ use ``*`` symbol:
 
 *Optional* | Type: ``Array`` or ``Object``
 
-A list of dependent libraries. They will be installed automatically with
-:ref:`cmd_lib_install` command.
 
 Allowed requirements for dependent library:
 
 * ``owner`` | Type: ``String`` – an owner name (username) from the PlatformIO Registry
 * ``name`` | Type: ``String`` – library name
 * ``version`` | Type: ``String`` – version or version range in SemVer format
-* ``frameworks`` | Type: ``String`` or ``Array`` – project compatible :ref:`frameworks`
-* ``platforms`` | Type: ``String`` or ``Array`` – project compatible :ref:`platforms`
 
 The ``version`` supports `Semantic Versioning <https://devhints.io/semver>`__ (
 ``<major>.<minor>.<patch>``) and can take any of the following forms:
@@ -315,10 +298,6 @@ The ``version`` supports `Semantic Versioning <https://devhints.io/semver>`__ (
   are also possible
 * ``>0.1.0,!=0.2.0,<0.3.0`` - any version greater than ``0.1.0``, not equal to
   ``0.2.0`` and less than ``0.3.0``
-
-The rest possible values including VCS repository URLs are documented in
-:ref:`cmd_lib_install` command.
-
 
 Example:
 
@@ -409,16 +388,11 @@ options:
 
 *Optional* | Type: ``String`` or ``Array``
 
-Extra flags to control preprocessing, compilation, assembly and linking
-processes. More details :ref:`projectconf_build_flags`.
-
 ``unflags``
 ~~~~~~~~~~~
 
 *Optional* | Type: ``String`` or ``Array``
 
-Remove base/initial flags which were set by development platform. More
-details :ref:`projectconf_build_unflags`.
 
 ``includeDir``
 ~~~~~~~~~~~~~~
@@ -444,18 +418,8 @@ means that folder is located in the root of a library.
 Specify which source files should be included/excluded from build process.
 The path in filter should be relative to the ``srcDir`` option of a library.
 
-See syntax in :ref:`projectconf_src_filter`.
-
 Please note that you can generate source filter "on-the-fly" using
 ``extraScript`` (see below)
-
-``extraScript``
-~~~~~~~~~~~~~~~
-
-*Optional* | Type: ``String``
-
-Launch extra script before build process.
-More details :ref:`projectconf_extra_scripts`.
 
 **Example** (HAL-based library)
 
@@ -536,35 +500,6 @@ Project structure
 
 ``libArchive``
 ~~~~~~~~~~~~~~
-
-*Optional* | Type: ``Boolean``
-
-Create an archive (``*.a``, static library) from the object files and link it
-into a firmware (program). This is default behavior of PlatformIO Build System
-(``"libArchive": true``).
-
-Setting ``"libArchive": false`` will instruct PlatformIO Build System to link object
-files directly (in-line). This could be useful if you need to override ``weak``
-symbols defined in framework or other libraries.
-
-You can disable library archiving globally using :ref:`projectconf_lib_archive`
-option in :ref:`projectconf`.
-
-``libLDFMode``
-~~~~~~~~~~~~~~
-
-*Optional* | Type: ``String``
-
-Specify Library Dependency Finder Mode. See :ref:`ldf_mode` for details.
-
-.. _libjons_compatmode:
-
-``libCompatMode``
-~~~~~~~~~~~~~~~~~
-
-*Optional* | Type: ``String``
-
-Specify Library Compatibility Mode. See :ref:`ldf_compat_mode` for details.
 
 Examples
 --------

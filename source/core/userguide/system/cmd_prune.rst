@@ -36,11 +36,6 @@ Remove unused data:
 - unnecessary core packages
 - unnecessary development platform packages.
 
-.. note::
-    If you have a custom package in :ref:`projectconf_pio_packages_dir` folder
-    and would like to skip it from "prune process", please add empty ``.piokeep`` file
-    to the root of a package folder.
-
 Options
 -------
 

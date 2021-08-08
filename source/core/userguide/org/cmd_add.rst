@@ -41,10 +41,3 @@ Add Bob as an owner of "platformio" organization:
 
     > pio org add platformio bob
     The new owner "bob" has been successfully added to the "platformio" organization.
-
-See Also
---------
-
-* :ref:`cmd_org_create`
-* :ref:`cmd_org_list`
-* :ref:`cmd_org_remove`
