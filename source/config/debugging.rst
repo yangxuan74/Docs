@@ -32,13 +32,8 @@ file “platformio.ini”, and a project is ready for 1-Click debugging.
 * Support over 300+ embedded boards (see below)
 * Multiple architectures and development platforms
 * Windows, MacOS, Linux
-* Built-in into :ref:`ide_atom` and :ref:`ide_vscode`
-* Integration with :ref:`ide_eclipse` and :ref:`ide_sublimetext`
 
 .. hint::
-  In our experience, :ref:`ide_vscode` has the best system performance,
-  modern interface for |PIODebug|, and users have found it easier to get started.
-  Key debugging features of :ref:`ide_vscode`:
 
   - Local, Global, and Static Variable Explorer
   - Conditional Breakpoints

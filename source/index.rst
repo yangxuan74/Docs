@@ -33,6 +33,7 @@
 
     工程模板 <T/index>
     工程配置 <config/index>
+    工程依赖 <lib/index>
 
 .. toctree::
     :caption: 解决方案
