@@ -5,9 +5,7 @@
 Debugging
 =========
 
-**It Simply Works. Easier than ever before!**
-
-.. contents:: Contents
+.. contents:: 目录索引
     :local:
     :depth: 1
 
@@ -97,12 +95,6 @@ Frameworks
 
     * - :ref:`framework_espidf`
       - ESP-IDF is the official development framework for the ESP32 and ESP32-S Series SoCs.
-
-    * - :ref:`framework_pulp-runtime`
-      - Runtime Environment for Parallel Ultra Low Power platform targeting high energy efficiencies
-
-    * - :ref:`framework_pulp-sdk`
-      - Software Development Kit for Parallel Ultra Low Power platform targeting high energy efficiencies
 
     * - :ref:`framework_stm32cube`
       - STM32Cube embedded software libraries, including: The HAL hardware abstraction layer, enabling portability between different STM32 devices via standardized API calls; The Low-Layer (LL) APIs, a light-weight, optimized, expert oriented set of APIs designed for both performance and runtime efficiency
