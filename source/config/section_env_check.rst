@@ -34,8 +34,6 @@ want to check source code with two or more tools.
 Type: ``String (Pattern)`` | Multiple: ``Yes``
 
 
-Another option for filtering source files is :option:`pio check --pattern` command.
-
 **Example**
 
 .. code-block:: ini
@@ -61,7 +59,6 @@ when you want to adjust the check process to fit your project requirements.
 By default, the flags are passed to all tools specified in :ref:`projectconf_check_tool`
 section. To set individual flags, define tool name at the beginning of the line.
 
-Another option for adding flags is :option:`pio check --flags` command.
 
 **Example**
 
@@ -84,8 +81,6 @@ Another option for adding flags is :option:`pio check --flags` command.
 
 Type: ``String`` | Multiple: ``Yes`` | Default: ``low, medium, high``
 
-
-Another option for filtering source files is :option:`pio check --severity` command.
 
 **Example**
 

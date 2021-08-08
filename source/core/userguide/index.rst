@@ -55,7 +55,6 @@ Commands
     access/index
     account/index
     cmd_boards
-    cmd_check
     cmd_ci
     cmd_debug
     pio device <device/index>
