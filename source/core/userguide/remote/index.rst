@@ -3,8 +3,6 @@
 PlatformIO Remote CLI
 =====================
 
-Helper command for :ref:`pioremote`.
-
 To print all available commands and options use:
 
 .. code-block:: bash
