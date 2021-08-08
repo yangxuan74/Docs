@@ -54,9 +54,6 @@ The full list with pre-configured boards is available here :ref:`platforms`.
 Initialize PlatformIO project for the specified IDE which can be imported later
 via "Import Project" functionality.
 
-A list with supported IDE is available within ``pio project init --help`` command.
-Also, please take a look at :ref:`ide` page.
-
 .. option::
     -e, --environment
 
