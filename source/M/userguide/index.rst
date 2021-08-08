@@ -59,7 +59,7 @@ Commands
     cmd_debug
     pio device <device/index>
     cmd_home
-    pio lib <lib/index>
+    pio lib <L/index>
     org/index
     package/index
     pio platform <platforms/index>

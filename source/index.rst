@@ -21,38 +21,35 @@
     :caption: 编译体系
     :maxdepth: 1
 
-    Arduino <P/index>
+    Arduino <A/index>
     PlatformIO <P/index>
-    STM32CubeIDE <P/index>
+    RUST <R/index>
 
 .. toctree::
     :caption: 原型平台
     :maxdepth: 1
 
-    Arduino <H/index>
+    Arduino <B/index>
     BluePill <H/index>
-    Nucleo <H/index>
 
 .. toctree::
     :caption: 开发框架
     :maxdepth: 1
 
     FreeRTOS <F/index>
-    LUA <F/index>
-    MicroPython <core/index>
+    MicroPython <M/index>
 
 .. toctree::
     :caption: 项目模板
     :maxdepth: 1
 
     工程模板 <T/index>
-    工程配置 <config/index>
-    工程依赖 <lib/index>
+    工程配置 <C/index>
+    工程依赖 <L/index>
 
 .. toctree::
     :caption: 解决方案
     :maxdepth: 1
 
-    3D打印机 <S/index>
-    CNC <S/index>
+    产品方案 <S/index>
     常见问题 <faq>

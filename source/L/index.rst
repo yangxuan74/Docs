@@ -17,6 +17,6 @@ up-to-date. PlatformIO Library Manager supports
 
     quickstart
     ldf
-    Configuration <../config/section_env_library>
+    Configuration <../C/section_env_library>
     config
     creating
