@@ -14,3 +14,11 @@ STM32G0
     STM32G031K <stm32g031k8>
     STM32G071R <stm32g071rb>
 
+
+ESP32
+----------
+
+.. toctree::
+    :maxdepth: 1
+
+    ESP32 <ESP32>

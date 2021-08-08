@@ -1,0 +1,615 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>常见问题 &mdash; OS-Q 0.1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+  
+
+  
+  
+
+  
+    <link rel="canonical" href="https://docs.OS-Q.com/faq.html" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="解决方案" href="S/index.html" />
+ 
+<link rel="stylesheet" href="_static/css/extra.css" type="text/css" />
+<script src="_static/js/bootstrap.min.js"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7398081349378542" crossorigin="anonymous"></script>
+<!-- <script src="http://dl.platformio.org/misc/abplus.js"></script> -->
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> OS-Q
+          
+
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+
+            
+            
+              
+            
+            
+              <p class="caption" role="heading"><span class="caption-text">编译体系</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="P/index.html">芯级容器</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">原型平台</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="H/index.html">硬件平台</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">开发框架</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="F/index.html">编程框架</a></li>
+<li class="toctree-l1"><a class="reference internal" href="core/index.html">编程平台</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">项目模板</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="T/index.html">工程模板</a></li>
+<li class="toctree-l1"><a class="reference internal" href="config/index.html">工程配置</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lib/index.html">工程依赖</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">解决方案</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="S/index.html">解决方案</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">常见问题</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#install-python">Install Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#convert-arduino-to-c">Convert Arduino to C++</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#program-memory-usage">Program Memory Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#advanced-serial-monitor-with-ui">Advanced Serial Monitor with UI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#troubleshooting">Troubleshooting</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#installation">Installation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#platformio-is-not-recognized-as-an-internal-or-external-command">‘platformio’ is not recognized as an internal or external command</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#platformio-udev-rules">99-platformio-udev.rules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#importerror-cannot-import-name-remove-dead-weakref">ImportError: cannot import name _remove_dead_weakref</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+<p style="margin-top: 15px;">
+    <!-- Docs: Side Navigation -->
+    <ins class="adsbygoogle ads"
+        style="display:block;background-color: transparent;"
+        data-ad-client="ca-pub-7398081349378542"
+        data-ad-slot="2509136660"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</p>
+
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">OS-Q</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>常见问题</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            
+              <a href="https://github.com/OS-Q/Docs/blob/master/source/faq.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="faq">
+<span id="id1"></span><h1>常见问题<a class="headerlink" href="#faq" title="Permalink to this headline">¶</a></h1>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>社区尚未建立起来，相关问题通过文档汇总或在代码库中管理 <a class="reference external" href="https://community.OS-Q.com/faq">源圈社区</a>.</p>
+</div>
+<div class="contents local topic" id="id3">
+<p class="topic-title">目录索引</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#install-python" id="id4">Install Python</a></p></li>
+<li><p><a class="reference internal" href="#convert-arduino-to-c" id="id5">Convert Arduino to C++</a></p></li>
+<li><p><a class="reference internal" href="#program-memory-usage" id="id6">Program Memory Usage</a></p></li>
+<li><p><a class="reference internal" href="#advanced-serial-monitor-with-ui" id="id7">Advanced Serial Monitor with UI</a></p></li>
+<li><p><a class="reference internal" href="#troubleshooting" id="id8">Troubleshooting</a></p>
+<ul>
+<li><p><a class="reference internal" href="#installation" id="id9">Installation</a></p>
+<ul>
+<li><p><a class="reference internal" href="#platformio-is-not-recognized-as-an-internal-or-external-command" id="id10">‘platformio’ is not recognized as an internal or external command</a></p></li>
+<li><p><a class="reference internal" href="#platformio-udev-rules" id="id11">99-platformio-udev.rules</a></p></li>
+<li><p><a class="reference internal" href="#importerror-cannot-import-name-remove-dead-weakref" id="id12">ImportError: cannot import name _remove_dead_weakref</a></p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="install-python">
+<span id="faq-install-python"></span><h2><a class="toc-backref" href="#id4">Install Python</a><a class="headerlink" href="#install-python" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://www.python.org/downloads/">Python</a> is installed by default on the all popular OS except Windows.</p>
+<p>Please navigate to official website and <a class="reference external" href="https://www.python.org/downloads/">Download the latest Python</a>
+and install it. Please <strong>READ NOTES BELOW</strong>.</p>
+<dl class="field-list">
+<dt class="field-odd">macOS</dt>
+<dd class="field-odd"><p>Please read the “Important Information” displayed during installation for information
+about SSL/TLS certificate validation and the running the <strong>“Install Certificates.command”</strong>.</p>
+<p>If you do not install SSL/TLS certificates, PlatformIO will not be able to download
+dependent packages, libraries, and toolchains.</p>
+</dd>
+<dt class="field-even">Windows</dt>
+<dd class="field-even"><p>Please select <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Python</span> <span class="pre">to</span> <span class="pre">Path</span></code> (see below), otherwise, <code class="docutils literal notranslate"><span class="pre">python</span></code> command will
+not be available.</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="convert-arduino-to-c">
+<span id="faq-convert-ino-to-cpp"></span><h2><a class="toc-backref" href="#id5">Convert Arduino to C++</a><a class="headerlink" href="#convert-arduino-to-c" title="Permalink to this headline">¶</a></h2>
+<p>Some IDE doesn’t support Arduino files (<code class="docutils literal notranslate"><span class="pre">*.ino</span></code> and <code class="docutils literal notranslate"><span class="pre">.pde</span></code>) because
+they are not valid C/C++ based source files:</p>
+<ol class="arabic simple">
+<li><p>Missing includes such as <code class="docutils literal notranslate"><span class="pre">#include</span> <span class="pre">&lt;Arduino.h&gt;</span></code></p></li>
+<li><p>Function declarations are omitted.</p></li>
+</ol>
+<p>In this case, code completion and code linting do not work properly or
+are disabled. To avoid this issue you can manually convert your INO files to CPP.</p>
+<p>For example, we have the next <code class="docutils literal notranslate"><span class="pre">Demo.ino</span></code> file:</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kt">void</span> <span class="nf">setup</span> <span class="p">()</span> <span class="p">{</span>
+    <span class="n">someFunction</span><span class="p">(</span><span class="mi">13</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kt">void</span> <span class="nf">loop</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kt">void</span> <span class="nf">someFunction</span><span class="p">(</span><span class="kt">int</span> <span class="n">num</span><span class="p">)</span> <span class="p">{</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>Let’s convert it to  <code class="docutils literal notranslate"><span class="pre">Demo.cpp</span></code>:</p>
+<ol class="arabic simple">
+<li><p>Add <code class="docutils literal notranslate"><span class="pre">#include</span> <span class="pre">&lt;Arduino.h&gt;</span></code> at the top of the source file</p></li>
+<li><p>Declare each custom function (excluding built-in, such as <code class="docutils literal notranslate"><span class="pre">setup</span></code> and <code class="docutils literal notranslate"><span class="pre">loop</span></code>)
+before it will be called.</p></li>
+</ol>
+<p>The final <code class="docutils literal notranslate"><span class="pre">Demo.cpp</span></code>:</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span> <span class="cpf">&lt;Arduino.h&gt;</span><span class="cp"></span>
+
+<span class="kt">void</span> <span class="nf">someFunction</span><span class="p">(</span><span class="kt">int</span> <span class="n">num</span><span class="p">);</span>
+
+<span class="kt">void</span> <span class="nf">setup</span> <span class="p">()</span> <span class="p">{</span>
+    <span class="n">someFunction</span><span class="p">(</span><span class="mi">13</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kt">void</span> <span class="nf">loop</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kt">void</span> <span class="nf">someFunction</span><span class="p">(</span><span class="kt">int</span> <span class="n">num</span><span class="p">)</span> <span class="p">{</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>Finish.</p>
+</div>
+<div class="section" id="program-memory-usage">
+<h2><a class="toc-backref" href="#id6">Program Memory Usage</a><a class="headerlink" href="#program-memory-usage" title="Permalink to this headline">¶</a></h2>
+<p>PlatformIO calculates firmware/program memory usage based on the next segments:</p>
+<dl class="field-list">
+<dt class="field-odd"><code class="docutils literal notranslate"><span class="pre">.text</span></code></dt>
+<dd class="field-odd"><p>The code segment, also known as a text segment or simply as
+text, is where a portion of an object file or the corresponding section of
+the program’s virtual address space that contains executable instructions
+is stored and is generally read-only and fixed size.</p>
+</dd>
+<dt class="field-even"><code class="docutils literal notranslate"><span class="pre">.data</span></code></dt>
+<dd class="field-even"><p>The .data segment contains any global or static variables which have a
+pre-defined value and can be modified. The values for these variables are
+initially stored within the read-only memory (typically within <code class="docutils literal notranslate"><span class="pre">.text</span></code>)
+and are copied into the <code class="docutils literal notranslate"><span class="pre">.data</span></code> segment during the start-up routine of
+the program. Example,</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kt">int</span> <span class="n">val</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>
+<span class="kt">char</span> <span class="n">string</span><span class="p">[]</span> <span class="o">=</span> <span class="s">&quot;Hello World&quot;</span><span class="p">;</span>
+</pre></div>
+</div>
+</dd>
+<dt class="field-odd"><code class="docutils literal notranslate"><span class="pre">.bss</span></code></dt>
+<dd class="field-odd"><p>Uninitialized data is usually adjacent to the data segment. The BSS
+segment contains all global variables and static variables that are
+initialized to zero or do not have explicit initialization in the source code.
+For instance, a variable defined as <code class="docutils literal notranslate"><span class="pre">static</span> <span class="pre">int</span> <span class="pre">i;</span></code> would be contained
+in the BSS segment.</p>
+</dd>
+</dl>
+<p>The rough calculation could be done as:</p>
+<ul class="simple">
+<li><p>PROGRAM (Flash) = <code class="docutils literal notranslate"><span class="pre">.text</span></code> + <code class="docutils literal notranslate"><span class="pre">.data</span></code></p></li>
+<li><p>DATA (RAM) = <code class="docutils literal notranslate"><span class="pre">.bss</span></code> + <code class="docutils literal notranslate"><span class="pre">.data</span></code></p></li>
+</ul>
+<p>If you need to print <strong>all memory sections and addresses</strong>, please use
+<a class="reference internal" href="core/userguide/cmd_run.html#cmdoption-pio-run-v"><code class="xref std std-option docutils literal notranslate"><span class="pre">pio</span> <span class="pre">run</span> <span class="pre">--verbose</span></code></a> command.</p>
+<p>Recommended for reading:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/Data_segment">https://en.wikipedia.org/wiki/Data_segment</a></p></li>
+<li><p><a class="reference external" href="https://mcuoneclipse.com/2013/04/14/text-data-and-bss-code-and-data-size-explained/?utm_source=platformio&amp;utm_medium=docs">text, data and bss: Code and Data Size Explained</a></p></li>
+</ul>
+</div>
+<div class="section" id="advanced-serial-monitor-with-ui">
+<span id="faq-advanced-serial-monitor-ui"></span><h2><a class="toc-backref" href="#id7">Advanced Serial Monitor with UI</a><a class="headerlink" href="#advanced-serial-monitor-with-ui" title="Permalink to this headline">¶</a></h2>
+<p>PlatformIO Core provides CLI version (<a class="reference internal" href="core/userguide/device/cmd_monitor.html#cmd-device-monitor"><span class="std std-ref">pio device monitor</span></a>) of Serial Monitor.
+If you need advanced instrument with a rich UI, we recommend free and multi-platform
+<a class="reference external" href="https://freeware.the-meiers.org/?utm_source=platformio&amp;utm_medium=docs">CoolTerm</a>
+serial port terminal application.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Please note that you need to <strong>manually disconnect (close serial port connection)</strong> in
+CoolTerm <strong>before doing uploading</strong> in PlatformIO. PlatformIO can not disconnect/connect
+to a target device automatically when CoolTerm is used.</p>
+</div>
+</div>
+<div class="section" id="troubleshooting">
+<span id="faq-troubleshooting"></span><h2><a class="toc-backref" href="#id8">Troubleshooting</a><a class="headerlink" href="#troubleshooting" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="installation">
+<h3><a class="toc-backref" href="#id9">Installation</a><a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="platformio-is-not-recognized-as-an-internal-or-external-command">
+<h4><a class="toc-backref" href="#id10">‘platformio’ is not recognized as an internal or external command</a><a class="headerlink" href="#platformio-is-not-recognized-as-an-internal-or-external-command" title="Permalink to this headline">¶</a></h4>
+<p>If you modify system environment variable <code class="docutils literal notranslate"><span class="pre">PATH</span></code> in your Bash/Fish/ZSH
+profile, please do not override global <code class="docutils literal notranslate"><span class="pre">PATH</span></code>. This line
+<code class="docutils literal notranslate"><span class="pre">export</span> <span class="pre">PATH=&quot;/my/custom/path&quot;</span></code> is incorrect. Use <code class="docutils literal notranslate"><span class="pre">export</span> <span class="pre">PATH=&quot;/my/custom/path&quot;:$PATH</span></code>
+instead.</p>
+</div>
+<div class="section" id="platformio-udev-rules">
+<span id="faq-udev-rules"></span><h4><a class="toc-backref" href="#id11">99-platformio-udev.rules</a><a class="headerlink" href="#platformio-udev-rules" title="Permalink to this headline">¶</a></h4>
+<p>Linux users have to install <a class="reference external" href="https://en.wikipedia.org/wiki/Udev">udev</a> rules
+for PlatformIO supported boards/devices. The
+latest version of rules may be found at <a class="reference external" href="https://raw.githubusercontent.com/platformio/platformio-core/master/scripts/99-platformio-udev.rules">https://raw.githubusercontent.com/platformio/platformio-core/master/scripts/99-platformio-udev.rules</a></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Please check that your board’s PID and VID  are listed in the rules.
+You can list connected devices and their PID/VID using <a class="reference internal" href="core/userguide/device/cmd_list.html#cmd-device-list"><span class="std std-ref">pio device list</span></a>
+command.</p>
+</div>
+<p>This file must be placed at <code class="docutils literal notranslate"><span class="pre">/etc/udev/rules.d/99-platformio-udev.rules</span></code>
+(preferred location) or <code class="docutils literal notranslate"><span class="pre">/lib/udev/rules.d/99-platformio-udev.rules</span></code>
+(required on some broken systems).</p>
+<p>Please open system Terminal and type</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Recommended</span>
+curl -fsSL https://raw.githubusercontent.com/platformio/platformio-core/master/scripts/99-platformio-udev.rules <span class="p">|</span> sudo tee /etc/udev/rules.d/99-platformio-udev.rules
+
+<span class="c1"># OR, manually download and copy this file to destination folder</span>
+sudo cp <span class="m">99</span>-platformio-udev.rules /etc/udev/rules.d/99-platformio-udev.rules
+</pre></div>
+</div>
+<p>Restart “udev” management tool:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo service udev restart
+
+<span class="c1"># or</span>
+
+sudo udevadm control --reload-rules
+sudo udevadm trigger
+</pre></div>
+</div>
+<p>Ubuntu/Debian users may need to add own “username” to the “dialout” group if
+they are not “root”, doing this issuing</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo usermod -a -G dialout <span class="nv">$USER</span>
+sudo usermod -a -G plugdev <span class="nv">$USER</span>
+</pre></div>
+</div>
+<p>Similarly, Arch users may need to add their user to the “uucp” group</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo usermod -a -G uucp <span class="nv">$USER</span>
+sudo usermod -a -G lock <span class="nv">$USER</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You will need to log out and log back in again (or reboot) for the user
+group changes to take effect.</p>
+</div>
+<p>After this file is installed, physically unplug and reconnect your board.</p>
+</div>
+<div class="section" id="importerror-cannot-import-name-remove-dead-weakref">
+<h4><a class="toc-backref" href="#id12">ImportError: cannot import name _remove_dead_weakref</a><a class="headerlink" href="#importerror-cannot-import-name-remove-dead-weakref" title="Permalink to this headline">¶</a></h4>
+<p>Windows users can experience this issue when multiple Python interpreters are
+installed in a system and conflict each other. The easy way to fix this
+problem is uninstalling all Python interpreters using Windows Programs Manager
+and installing them manually again.</p>
+<ol class="arabic simple">
+<li><p>“Windows &gt; Start Menu &gt; Settings &gt; System &gt; Apps &amp; Features”, select
+Python interpreters and uninstall them.</p></li>
+<li><p>Install the latest Python interpreter, see <a class="reference internal" href="#faq-install-python"><span class="std std-ref">Install Python</span></a> guide</p></li>
+<li><p>Remove <code class="docutils literal notranslate"><span class="pre">C:\Users\YourUserName\.platformio</span></code> and <code class="docutils literal notranslate"><span class="pre">C:\.platformio</span></code> folders
+if exist (do not forget to replace “YourUserName” with the real user name)</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You can add <code class="docutils literal notranslate"><span class="pre">platformio</span></code> and <code class="docutils literal notranslate"><span class="pre">pio</span></code> commands to your system environment.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="S/index.html" class="btn btn-neutral float-left" title="解决方案" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+
+    <p>
+        &#169; Copyright 2021, www.OS-Q.com.
+
+    </p>
+<p>
+  <!-- Docs: Page bottom -->
+  <ins class="adsbygoogle ads"
+      style="display:block;background-color: transparent;"
+      data-ad-client="ca-pub-7398081349378542"
+      data-ad-slot="1206527817"
+      data-ad-format="auto"
+      data-full-width-responsive="true"></ins>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+</p>
+
+  </div>
+ 
+<script>
+  var navBarHTML = '\
+<div>\
+  <div class="container container-fluid">\
+    <div class="navbar-header">\
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navBarCollapse" aria-expanded="false">\
+        <span class="sr-only">Toggle navigation</span>\
+        <span class="icon-bar"></span>\
+        <span class="icon-bar"></span>\
+        <span class="icon-bar"></span>\
+      </button>\
+      <a class="navbar-brand" href="https://www.OS-Q.com" title="OS-Q"></a>\
+    </div>\
+    <nav role="navigation" class="collapse navbar-collapse" id="navBarCollapse">\
+      <div>\
+        <ul class="nav navbar-nav">\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://www.SoC.xin" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-microchip fa-lg"></i>芯芸<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://www.soc.xin"><i class="fa fa-home"></i>探索芯世界</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.soc.xin"><i class="fa fa-graduation-cap"></i>Docs</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://www.github.com/socxin"><i class="fa fa-github"></i>GitHub</a></li>\
+            </ul>\
+          </li>\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://www.stopi.cn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cogs fa-lg"></i>石头派<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://www.stopi.cn"><i class="fa fa-home"></i>原型开发平台</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://www.github.com/sto-pi"><i class="fa fa-github"></i>STOPi</a></li>\
+              <li role="menuitem"><a href="https://shop562718807.taobao.com/"><i class="fa fa-shopping-cart"></i>STOPi</a></li>\
+            </ul>\
+          </li>\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://stop.stops.top" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-lightbulb-o fa-lg"></i>石头铺<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://stop.stops.top"><i class="fa fa-home"></i>为生产更好的工厂</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://www.github.com/stopstopstop"><i class="fa fa-github"></i>GitHub</a></li>\
+            </ul>\
+          </li>\
+        </ul>\
+        <ul class="nav navbar-nav navbar-right">\
+          <li class="active"><a href="https://docs.OS-Q.com"><i class="fa fa-book fa-lg"></i>Docs</a></li>\
+          <li><a href="https://www.github.com/OS-Q"><i class="fa fa-github fa-lg"></i>GitHub</a></li>\
+          <li class="nav-pio-tech"><a href="https://www.OS-Q.com"><i class="fa fa-heart-o fa-lg"></i>OS-Q</a></li>\
+        </ul>\
+      </div>\
+    </nav>\
+  </div>\
+</div>';
+
+  (function() {
+    if (window.location.href.indexOf('http://') === 0) {
+      location.href = 'https:' + window.location.href.substring(5);
+    }
+
+    var topBanner = $('.top-banner');
+    var navBar = document.createElement('header');
+    navBar.className = 'navbar navbar-inverse';
+    navBar.innerHTML = navBarHTML;
+    if (topBanner.length) {
+      $(navBar).insertAfter(topBanner)
+    } else {
+      document.body.insertBefore(navBar, document.body.firstChild);
+    }
+
+    if ($(window).width() <= 768) {
+      return;
+    }
+
+    var topOffset = 50;
+    if (topBanner.length) {
+      topOffset += $('.navbar').offset().top;
+    }
+    $('.wy-nav-side').css('top', topOffset + 'px');
+    $(window).scroll(function() {
+      $('.wy-nav-side').css('top', $(window).scrollTop() > topOffset ? 0 : topOffset + 'px');
+    });
+  })();
+</script>
+
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+<div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    <span class="fa fa-book">源圈:开源项目校验</span>
+    v0.1
+    <span class="fa fa-caret-down"></span>
+  </span>
+  <div class="rst-other-versions">
+    <dl>
+      <dt>By Qtias</dt>
+      <img src="../_static/images/weixin.jpg">
+        <dd><a href="https://github.com/OS-Q/Docs/blob/master/source/faq.rst"> View</a></dd>
+        <dd><a href="https://github.com/OS-Q/Docs/edit/master/source/faq.rst"> Edit</a></dd>
+    </dl>
+  </div>
+</div>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+    <!-- Theme Analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-1768265-7', 'auto');
+    
+    ga('send', 'pageview');
+    </script>
+
+    
+   
+
+</body>
+</html>
