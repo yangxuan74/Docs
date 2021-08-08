@@ -235,8 +235,7 @@ At the moment several limitations are present:
 * No whitespace characters allowed in project paths. This limitation is imposed by the
   `native ESP-IDF build system <https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/index.html?highlight=spaces#step-2-get-esp-idf>`_.
   This affects users that have a whitespace in their username or added a whitespace to
-  the project name. As a workaround, it's recommended to move :ref:`projectconf_pio_core_dir`
-  to a folder without spaces. For example:
+  the project name. As a workaround. For example:
 
   .. code-block:: ini
 
