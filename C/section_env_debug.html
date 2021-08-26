@@ -107,7 +107,7 @@
 <p class="caption" role="heading"><span class="caption-text">开源框架</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../F/index.html">编程框架</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../M/index.html">编程语言</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lan/index.html">编程语言</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">开源模板</span></p>
 <ul class="current">
@@ -137,7 +137,6 @@
 <p class="caption" role="heading"><span class="caption-text">开源方案</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../S/index.html">技术方案</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../S/index.html#id2">量产方案</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../faq.html">常见问题</a></li>
 </ul>
 
@@ -364,18 +363,6 @@ this file could be loaded via <code class="docutils literal notranslate"><span c
 <p>Type: <code class="docutils literal notranslate"><span class="pre">String</span></code> | Multiple: <code class="docutils literal notranslate"><span class="pre">Yes</span></code> | Default: <code class="docutils literal notranslate"><span class="pre">load</span></code></p>
 <p>Specify a command which will be used to load program/firmware to a target
 device. Possible options:</p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">load</span></code> - <strong>default</strong> option</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">load</span> <span class="pre">[address]</span></code> - load program at specified address, where “[address]”
-should be a valid number</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">preload</span></code> - some embedded devices have locked Flash Memory (a few
-Freescale Kinetis and NXP LPC boards). In this case, firmware loading using
-debugging client is disabled. <code class="docutils literal notranslate"><span class="pre">preload</span></code> command instructs
-<a class="reference internal" href="../M/index.html#piocore"><span class="std std-ref">PlatformIO Core</span></a> to load program/firmware using development platform “upload”
-method (via bootloader, media disk, etc)</p></li>
-<li><p>(empty value, <code class="docutils literal notranslate"><span class="pre">debug_load_cmds</span> <span class="pre">=</span></code>), disables program loading at all.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">custom</span> <span class="pre">commands</span></code> - pass any debugging client command (GDB, etc.)</p></li>
-</ul>
 <p>Sometimes you need to run extra monitor commands (on debug server side) before
 program/firmware loading, such as flash unlocking or erasing. In this case we
 can combine service commands with loading and run them before. See example:</p>
@@ -439,7 +426,7 @@ PlatformIO detects it automatically if is not specified.</p>
 <p>The debug adapter speed. The value format depends on the type of <a class="reference internal" href="debugging.html#debugging-tools"><span class="std std-ref">Tools &amp; Debug Probes</span></a>.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Please note that this option takes effect only if <a class="reference internal" href="../pio/index.html#platforms"><span class="std std-ref">芯级平台</span></a> implement it.</p>
+<p>Please note that this option takes effect only if <a class="reference internal" href="../pio/index.html#platforms"><span class="std std-ref">PlatformIO</span></a> implement it.</p>
 </div>
 <p>Examples:</p>
 <div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:custom_debug_speed_examples]</span>

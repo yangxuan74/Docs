@@ -2,7 +2,7 @@
 源圈
 ==================
 
-**开源项目集锦 OpenSource - Quality**
+**开源项目集锦** ``OpenSource - Quality``
 
 `GitHub <https://GitHub.com/Qitas>`_ |
 `LinkedIn <https://www.linkedin.com/in/qitas/>`_ |
@@ -32,7 +32,7 @@
     :maxdepth: 1
 
     编程框架 <F/index>
-    编程语言 <M/index>
+    编程语言 <lan/index>
 
 用于开发的框架结构
 

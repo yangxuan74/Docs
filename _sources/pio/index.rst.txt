@@ -1,26 +1,38 @@
 
 .. _platforms:
 
-芯级平台
+PlatformIO
 ================
 
+.. contents::
+    :local:
 
-MCU
+使用说明
+----------------
+
+.. toctree::
+    :maxdepth: 1
+
+    userguide/demo
+    userguide/index
+
+
+开发平台
 ----------------
 
 .. toctree::
     :maxdepth: 1
 
     P215 <P215>
-    STM32G031J <stm32g031j6>
-    STM32G031K <stm32g031k8>
-    STM32G071R <stm32g071rb>
+    P511 <P511>
 
-SoC
+芯片平台
 ----------------
 
 .. toctree::
     :maxdepth: 1
 
-    P511 <P511>
-    ESP32 <ESP32>
+    ESP32 <chips/ESP32>
+    STM32G031J <chips/stm32g031j6>
+    STM32G031K <chips/stm32g031k8>
+    STM32G071R <chips/stm32g071rb>
