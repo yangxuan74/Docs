@@ -2,7 +2,7 @@
 源圈
 ==================
 
-**开源项目集锦 OpenSource - Quality**
+**开源项目集锦** ``OpenSource - Quality``
 
 `GitHub <https://GitHub.com/Qitas>`_ |
 `LinkedIn <https://www.linkedin.com/in/qitas/>`_ |
