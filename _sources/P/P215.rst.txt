@@ -46,21 +46,21 @@ Tools & Debug Probes
       - blackmagic
       - serial
       - dfu
-    * - :ref:`hardware_stm32g031j6`
+    * - :ref:`stm32g031j6`
       - YES
       - YES
       - YES
       - YES
       - YES
       - YES
-    * - :ref:`hardware_stm32g031k8`
+    * - :ref:`stm32g031k8`
       - YES
       - YES
       - YES
       - YES
       - YES
       - YES
-    * - :ref:`hardware_stm32g071rb`
+    * - :ref:`stm32g071rb`
       - YES
       - YES
       - YES
@@ -154,19 +154,19 @@ Stable
       - Frequency
       - Flash
       - RAM
-    * - :ref:`hardware_stm32g031j6`
+    * - :ref:`stm32g031j6`
       - SON8
       - STM32G031J6
       - 64MHz
       - 32KB
       - 8KB
-    * - :ref:`hardware_stm32g031k8`
+    * - :ref:`stm32g031k8`
       - LQFP32
       - STM32G031K8
       - 64MHz
       - 64KB
       - 8KB
-    * - :ref:`hardware_stm32g071rb`
+    * - :ref:`stm32g071rb`
       - LQFP64
       - STM32G071RB
       - 64MHz

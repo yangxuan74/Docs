@@ -188,7 +188,7 @@ Filters
     * - ``send_on_enter``
       - Send a text to device on ENTER
     * - ``esp32_exception_decoder``
-      - Custom filter for :ref:`h511` which decodes crash exception
+      - Custom filter for :ref:`esp32` which decodes crash exception
 
 Capture output to a file
 ------------------------

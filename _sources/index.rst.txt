@@ -19,11 +19,11 @@
 开发环境指用于编译固件和原型验证
 
 .. toctree::
-    :caption: 硬件平台
+    :caption: 开源硬件
     :maxdepth: 1
 
     Arduino <B/index>
-    Pi <H/index>
+    Pi <Pi/index>
 
 用于搭建基本硬件原型
 
