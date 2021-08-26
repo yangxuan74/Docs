@@ -22,7 +22,7 @@
     :caption: 开源硬件
     :maxdepth: 1
 
-    Arduino <B/index>
+    Arduino <L/index>
     Pi <Pi/index>
 
 用于搭建基本硬件原型
@@ -51,7 +51,6 @@
     :maxdepth: 1
 
     技术方案 <S/index>
-    量产方案 <L/index>
     常见问题 <faq>
 
 完成的解决方案参考案例
