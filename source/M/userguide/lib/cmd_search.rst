@@ -26,9 +26,6 @@ Usage
 Description
 -----------
 
-Search for library in `PlatformIO Library Registry <https://platformio.org/lib>`_
-by :ref:`library_json` fields in the boolean mode.
-
 The boolean search capability supports the following operators:
 
 .. list-table::

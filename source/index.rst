@@ -13,8 +13,8 @@
     :caption: 开发环境
     :maxdepth: 1
 
-    Arduino <A/index>
-    PlatformIO <P/index>
+    Arduino <arduino/ide>
+    PlatformIO <pio/index>
 
 开发环境指用于编译固件和原型验证
 
@@ -22,7 +22,7 @@
     :caption: 开源硬件
     :maxdepth: 1
 
-    Arduino <L/index>
+    Arduino <arduino/index>
     Pi <Pi/index>
 
 用于搭建基本硬件原型
