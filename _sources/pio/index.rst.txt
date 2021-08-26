@@ -13,7 +13,7 @@ PlatformIO
 .. toctree::
     :maxdepth: 1
 
-    userguide/demo
+    config/index
     userguide/index
 
 
