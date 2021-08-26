@@ -1,5 +1,5 @@
 
-Configuration
+安装配置
 -------------
 
 .. note::
@@ -22,7 +22,7 @@ framework.
     ESP-IDF v4.0 projects are not backwards-compatible with ESP-IDF v3.x projects in
     terms of project configuration process.
 
-Configuration for 4.0
+ESP-IDF v4.0
 ~~~~~~~~~~~~~~~~~~~~~
 
 .. contents::
@@ -175,7 +175,7 @@ ULP coprocessor programming
 
 If you want to take measurements using ADC, internal temperature sensor or external
 I2C sensors, while the main processors are in deep sleep mode you need to use ULP
-coprocessor. At the moment ULP can be used only with the :ref:`framework_espidf`.
+coprocessor. At the moment ULP can be used only with the :ref:`espidf`.
 
 All ULP code, usually written in assembly in files with ``.S`` extension,
 must be placed into a separate directory with the name ``ulp`` in the root folder
@@ -251,7 +251,7 @@ At the moment several limitations are present:
   existing ESP-IDF projects. List of source files is specified in the project
   ``CMakeLists.txt`` file.
 
-Configuration for 3.0, 3.1, 3.2, 3.3
+ESP-IDF v3.0, v3.1, v3.2, v3.3
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Support for ESP-IDF v3.x is considered obsolete and is not available in the latest

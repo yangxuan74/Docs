@@ -60,7 +60,7 @@ Framework :ref:`framework_arduino`:
         -DBOARD_HAS_PSRAM
         -mfix-esp32-psram-cache-issue
 
-Framework :ref:`framework_espidf`:
+Framework :ref:`espidf`:
 
 .. code-block:: ini
 
@@ -136,7 +136,7 @@ Partition Tables
 
 * ``default.csv`` for :ref:`framework_arduino`
   (`show pre-configured partition tables <https://github.com/espressif/arduino-esp32/blob/master/tools/partitions>`__)
-* ``partitions_singleapp.csv`` for :ref:`framework_espidf`
+* ``partitions_singleapp.csv`` for :ref:`espidf`
   (`show pre-configured partition tables <https://github.com/espressif/esp-idf/blob/master/components/partition_table>`__)
 
 .. warning::

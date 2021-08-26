@@ -33,10 +33,10 @@ OS-Q收录资源经过验证后按照如何分类整理：
     BluePill <H/index>
 
 .. toctree::
-    :caption: 应用语言
+    :caption: 开发框架
     :maxdepth: 1
 
-    C <F/index>
+    开发框架 <F/index>
     Python <M/index>
 
 .. toctree::
