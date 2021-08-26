@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>Espressif IDF &mdash; OS-Q 0.1 documentation</title>
+  <title>ESP-IDF &mdash; OS-Q 0.1 documentation</title>
   
 
   
@@ -44,8 +44,8 @@
     
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Simba" href="simba.html" />
-    <link rel="prev" title="Zephyr RTOS" href="zephyr.html" />
+    <link rel="next" title="CMSIS" href="cmsis.html" />
+    <link rel="prev" title="Arduino" href="arduino.html" />
  
 <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
 <script src="../_static/js/bootstrap.min.js"></script>
@@ -94,53 +94,48 @@
               
             
             
-              <p class="caption" role="heading"><span class="caption-text">编译体系</span></p>
+              <p class="caption" role="heading"><span class="caption-text">工具平台</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../A/index.html">Arduino</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../P/index.html">PlatformIO</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../R/index.html">Keil&amp;IAR</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">原型平台</span></p>
+<p class="caption" role="heading"><span class="caption-text">硬件平台</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../B/index.html">Arduino</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../H/index.html">BluePill</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">应用语言</span></p>
+<p class="caption" role="heading"><span class="caption-text">开发框架</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="index.html">C</a><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">开发框架</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="arduino.html">Arduino</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">ESP-IDF</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id2">安装配置</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#esp-idf-v4-0">ESP-IDF v4.0</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#esp-idf-v3-0-v3-1-v3-2-v3-3">ESP-IDF v3.0, v3.1, v3.2, v3.3</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#id8">开发示例</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id9">运行平台</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="cmsis.html">CMSIS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="libopencm3.html">libopencm3</a></li>
 <li class="toctree-l2"><a class="reference internal" href="stm32cube.html">STM32Cube</a></li>
 <li class="toctree-l2"><a class="reference internal" href="zephyr.html">Zephyr RTOS</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Espressif IDF</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#configuration">Configuration</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#configuration-for-4-0">Configuration for 4.0</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#configuration-for-3-0-3-1-3-2-3-3">Configuration for 3.0, 3.1, 3.2, 3.3</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#debugging">Debugging</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#tools-debug-probes">Tools &amp; Debug Probes</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#examples">Examples</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#platforms">Platforms</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#boards">Boards</a></li>
-</ul>
-</li>
 <li class="toctree-l2"><a class="reference internal" href="simba.html">Simba</a></li>
 <li class="toctree-l2"><a class="reference internal" href="pumbaa.html">Pumbaa</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../M/index.html">Python</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">项目起点</span></p>
+<p class="caption" role="heading"><span class="caption-text">工程模板</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../T/index.html">工程模板</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../C/index.html">工程配置</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../T/index.html">数据采集</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../C/index.html">网络管理</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../L/index.html">工程依赖</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">完整方案</span></p>
+<p class="caption" role="heading"><span class="caption-text">解决方案</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../S/index.html">产品方案</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../faq.html">常见问题</a></li>
@@ -205,9 +200,9 @@
     
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
         
-          <li><a href="index.html">编程框架</a> &raquo;</li>
+          <li><a href="index.html">开发框架</a> &raquo;</li>
         
-      <li>Espressif IDF</li>
+      <li>ESP-IDF</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -228,32 +223,29 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="espressif-idf">
-<span id="framework-espidf"></span><h1>Espressif IDF<a class="headerlink" href="#espressif-idf" title="Permalink to this headline">¶</a></h1>
-<p>ESP-IDF is the official development framework for the ESP32 and ESP32-S Series SoCs.</p>
-<p>For more detailed information please visit <a class="reference external" href="https://docs.espressif.com/projects/esp-idf/en/latest/esp32/?utm_source=platformio.org&amp;utm_medium=docs">vendor site</a>.</p>
+  <div class="section" id="esp-idf">
+<span id="espidf"></span><h1>ESP-IDF<a class="headerlink" href="#esp-idf" title="Permalink to this headline">¶</a></h1>
+<p>ESP-IDF 是乐鑫官方的物联网开发框架，适用于 ESP32、ESP32-S 和 ESP32-C 系列 SoC。它基于 C/C++ 语言提供了一个自给自足的 SDK，方便用户在这些平台上开发通用应用程序。ESP-IDF 目前已服务支持数以亿计的物联网设备，并已开发构建了多种物联网产品，例如照明、消费电子大小家电、支付终端、工控等各类物联网设备。</p>
+<p><a class="reference external" href="https://docs.espressif.com/projects/esp-idf/zh_CN/latest/esp32/index.html">官方指南</a></p>
 <div class="contents local topic" id="contents">
-<p class="topic-title">Contents</p>
 <ul class="simple">
-<li><p><a class="reference internal" href="#configuration" id="id7">Configuration</a></p></li>
-<li><p><a class="reference internal" href="#debugging" id="id8">Debugging</a></p></li>
-<li><p><a class="reference internal" href="#examples" id="id9">Examples</a></p></li>
-<li><p><a class="reference internal" href="#platforms" id="id10">Platforms</a></p></li>
-<li><p><a class="reference internal" href="#boards" id="id11">Boards</a></p></li>
+<li><p><a class="reference internal" href="#id2" id="id10">安装配置</a></p></li>
+<li><p><a class="reference internal" href="#id8" id="id11">开发示例</a></p></li>
+<li><p><a class="reference internal" href="#id9" id="id12">运行平台</a></p></li>
 </ul>
 </div>
-<div class="section" id="configuration">
-<h2><a class="toc-backref" href="#id7">Configuration</a><a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id2">
+<h2><a class="toc-backref" href="#id10">安装配置</a><a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Starting with ESP-IDF v4.0, a CMake-based build system is used. Different
 configuration steps are required for ESP-IDF v3.x due to a legacy build system
 based on GNU Make.</p>
 </div>
-<div class="contents local topic" id="id1">
+<div class="contents local topic" id="id3">
 <ul class="simple">
-<li><p><a class="reference internal" href="#configuration-for-4-0" id="id12">Configuration for 4.0</a></p></li>
-<li><p><a class="reference internal" href="#configuration-for-3-0-3-1-3-2-3-3" id="id13">Configuration for 3.0, 3.1, 3.2, 3.3</a></p></li>
+<li><p><a class="reference internal" href="#esp-idf-v4-0" id="id13">ESP-IDF v4.0</a></p></li>
+<li><p><a class="reference internal" href="#esp-idf-v3-0-v3-1-v3-2-v3-3" id="id14">ESP-IDF v3.0, v3.1, v3.2, v3.3</a></p></li>
 </ul>
 </div>
 <p>Each release of <a class="reference internal" href="../P/P511.html#p511"><span class="std std-ref">Espressif32</span></a> platform uses a specific version of ESP-IDF.
@@ -264,14 +256,14 @@ framework.</p>
 <p>ESP-IDF v4.0 projects are not backwards-compatible with ESP-IDF v3.x projects in
 terms of project configuration process.</p>
 </div>
-<div class="section" id="configuration-for-4-0">
-<h3><a class="toc-backref" href="#id12">Configuration for 4.0</a><a class="headerlink" href="#configuration-for-4-0" title="Permalink to this headline">¶</a></h3>
-<div class="contents local topic" id="id2">
+<div class="section" id="esp-idf-v4-0">
+<h3><a class="toc-backref" href="#id13">ESP-IDF v4.0</a><a class="headerlink" href="#esp-idf-v4-0" title="Permalink to this headline">¶</a></h3>
+<div class="contents local topic" id="id4">
 <ul class="simple">
-<li><p><a class="reference internal" href="#project-structure" id="id14">Project Structure</a></p></li>
-<li><p><a class="reference internal" href="#esp-idf-components" id="id15">ESP-IDF components</a></p></li>
-<li><p><a class="reference internal" href="#ulp-coprocessor-programming" id="id16">ULP coprocessor programming</a></p></li>
-<li><p><a class="reference internal" href="#limitations" id="id17">Limitations</a></p></li>
+<li><p><a class="reference internal" href="#project-structure" id="id15">Project Structure</a></p></li>
+<li><p><a class="reference internal" href="#esp-idf-components" id="id16">ESP-IDF components</a></p></li>
+<li><p><a class="reference internal" href="#ulp-coprocessor-programming" id="id17">ULP coprocessor programming</a></p></li>
+<li><p><a class="reference internal" href="#limitations" id="id18">Limitations</a></p></li>
 </ul>
 </div>
 <p>The general project configuration (default optimization level, bootloader configuration
@@ -307,7 +299,7 @@ key to move the cursor down and <code class="docutils literal notranslate"><span
 <code class="docutils literal notranslate"><span class="pre">-</span></code> and <code class="docutils literal notranslate"><span class="pre">+</span></code> keys on the numeric keypad.</p>
 </div>
 <div class="section" id="project-structure">
-<h4><a class="toc-backref" href="#id14">Project Structure</a><a class="headerlink" href="#project-structure" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id15">Project Structure</a><a class="headerlink" href="#project-structure" title="Permalink to this headline">¶</a></h4>
 <p>The ESP-IDF framework requires an unusual project structure because most of the framework
 configuration is performed by the native for the ESP-IDF build system called <code class="docutils literal notranslate"><span class="pre">CMake</span></code>.</p>
 <p>A typical PlatformIO project for the ESP-IDF framework must have the following structure:</p>
@@ -369,7 +361,7 @@ is also used as the base build environment for project sources (including librar
 </div>
 </div>
 <div class="section" id="esp-idf-components">
-<h4><a class="toc-backref" href="#id15">ESP-IDF components</a><a class="headerlink" href="#esp-idf-components" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id16">ESP-IDF components</a><a class="headerlink" href="#esp-idf-components" title="Permalink to this headline">¶</a></h4>
 <p>ESP-IDF modules as modular pieces of standalone code might be useful for structuring
 reusable code or including third party components that aren’t part of ESP-IDF.</p>
 <p>These components contain either a single <code class="docutils literal notranslate"><span class="pre">CMakeLists.txt</span></code> file which controls the
@@ -401,10 +393,10 @@ characters (see <code class="docutils literal notranslate"><span class="pre">CMA
 to the project files.</p>
 </div>
 <div class="section" id="ulp-coprocessor-programming">
-<h4><a class="toc-backref" href="#id16">ULP coprocessor programming</a><a class="headerlink" href="#ulp-coprocessor-programming" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id17">ULP coprocessor programming</a><a class="headerlink" href="#ulp-coprocessor-programming" title="Permalink to this headline">¶</a></h4>
 <p>If you want to take measurements using ADC, internal temperature sensor or external
 I2C sensors, while the main processors are in deep sleep mode you need to use ULP
-coprocessor. At the moment ULP can be used only with the <a class="reference internal" href="#framework-espidf"><span class="std std-ref">Espressif IDF</span></a>.</p>
+coprocessor. At the moment ULP can be used only with the <a class="reference internal" href="#espidf"><span class="std std-ref">ESP-IDF</span></a>.</p>
 <p>All ULP code, usually written in assembly in files with <code class="docutils literal notranslate"><span class="pre">.S</span></code> extension,
 must be placed into a separate directory with the name <code class="docutils literal notranslate"><span class="pre">ulp</span></code> in the root folder
 of your project. So your project structure should look like this:</p>
@@ -452,7 +444,7 @@ for ULP:</p>
 <a class="reference external" href="https://docs.espressif.com/projects/esp-idf/en/latest/api-guides/ulp.html#accessing-ulp-program-variable">ULP coprocessor programming</a>.</p>
 </div>
 <div class="section" id="limitations">
-<h4><a class="toc-backref" href="#id17">Limitations</a><a class="headerlink" href="#limitations" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id18">Limitations</a><a class="headerlink" href="#limitations" title="Permalink to this headline">¶</a></h4>
 <p>At the moment several limitations are present:</p>
 <ul>
 <li><p>No whitespace characters allowed in project paths. This limitation is imposed by the
@@ -475,8 +467,8 @@ existing ESP-IDF projects. List of source files is specified in the project
 </ul>
 </div>
 </div>
-<div class="section" id="configuration-for-3-0-3-1-3-2-3-3">
-<h3><a class="toc-backref" href="#id13">Configuration for 3.0, 3.1, 3.2, 3.3</a><a class="headerlink" href="#configuration-for-3-0-3-1-3-2-3-3" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="esp-idf-v3-0-v3-1-v3-2-v3-3">
+<h3><a class="toc-backref" href="#id14">ESP-IDF v3.0, v3.1, v3.2, v3.3</a><a class="headerlink" href="#esp-idf-v3-0-v3-1-v3-2-v3-3" title="Permalink to this headline">¶</a></h3>
 <p>Support for ESP-IDF v3.x is considered obsolete and is not available in the latest
 platform releases. Please check the <a class="reference external" href="https://github.com/platformio/platform-espressif32/releases">platform release notes</a>
 to figure out what version of the platform should be installed to use required ESP-IDF
@@ -490,8 +482,8 @@ version, for example:</p>
 </pre></div>
 </div>
 </div></blockquote>
-<div class="section" id="id4">
-<h4>Project Structure<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id6">
+<h4>Project Structure<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h4>
 <p>Due to limited support of GNU Make build system used in ESP-IDF v3.x, the project
 configuration depends on a pregenerated file <code class="docutils literal notranslate"><span class="pre">sdkconfig.h</span></code> which contains a list of
 macro definitions <code class="docutils literal notranslate"><span class="pre">CONFIG_*</span></code>. These definitions describe project settings that will be
@@ -516,8 +508,8 @@ environment.</p>
 <p>See <a class="reference external" href="https://github.com/platformio/platform-espressif32/tree/v1.10.0/examples/espidf-exceptions">project example</a>
 with enabled exceptions.</p>
 </div>
-<div class="section" id="id5">
-<h4>ULP coprocessor programming<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id7">
+<h4>ULP coprocessor programming<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h4>
 <p>To use ULP in your project you need to make sure that it’s enabled in the <code class="docutils literal notranslate"><span class="pre">sdkconfig.h</span></code>
 configuration file. The following two lines must be added:</p>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">#define CONFIG_ULP_COPROC_ENABLED 1</span>
@@ -550,30 +542,14 @@ So your project structure should look like this:</p>
 </div>
 </div>
 </div>
-<div class="section" id="debugging">
-<h2><a class="toc-backref" href="#id8">Debugging</a><a class="headerlink" href="#debugging" title="Permalink to this headline">¶</a></h2>
-<div class="contents local topic" id="id6">
+<div class="section" id="id8">
+<h2><a class="toc-backref" href="#id11">开发示例</a><a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p><a class="reference internal" href="#tools-debug-probes" id="id18">Tools &amp; Debug Probes</a></p></li>
+<li><p><a class="reference external" href="https://github.com/platformio/platform-espressif32/tree/master/examples?utm_source=platformio.org&amp;utm_medium=docs">platform-espressif32</a></p></li>
 </ul>
 </div>
-<div class="section" id="tools-debug-probes">
-<h3><a class="toc-backref" href="#id18">Tools &amp; Debug Probes</a><a class="headerlink" href="#tools-debug-probes" title="Permalink to this headline">¶</a></h3>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>You will need to install debug tool drivers depending on your system.
-Please click on compatible debug tool below for the further instructions.</p>
-</div>
-</div>
-</div>
-<div class="section" id="examples">
-<h2><a class="toc-backref" href="#id9">Examples</a><a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p><a class="reference external" href="https://github.com/platformio/platform-espressif32/tree/master/examples?utm_source=platformio.org&amp;utm_medium=docs">Espressif IoT Development Framework for Espressif 32</a></p></li>
-</ul>
-</div>
-<div class="section" id="platforms">
-<h2><a class="toc-backref" href="#id10">Platforms</a><a class="headerlink" href="#platforms" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id9">
+<h2><a class="toc-backref" href="#id12">运行平台</a><a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h2>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 50%" />
@@ -591,17 +567,6 @@ Please click on compatible debug tool below for the further instructions.</p>
 </tbody>
 </table>
 </div>
-<div class="section" id="boards">
-<h2><a class="toc-backref" href="#id11">Boards</a><a class="headerlink" href="#boards" title="Permalink to this headline">¶</a></h2>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<ul class="simple">
-<li><p>You can list pre-configured boards by <a class="reference internal" href="../M/userguide/cmd_boards.html#cmd-boards"><span class="std std-ref">板级支持</span></a> command or
-<a class="reference external" href="https://platformio.org/boards">PlatformIO Boards Explorer</a></p></li>
-<li><p>For more detailed <code class="docutils literal notranslate"><span class="pre">board</span></code> information please scroll the tables below by horizontally.</p></li>
-</ul>
-</div>
-</div>
 </div>
 
 
@@ -610,8 +575,8 @@ Please click on compatible debug tool below for the further instructions.</p>
           </div>
           <footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="simba.html" class="btn btn-neutral float-right" title="Simba" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-        <a href="zephyr.html" class="btn btn-neutral float-left" title="Zephyr RTOS" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="cmsis.html" class="btn btn-neutral float-right" title="CMSIS" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="arduino.html" class="btn btn-neutral float-left" title="Arduino" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
 
   <hr/>

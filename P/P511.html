@@ -94,7 +94,7 @@
               
             
             
-              <p class="caption" role="heading"><span class="caption-text">编译体系</span></p>
+              <p class="caption" role="heading"><span class="caption-text">工具平台</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../A/index.html">Arduino</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">PlatformIO</a><ul class="current">
@@ -117,23 +117,23 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../R/index.html">Keil&amp;IAR</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">原型平台</span></p>
+<p class="caption" role="heading"><span class="caption-text">硬件平台</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../B/index.html">Arduino</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../H/index.html">BluePill</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">应用语言</span></p>
+<p class="caption" role="heading"><span class="caption-text">开发框架</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../F/index.html">C</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../F/index.html">开发框架</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../M/index.html">Python</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">项目起点</span></p>
+<p class="caption" role="heading"><span class="caption-text">工程模板</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../T/index.html">工程模板</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../C/index.html">工程配置</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../T/index.html">数据采集</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../C/index.html">网络管理</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../L/index.html">工程依赖</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">完整方案</span></p>
+<p class="caption" role="heading"><span class="caption-text">解决方案</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../S/index.html">产品方案</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../faq.html">常见问题</a></li>
@@ -314,7 +314,7 @@ talk to the flash chip.</p>
     <span class="na">-mfix-esp32-psram-cache-issue</span>
 </pre></div>
 </div>
-<p>Framework <a class="reference internal" href="../F/espidf.html#framework-espidf"><span class="std std-ref">Espressif IDF</span></a>:</p>
+<p>Framework <a class="reference internal" href="../F/espidf.html#espidf"><span class="std std-ref">ESP-IDF</span></a>:</p>
 <div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span>
 <span class="na">platform</span> <span class="o">=</span> <span class="s">espressif32</span>
 <span class="na">framework</span> <span class="o">=</span> <span class="s">espidf</span>
@@ -381,7 +381,7 @@ flash chip (all data replaced with 0xFF bytes):</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">default.csv</span></code> for <a class="reference internal" href="../F/arduino.html#framework-arduino"><span class="std std-ref">Arduino</span></a>
 (<a class="reference external" href="https://github.com/espressif/arduino-esp32/blob/master/tools/partitions">show pre-configured partition tables</a>)</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">partitions_singleapp.csv</span></code> for <a class="reference internal" href="../F/espidf.html#framework-espidf"><span class="std std-ref">Espressif IDF</span></a>
+<li><p><code class="docutils literal notranslate"><span class="pre">partitions_singleapp.csv</span></code> for <a class="reference internal" href="../F/espidf.html#espidf"><span class="std std-ref">ESP-IDF</span></a>
 (<a class="reference external" href="https://github.com/espressif/esp-idf/blob/master/components/partition_table">show pre-configured partition tables</a>)</p></li>
 </ul>
 <div class="admonition warning">
@@ -426,12 +426,12 @@ using the <code class="docutils literal notranslate"><span class="pre">target_ad
 </div>
 <p>The file contents will be added to the <code class="docutils literal notranslate"><span class="pre">.rodata</span></code> section in flash, and
 are available via symbol names as follows:</p>
-<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="k">extern</span> <span class="k">const</span> <span class="kt">uint8_t</span> <span class="n">aws_root_ca_pem_start</span><span class="p">[]</span> <span class="k">asm</span><span class="p">(</span><span class="s">&quot;_binary_src_aws_root_ca_pem_start&quot;</span><span class="p">);</span>
-<span class="k">extern</span> <span class="k">const</span> <span class="kt">uint8_t</span> <span class="n">aws_root_ca_pem_end</span><span class="p">[]</span> <span class="k">asm</span><span class="p">(</span><span class="s">&quot;_binary_src_aws_root_ca_pem_end&quot;</span><span class="p">);</span>
-<span class="k">extern</span> <span class="k">const</span> <span class="kt">uint8_t</span> <span class="n">certificate_pem_crt_start</span><span class="p">[]</span> <span class="k">asm</span><span class="p">(</span><span class="s">&quot;_binary_src_certificate_pem_crt_start&quot;</span><span class="p">);</span>
-<span class="k">extern</span> <span class="k">const</span> <span class="kt">uint8_t</span> <span class="n">certificate_pem_crt_end</span><span class="p">[]</span> <span class="k">asm</span><span class="p">(</span><span class="s">&quot;_binary_src_certificate_pem_crt_end&quot;</span><span class="p">);</span>
-<span class="k">extern</span> <span class="k">const</span> <span class="kt">uint8_t</span> <span class="n">private_pem_key_start</span><span class="p">[]</span> <span class="k">asm</span><span class="p">(</span><span class="s">&quot;_binary_src_private_pem_key_start&quot;</span><span class="p">);</span>
-<span class="k">extern</span> <span class="k">const</span> <span class="kt">uint8_t</span> <span class="n">private_pem_key_end</span><span class="p">[]</span> <span class="k">asm</span><span class="p">(</span><span class="s">&quot;_binary_src_private_pem_key_end&quot;</span><span class="p">);</span>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="k">extern</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">aws_root_ca_pem_start</span><span class="p">[]</span><span class="w"> </span><span class="k">asm</span><span class="p">(</span><span class="s">&quot;_binary_src_aws_root_ca_pem_start&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="k">extern</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">aws_root_ca_pem_end</span><span class="p">[]</span><span class="w"> </span><span class="k">asm</span><span class="p">(</span><span class="s">&quot;_binary_src_aws_root_ca_pem_end&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="k">extern</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">certificate_pem_crt_start</span><span class="p">[]</span><span class="w"> </span><span class="k">asm</span><span class="p">(</span><span class="s">&quot;_binary_src_certificate_pem_crt_start&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="k">extern</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">certificate_pem_crt_end</span><span class="p">[]</span><span class="w"> </span><span class="k">asm</span><span class="p">(</span><span class="s">&quot;_binary_src_certificate_pem_crt_end&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="k">extern</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">private_pem_key_start</span><span class="p">[]</span><span class="w"> </span><span class="k">asm</span><span class="p">(</span><span class="s">&quot;_binary_src_private_pem_key_start&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="k">extern</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">private_pem_key_end</span><span class="p">[]</span><span class="w"> </span><span class="k">asm</span><span class="p">(</span><span class="s">&quot;_binary_src_private_pem_key_end&quot;</span><span class="p">);</span><span class="w"></span>
 </pre></div>
 </div>
 <p>The names are generated from the full name of the file. Characters <code class="docutils literal notranslate"><span class="pre">/,</span> <span class="pre">.</span></code>,
@@ -830,7 +830,7 @@ manufacturer</p>
 <tr class="row-even"><td><p><a class="reference internal" href="../F/arduino.html#framework-arduino"><span class="std std-ref">Arduino</span></a></p></td>
 <td><p>Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../F/espidf.html#framework-espidf"><span class="std std-ref">Espressif IDF</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../F/espidf.html#espidf"><span class="std std-ref">ESP-IDF</span></a></p></td>
 <td><p>ESP-IDF is the official development framework for the ESP32 and ESP32-S Series SoCs.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../F/pumbaa.html#framework-pumbaa"><span class="std std-ref">Pumbaa</span></a></p></td>

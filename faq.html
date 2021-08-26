@@ -93,29 +93,29 @@
               
             
             
-              <p class="caption" role="heading"><span class="caption-text">编译体系</span></p>
+              <p class="caption" role="heading"><span class="caption-text">工具平台</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="A/index.html">Arduino</a></li>
 <li class="toctree-l1"><a class="reference internal" href="P/index.html">PlatformIO</a></li>
 <li class="toctree-l1"><a class="reference internal" href="R/index.html">Keil&amp;IAR</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">原型平台</span></p>
+<p class="caption" role="heading"><span class="caption-text">硬件平台</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="B/index.html">Arduino</a></li>
 <li class="toctree-l1"><a class="reference internal" href="H/index.html">BluePill</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">应用语言</span></p>
+<p class="caption" role="heading"><span class="caption-text">开发框架</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="F/index.html">C</a></li>
+<li class="toctree-l1"><a class="reference internal" href="F/index.html">开发框架</a></li>
 <li class="toctree-l1"><a class="reference internal" href="M/index.html">Python</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">项目起点</span></p>
+<p class="caption" role="heading"><span class="caption-text">工程模板</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="T/index.html">工程模板</a></li>
-<li class="toctree-l1"><a class="reference internal" href="C/index.html">工程配置</a></li>
+<li class="toctree-l1"><a class="reference internal" href="T/index.html">数据采集</a></li>
+<li class="toctree-l1"><a class="reference internal" href="C/index.html">网络管理</a></li>
 <li class="toctree-l1"><a class="reference internal" href="L/index.html">工程依赖</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">完整方案</span></p>
+<p class="caption" role="heading"><span class="caption-text">解决方案</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="S/index.html">产品方案</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">常见问题</a><ul>
@@ -271,16 +271,16 @@ they are not valid C/C++ based source files:</p>
 <p>In this case, code completion and code linting do not work properly or
 are disabled. To avoid this issue you can manually convert your INO files to CPP.</p>
 <p>For example, we have the next <code class="docutils literal notranslate"><span class="pre">Demo.ino</span></code> file:</p>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kt">void</span> <span class="nf">setup</span> <span class="p">()</span> <span class="p">{</span>
-    <span class="n">someFunction</span><span class="p">(</span><span class="mi">13</span><span class="p">);</span>
-<span class="p">}</span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">someFunction</span><span class="p">(</span><span class="mi">13</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 
-<span class="kt">void</span> <span class="nf">loop</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
-<span class="p">}</span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 
-<span class="kt">void</span> <span class="nf">someFunction</span><span class="p">(</span><span class="kt">int</span> <span class="n">num</span><span class="p">)</span> <span class="p">{</span>
-<span class="p">}</span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">someFunction</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">num</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
 <p>Let’s convert it to  <code class="docutils literal notranslate"><span class="pre">Demo.cpp</span></code>:</p>
@@ -290,20 +290,20 @@ are disabled. To avoid this issue you can manually convert your INO files to CPP
 before it will be called.</p></li>
 </ol>
 <p>The final <code class="docutils literal notranslate"><span class="pre">Demo.cpp</span></code>:</p>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span> <span class="cpf">&lt;Arduino.h&gt;</span><span class="cp"></span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;Arduino.h&gt;</span><span class="cp"></span>
 
-<span class="kt">void</span> <span class="nf">someFunction</span><span class="p">(</span><span class="kt">int</span> <span class="n">num</span><span class="p">);</span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">someFunction</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">num</span><span class="p">);</span><span class="w"></span>
 
-<span class="kt">void</span> <span class="nf">setup</span> <span class="p">()</span> <span class="p">{</span>
-    <span class="n">someFunction</span><span class="p">(</span><span class="mi">13</span><span class="p">);</span>
-<span class="p">}</span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">someFunction</span><span class="p">(</span><span class="mi">13</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 
-<span class="kt">void</span> <span class="nf">loop</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
-<span class="p">}</span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 
-<span class="kt">void</span> <span class="nf">someFunction</span><span class="p">(</span><span class="kt">int</span> <span class="n">num</span><span class="p">)</span> <span class="p">{</span>
-<span class="p">}</span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">someFunction</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">num</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
 <p>Finish.</p>
@@ -324,8 +324,8 @@ pre-defined value and can be modified. The values for these variables are
 initially stored within the read-only memory (typically within <code class="docutils literal notranslate"><span class="pre">.text</span></code>)
 and are copied into the <code class="docutils literal notranslate"><span class="pre">.data</span></code> segment during the start-up routine of
 the program. Example,</p>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kt">int</span> <span class="n">val</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>
-<span class="kt">char</span> <span class="n">string</span><span class="p">[]</span> <span class="o">=</span> <span class="s">&quot;Hello World&quot;</span><span class="p">;</span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kt">int</span><span class="w"> </span><span class="n">val</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">3</span><span class="p">;</span><span class="w"></span>
+<span class="kt">char</span><span class="w"> </span><span class="n">string</span><span class="p">[]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Hello World&quot;</span><span class="p">;</span><span class="w"></span>
 </pre></div>
 </div>
 </dd>
