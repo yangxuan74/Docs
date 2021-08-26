@@ -13,6 +13,3 @@ trezor
     :target: https://github.com/trezor
 
 
-
-量产方案
-===========

@@ -32,7 +32,7 @@
     :maxdepth: 1
 
     编程框架 <F/index>
-    编程语言 <M/index>
+    编程语言 <lan/index>
 
 用于开发的框架结构
 
