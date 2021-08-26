@@ -2,7 +2,7 @@
 源圈
 ==================
 
-**开源项目集锦** ``OpenSource - Quality``
+**开源项目集锦** ``Open Source - Quality``
 
 `GitHub <https://GitHub.com/Qitas>`_ |
 `LinkedIn <https://www.linkedin.com/in/qitas/>`_ |
@@ -40,9 +40,7 @@
     :caption: 开源模板
     :maxdepth: 1
 
-    数据采集 <T/index>
-    网络管理 <C/index>
-
+    工程模板 <T/index>
 
 用于开发的模板
 
