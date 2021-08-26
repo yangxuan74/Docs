@@ -1,10 +1,12 @@
 .. _hardware:
 
-硬件平台
+开源硬件
 ===========
 
+Raspberry Pi
+-------------
 
-STM32G0
+STM32
 ----------
 
 .. toctree::
