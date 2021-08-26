@@ -92,7 +92,7 @@ External Debug Tools
       - Frequency
       - Flash
       - RAM
-    * - :ref:`h511`
+    * - :ref:`esp32`
       - ESP32
       - 240MHz
       - 4MB
@@ -250,7 +250,7 @@ ESP32
       - Frequency
       - Flash
       - RAM
-    * - :ref:`h511`
+    * - :ref:`esp32`
       - External
       - ESP32
       - 240MHz

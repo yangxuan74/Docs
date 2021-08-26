@@ -1,7 +1,7 @@
-.. _hardware_stm32g031j6:
+.. _stm32g071rb:
 
-STM32G031J6
-===================
+STM32G071RB
+================
 
 .. contents::
 
@@ -11,39 +11,40 @@ Hardware
 .. list-table::
 
   * - **Microcontroller**
-    - STM32G031J6
+    - STM32G071RBT6
   * - **Frequency**
     - 64MHz
   * - **Flash**
     - 128KB
   * - **RAM**
-    - 8KB
+    - 36KB
   * - **Vendor**
-    - `ST <https://www.st.com/en/evaluation-tools/stm32g0316-disco.html?utm_source=platformio.org&utm_medium=docs>`__
+    - `ST <https://www.st.com/en/evaluation-tools/nucleo-g071rb.html?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
+
 .. code-block:: ini
 
-  [env:disco_g031j6]
+  [env:nucleo_g071rb]
   platform = ststm32
-  board = disco_g031j6
+  board = nucleo_g071rb
 
-You can override default ST STM32G0316-DISCO settings per build environment using
+You can override default Nucleo G071RB settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `disco_g031j6.json <https://github.com/platformio/platform-ststm32/blob/master/boards/disco_g031j6.json>`_. For example,
+board manifest `nucleo_g071rb.json <https://github.com/platformio/platform-ststm32/blob/master/boards/nucleo_g071rb.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:disco_g031j6]
+  [env:nucleo_g071rb]
   platform = ststm32
-  board = disco_g031j6
+  board = nucleo_g071rb
 
   ; change microcontroller
-  board_build.mcu = stm32g031j6
+  board_build.mcu = stm32g071rbt6
 
   ; change MCU frequency
   board_build.f_cpu = 64000000L
@@ -51,25 +52,23 @@ board manifest `disco_g031j6.json <https://github.com/platformio/platform-ststm3
 
 Uploading
 ---------
-ST STM32G0316-DISCO supports the following uploading protocols:
+Nucleo G071RB supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``
-* ``dfu``
 * ``jlink``
 * ``mbed``
-* ``serial``
+* ``stlink``
 
-Default protocol is ``mbed``
+Default protocol is ``stlink``
 
 .. code-block:: ini
 
-  [env:disco_g031j6]
+  [env:nucleo_g071rb]
   platform = ststm32
-  board = disco_g031j6
+  board = nucleo_g071rb
 
-  upload_protocol = mbed
-
+  upload_protocol = stlink
 
 Frameworks
 ----------

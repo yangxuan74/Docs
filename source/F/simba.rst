@@ -53,7 +53,7 @@ Platforms
     * - Name
       - Description
 
-    * - :ref:`h511`
+    * - :ref:`esp32`
       - Espressif Systems is a privately held fabless semiconductor company. They provide wireless communications and Wi-Fi chips which are widely used in mobile devices and the Internet of Things applications.
 
 Boards
