@@ -3,8 +3,6 @@
 Library options
 ---------------
 
-.. seealso::
-    Please make sure to read :ref:`ldf` guide first.
 
 .. contents::
     :local:
@@ -13,9 +11,6 @@ Library options
 
 ``lib_deps``
 ^^^^^^^^^^^^
-
-.. seealso::
-    Please make sure to read :ref:`ldf` guide first.
 
 Type: ``String`` | Multiple: ``Yes``
 
@@ -65,9 +60,6 @@ Example:
 
 ``lib_ignore``
 ^^^^^^^^^^^^^^
-
-.. seealso::
-    Please make sure to read :ref:`ldf` guide first.
 
 Type: ``String`` | Multiple: ``Yes``
 
@@ -122,13 +114,7 @@ between ``<`` and ``>`` symbols.
 ``lib_extra_dirs``
 ^^^^^^^^^^^^^^^^^^
 
-.. seealso::
-    Please make sure to read :ref:`ldf` guide first.
-
 Type: ``DirPath`` | Multiple: ``Yes``
-
-A list with extra directories/storages where :ref:`ldf` will
-look for dependencies.
 
 This option can also be set by global environment variable
 :envvar:`PLATFORMIO_LIB_EXTRA_DIRS`.
@@ -152,14 +138,7 @@ Example:
 ``lib_ldf_mode``
 ^^^^^^^^^^^^^^^^
 
-.. seealso::
-    Please make sure to read :ref:`ldf` guide first.
-
 Type: ``String`` | Multiple: ``No`` | Default: ``chain``
-
-This option specifies how does Library Dependency Finder should analyze
-dependencies (``#include`` directives). See :ref:`ldf_mode` for details
-and available options.
 
 Example:
 
@@ -173,9 +152,6 @@ Example:
 
 ``lib_compat_mode``
 ^^^^^^^^^^^^^^^^^^^
-
-.. seealso::
-    Please make sure to read :ref:`ldf` guide first.
 
 Type: ``String`` | Multiple: ``No`` | Default: ``soft``
 

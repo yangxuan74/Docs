@@ -1,0 +1,195 @@
+.. _p215:
+
+STM32G0
+==========
+
+The STM32 family of 32-bit Flash MCUs based on the ARM Cortex-M processor is designed to offer new degrees of freedom to MCU users. It offers a 32-bit product range that combines very high performance, real-time capabilities, digital signal processing, and low-power, low-voltage operation, while maintaining full integration and ease of development.
+
+For more detailed information please visit `vendor site <http://www.st.com/web/en/catalog/mmc/FM141/SC1169?sc=stm32&utm_source=platformio.org&utm_medium=docs>`_.
+
+.. contents:: 目录索引
+    :local:
+    :depth: 1
+
+.. include:: P21.rst
+
+工程示例
+----------------
+
+Examples are listed from `ST STM32 development platform repository <https://github.com/platformio/platform-ststm32/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_:
+
+* `stm32cube-ll-blink <https://github.com/platformio/platform-ststm32/tree/master/examples/stm32cube-ll-blink?utm_source=platformio.org&utm_medium=docs>`_
+* `libopencm3-blink <https://github.com/platformio/platform-ststm32/tree/master/examples/libopencm3-blink?utm_source=platformio.org&utm_medium=docs>`_
+* `arduino-blink <https://github.com/platformio/platform-ststm32/tree/master/examples/arduino-blink?utm_source=platformio.org&utm_medium=docs>`_
+* `stm32cube-hal-blink <https://github.com/platformio/platform-ststm32/tree/master/examples/stm32cube-hal-blink?utm_source=platformio.org&utm_medium=docs>`_
+
+
+Tools & Debug Probes
+~~~~~~~~~~~~~~~~~~~~
+
+
+.. warning::
+    You will need to install debug tool drivers depending on your system.
+    Please click on compatible debug tool below for the further instructions.
+
+
+调试工具
+^^^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - cmsis-dap
+      - jlink
+      - stlink
+      - blackmagic
+      - serial
+      - dfu
+    * - :ref:`stm32g031j6`
+      - YES
+      - YES
+      - YES
+      - YES
+      - YES
+      - YES
+    * - :ref:`stm32g031k8`
+      - YES
+      - YES
+      - YES
+      - YES
+      - YES
+      - YES
+    * - :ref:`stm32g071rb`
+      - YES
+      - YES
+      - YES
+      - YES
+      - YES
+      - YES
+
+Stable and upstream versions
+----------------------------
+
+Stable
+~~~~~~
+
+.. code-block:: ini
+
+    ; Latest stable version
+    [env:latest_stable]
+    platform = ststm32
+    board = ...
+
+    ; Custom stable version
+    [env:custom_stable]
+    platform = ststm32@x.y.z
+    board = ...
+
+
+关联资源
+-------------
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Description
+
+    * - `tool-openocd <http://openocd.org?utm_source=platformio.org&utm_medium=docs>`__
+      - Open On-Chip Debugger. Free and Open On-Chip Debugging, In-System Programming and Boundary-Scan Testing
+
+    * - `tool-stm32duino <https://www.stm32duino.com?utm_source=platformio.org&utm_medium=docs>`__
+      - STM32Duino Tools
+
+    * - `toolchain-gccarmnoneeabi <https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm?utm_source=platformio.org&utm_medium=docs>`__
+      - GNU toolchain for Arm Cortex-M and Cortex-R processors
+
+    * - `tool-cmake <https://cmake.org?utm_source=platformio.org&utm_medium=docs>`__
+      - CMake is an open-source, cross-platform family of tools designed to build, test and package software
+
+    * - `tool-jlink <https://www.segger.com/downloads/jlink/?utm_source=platformio.org&utm_medium=docs>`__
+      - Software and Documentation Pack for SEGGER J-Link debug probes
+
+    * - `tool-ldscripts-ststm32 <https://www.st.com/en/development-tools/stm32cubemx.html?utm_source=platformio.org&utm_medium=docs>`__
+      - Linker scripts pack for STMicroelectronics STM32 platform
+
+    * - `framework-arduinoststm32 <https://github.com/stm32duino/Arduino_Core_STM32.git?utm_source=platformio.org&utm_medium=docs>`__
+      - Arduino Wiring-based Framework for ST STM32 microcontrollers
+
+    * - `framework-cmsis <http://www.arm.com/products/processors/cortex-m/cortex-microcontroller-software-interface-standard.php?utm_source=platformio.org&utm_medium=docs>`__
+      - Vendor-independent hardware abstraction layer for the Cortex-M processor series
+
+    * - `framework-libopencm3 <http://www.libopencm3.org/?utm_source=platformio.org&utm_medium=docs>`__
+      - Open source ARM Cortex-M microcontroller library
+
+    * - `framework-cmsis-stm32g0 <https://github.com/STMicroelectronics/cmsis_device_g0.git?utm_source=platformio.org&utm_medium=docs>`__
+      - CMSIS component for the STMicroelectronics STM32G0 series
+
+    * - `framework-stm32cubeg0 <https://github.com/STMicroelectronics/STM32CubeG0?utm_source=platformio.org&utm_medium=docs>`__
+      - STM32Cube is a set of tools and embedded software bricks available free of charge to enable fast and easy development on the STM32 platform (STM32CubeG0 MCU Firmware Package)
+
+
+.. warning::
+    **Linux Users**:
+
+        * Raspberry Pi users, please read this article
+          `Enable serial port on Raspberry Pi <https://hallard.me/enable-serial-port-on-raspberry-pi/>`__.
+
+
+    **Windows Users:**
+
+        Please check that you have a correctly installed USB driver from board
+        manufacturer
+
+控制核心
+-----------
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Package
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`stm32g031j6`
+      - SON8
+      - STM32G031J6
+      - 64MHz
+      - 32KB
+      - 8KB
+    * - :ref:`stm32g031k8`
+      - LQFP32
+      - STM32G031K8
+      - 64MHz
+      - 64KB
+      - 8KB
+    * - :ref:`stm32g071rb`
+      - LQFP64
+      - STM32G071RB
+      - 64MHz
+      - 128KB
+      - 36KB
+
+开发框架
+----------
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Description
+
+    * - :ref:`framework_arduino`
+      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences
+
+    * - :ref:`framework_cmsis`
+      - The ARM Cortex Microcontroller Software Interface Standard (CMSIS) is a vendor-independent hardware abstraction layer for the Cortex-M processor series and specifies debugger interfaces. The CMSIS enables consistent and simple software interfaces to the processor for interface peripherals, real-time operating systems, and middleware. It simplifies software re-use, reducing the learning curve for new microcontroller developers and cutting the time-to-market for devices
+
+    * - :ref:`framework_stm32cube`
+      - STM32Cube embedded software libraries, including: The HAL hardware abstraction layer, enabling portability between different STM32 devices via standardized API calls; The Low-Layer (LL) APIs, a light-weight, optimized, expert oriented set of APIs designed for both performance and runtime efficiency
+
+    * - :ref:`framework_libopencm3`
+      - The libOpenCM3 framework aims to create a free and open-source firmware library for various ARM Cortex-M0(+)/M3/M4 microcontrollers, including ST STM32, Ti Tiva and Stellaris, NXP LPC, Atmel SAM3, Energy Micro EFM32 and others
+
