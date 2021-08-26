@@ -140,10 +140,6 @@ Example:
 
 Type: ``String`` | Multiple: ``No`` | Default: ``chain``
 
-This option specifies how does Library Dependency Finder should analyze
-dependencies (``#include`` directives). See :ref:`ldf_mode` for details
-and available options.
-
 Example:
 
 .. code-block:: ini
