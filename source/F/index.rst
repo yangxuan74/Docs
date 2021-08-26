@@ -7,12 +7,11 @@
 .. toctree::
     :maxdepth: 1
 
-    arduino
+    Arduino  <arduino>
     ESP-IDF  <espidf>
     cmsis
     libopencm3
     stm32cube
     zephyr
-    espidf
     simba
     pumbaa
