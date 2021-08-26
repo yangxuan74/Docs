@@ -1,6 +1,0 @@
-
-.. _boards:
-
-Arduino Board
-================
-
