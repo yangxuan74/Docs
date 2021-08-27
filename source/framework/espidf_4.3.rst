@@ -100,43 +100,6 @@ for ``C++``) in order to force CMake generate build configuration for this langu
     is also used as the base build environment for project sources (including libraries).
 
 
-ESP-IDF components
-^^^^^^^^^^^^^^^^^^
-
-ESP-IDF modules as modular pieces of standalone code might be useful for structuring
-reusable code or including third party components that aren’t part of ESP-IDF.
-
-These components contain either a single ``CMakeLists.txt`` file which controls the
-build process of the component and its integration into the overall project. An
-optional ``Kconfig`` file defines the component configuration options that can be set
-via ``menuconfig``. Some components may also include ``Kconfig.projbuild`` and
-``project_include.cmake`` files, which are special files for overriding parts of the
-project. All valid components will be compiled as static libraries and linked to the
-final firmware. There are two possible ways of adding extra components to PlatformIO
-project:
-
-* By adding a new component to an optional folder called ``components`` in the root of
-  your project. This folder will be automatically scanned for valid components.
-* Using ``EXTRA_COMPONENT_DIRS`` option in the root ``CMakeLists.txt`` file. This option
-  represents a list of extra directories to search for components.
-
-An example of specifying ``esp-aws-iot`` as an extra component:
-
-.. code-block:: cmake
-
-    # The following lines of boilerplate have to be in your project's CMakeLists
-    # in this exact order for cmake to work correctly
-    cmake_minimum_required(VERSION 3.16)
-
-    include($ENV{IDF_PATH}/tools/cmake/project.cmake)
-    list(APPEND EXTRA_COMPONENT_DIRS esp-aws-iot)
-    project(subscribe_publish)
-
-
-Since the build may not work correctly if the full path to sources is greater than 250
-characters (see ``CMAKE_OBJECT_PATH_MAX``) it might be a good idea to keep modules close
-to the project files.
-
 ULP coprocessor programming
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -217,3 +180,28 @@ At the moment several limitations are present:
 * The ``src_filter`` option cannot be used. It's done to preserve compatibility with
   existing ESP-IDF projects. List of source files is specified in the project
   ``CMakeLists.txt`` file.
+
+
+工程示例
+~~~~~~~~~~~~~
+
+.. code-block:: none
+
+    examples
+    ├── bluetooth
+    │    ├── bluedroid
+    │    ├── blufi
+    │    ├── esp_ble_mesh
+    │    ├── esp_hid_device
+    │    ├── esp_hid_host
+    │    ├── hci
+    │    └── nimble
+    ├── mesh
+    │    ├── internal_communication
+    │    ├── ip_internal_network
+    │    └── manual_networking
+    └── README.md
+
+
+bluedroid
+^^^^^^^^^^^^^^
