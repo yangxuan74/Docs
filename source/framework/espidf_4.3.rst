@@ -7,13 +7,8 @@ ESP-IDF v4.3
     :depth: 1
 
 
-Each release of :ref:`p511` platform uses a specific version of ESP-IDF.
-The latest version of the platform only supports the latest stable version of the
-framework.
-
-
 安装配置
-~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~
 
 .. contents::
     :local:
@@ -27,29 +22,11 @@ of the project. This configuration file can be modified via a special target cal
 
     pio run -t menuconfig
 
-.. warning::
-    ESP-IDF requires some extra tools to be installed in your system in order to build
-    firmware for supported chips. Most of these tools are available in PlatformIO
-    ecosystem as standalone packages, but in order to use configuration tool called
-    ``menuconfig`` several additional packages need to be installed on Linux-based
-    systems:
-
-    .. code-block:: none
-
-        libncurses5-dev flex bison
-
-    More details about required packages can be found in the official ESP-IDF documentation -
-    `Standard Setup of Toolchain for Linux <https://docs.espressif.com/projects/esp-idf/en/latest/get-started/linux-setup.html>`_.
-
 .. hint::
   If menuconfig is not showed properly in the integrated VS Code terminal try changing
   the default terminal shell by clicking the dropdown menu on the top-right of the
   terminal panel and selectiing the ``Select Default Shell`` option.
 
-.. hint::
-  In case the ``UP`` and ``DOWN`` arrows don't work in menuconfig try using the ``J``
-  key to move the cursor down and ``K`` to move the cursor up. Another option is to use
-  ``-`` and ``+`` keys on the numeric keypad.
 
 Project Structure
 ^^^^^^^^^^^^^^^^^
