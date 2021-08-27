@@ -36,21 +36,21 @@ ESP-IDF 目前已服务支持数以亿计的物联网设备，并已开发构建
       - v4.2
       - NO
       - YES
-      - 100M
+      - 10/100M
     * - `ESP32-S2 <https://docs.soc.xin/ESP32-S2>`_
-      - 300 DMIPS
-      - 520 KB
+      - 360 DMIPS
+      - 320 KB
       - 802.11 b/g/n
-      - v5.0
       - NO
-      - YES
+      - USB OTG
+      - NO
       - NO
     * - `ESP32-S3 <https://docs.soc.xin/ESP32-S3>`_
-      - 600 DMIPS
+      - 720 DMIPS
       - 512 KB
       - 802.11 b/g/n
       - v5.0
-      - USB1.1 OTG
+      - USB OTG
       - YES
       - NO
     * - `ESP32-C3 <https://docs.soc.xin/ESP32-C3>`_
@@ -72,10 +72,33 @@ ESP-IDF 目前已服务支持数以亿计的物联网设备，并已开发构建
 
 
 
-开发工具
+开发平台
 ---------
 
 * `platform-espressif32 <https://github.com/platformio/platform-espressif32/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
+
+资源列表
+~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - platform
+      - xtensa32
+      - xtensa32s2
+      - esp32ulp
+      - esp32s2ulp
+      - riscv-esp
+      - espidf
+      - arduino
+    * - 3.3.1
+      - 5.2.0
+      - 8.4.0
+      - 2.28.51
+      - 2.28.51
+      - 8.4.0
+      - 1.0.6
+      - 4.3.0
 
 
 .. include:: espidf_4.3.rst
