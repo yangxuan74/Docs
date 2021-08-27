@@ -1,5 +1,5 @@
 
-安装配置
+ESP-IDF v4.0
 -------------
 
 .. note::
@@ -22,8 +22,8 @@ framework.
     ESP-IDF v4.0 projects are not backwards-compatible with ESP-IDF v3.x projects in
     terms of project configuration process.
 
-ESP-IDF v4.0
-~~~~~~~~~~~~~~~~~~~~~
+安装配置
+~~~~~~~~~~~~~~
 
 .. contents::
     :local:
@@ -251,85 +251,3 @@ At the moment several limitations are present:
   existing ESP-IDF projects. List of source files is specified in the project
   ``CMakeLists.txt`` file.
 
-ESP-IDF v3.0, v3.1, v3.2, v3.3
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Support for ESP-IDF v3.x is considered obsolete and is not available in the latest
-platform releases. Please check the `platform release notes <https://github.com/platformio/platform-espressif32/releases>`_
-to figure out what version of the platform should be installed to use required ESP-IDF
-version, for example:
-
-    .. code-block:: ini
-
-        [env:esp32dev]
-        ; v1.10.0 is the last version that supports ESP-IDF v3.3
-        platform = espressif32@1.10.0
-        framework = espidf
-        board = esp32dev
-
-Project Structure
-^^^^^^^^^^^^^^^^^
-
-Due to limited support of GNU Make build system used in ESP-IDF v3.x, the project
-configuration depends on a pregenerated file ``sdkconfig.h`` which contains a list of
-macro definitions ``CONFIG_*``. These definitions describe project settings that will be
-used for preparing a proper build environment. You can use the default ``sdkconfig.h``
-shipped with the platform or generate a custom one using native ESP-IDF build
-environment.
-
-A typical PlatformIO project for ESP-IDF v3.x must have the following structure:
-
-.. code-block:: none
-
-    project_dir
-    ├── include
-    ├── lib
-    │   └── README
-    ├── test
-    ├── src
-    │    ├── sdkconfig.h
-    │    └── main.c
-    └── platformio.ini
-
-Enable C++ exceptions
-^^^^^^^^^^^^^^^^^^^^^
-
-See `project example <https://github.com/platformio/platform-espressif32/tree/v1.10.0/examples/espidf-exceptions>`_
-with enabled exceptions.
-
-ULP coprocessor programming
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-To use ULP in your project you need to make sure that it's enabled in the ``sdkconfig.h``
-configuration file. The following two lines must be added:
-
-.. code-block:: cpp
-
-    #define CONFIG_ULP_COPROC_ENABLED 1
-    #define CONFIG_ULP_COPROC_RESERVE_MEM 1024
-
-Usually ``CONFIG_ULP_COPROC_RESERVE_MEM`` is already defined in the default
-``sdkconfig.h`` with value ``0``. You can modify this value to meet your requirements.
-
-All ULP code, usually written in assembly in files with ``.S`` extension, must be placed
-into a separate directory with the name ``ulp`` in the root folder of your project.
-So your project structure should look like this:
-
-.. code-block:: bash
-
-    project_dir
-    ├── include
-    ├── lib
-    │   └── README
-    ├── test
-    ├── src
-    │    ├── main.c
-    │    └── sdkconfig.h
-    ├── ulp
-    │    └── ulp_code.S
-    └── platformio.ini
-
-See full examples with ULP coprocessor programming for ESP-IDF v3.x:
-
-- https://github.com/platformio/platform-espressif32/tree/v1.10.0/examples/espidf-ulp-adc
-- https://github.com/platformio/platform-espressif32/tree/v1.10.0/examples/espidf-ulp-pulse

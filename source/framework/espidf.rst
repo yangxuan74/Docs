@@ -11,7 +11,7 @@ ESP-IDF 是乐鑫官方的物联网开发框架，适用于 ESP32、ESP32-S 和 
 .. contents::
     :local:
     :depth: 1
-.. include:: espidf_extra.rst
+
 
 开发示例
 ---------
@@ -28,3 +28,6 @@ ESP-IDF 是乐鑫官方的物联网开发框架，适用于 ESP32、ESP32-S 和 
 
     * - :ref:`p511`
       - Espressif Systems is a privately held fabless semiconductor company. They provide wireless communications and Wi-Fi chips which are widely used in mobile devices and the Internet of Things applications.
+
+.. include:: espidf_4.0.rst
+.. include:: espidf_4.3.rst
