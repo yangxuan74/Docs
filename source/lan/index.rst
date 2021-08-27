@@ -7,9 +7,18 @@
 .. contents::
     :local:
 
-microPython
+MicroPython
 ----------------
+
+.. toctree::
+    :maxdepth: 1
+
+    MicroPython  <mpy>
 
 Lua
 ----------------
 
+.. toctree::
+    :maxdepth: 1
+
+    Lua  <lua>
