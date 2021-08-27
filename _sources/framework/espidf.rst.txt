@@ -28,8 +28,8 @@ ESP-IDF 目前已服务支持数以亿计的物联网设备，并已开发构建
       - BLE
       - USB
       - TWAI
-      - MAC
-    * - :ref:`esp32`
+      - Ethernet
+    * - `ESP32 <https://docs.soc.xin/ESP32>`_
       - 600 DMIPS
       - 520 KB
       - 802.11 b/g/n
@@ -37,6 +37,14 @@ ESP-IDF 目前已服务支持数以亿计的物联网设备，并已开发构建
       - NO
       - YES
       - 100M
+    * - `ESP32-S2 <https://docs.soc.xin/ESP32-S2>`_
+      - 300 DMIPS
+      - 520 KB
+      - 802.11 b/g/n
+      - v5.0
+      - NO
+      - YES
+      - NO
     * - `ESP32-S3 <https://docs.soc.xin/ESP32-S3>`_
       - 600 DMIPS
       - 512 KB
@@ -50,6 +58,14 @@ ESP-IDF 目前已服务支持数以亿计的物联网设备，并已开发构建
       - 400 KB
       - 802.11 b/g/n
       - v5.0
+      - NO
+      - YES
+      - NO
+    * - `ESP32-C6 <https://docs.soc.xin/ESP32-C6>`_
+      - 200 DMIPS
+      - 400 KB
+      - 802.11 b/g/n
+      - v5.2
       - NO
       - YES
       - NO
