@@ -125,7 +125,7 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">开源框架</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../F/index.html">编程框架</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../framework/index.html">编程框架</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../lan/index.html">编程语言</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">开源模板</span></p>
@@ -304,7 +304,7 @@ talk to the flash chip.</p>
 </div>
 <div class="section" id="external-ram-psram">
 <h3><a class="toc-backref" href="#id15">External RAM (PSRAM)</a><a class="headerlink" href="#external-ram-psram" title="Permalink to this headline">¶</a></h3>
-<p>Framework <a class="reference internal" href="../F/arduino.html#framework-arduino"><span class="std std-ref">Arduino</span></a>:</p>
+<p>Framework <a class="reference internal" href="../framework/arduino.html#framework-arduino"><span class="std std-ref">Arduino</span></a>:</p>
 <div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span>
 <span class="na">platform</span> <span class="o">=</span> <span class="s">espressif32</span>
 <span class="na">framework</span> <span class="o">=</span> <span class="s">arduino</span>
@@ -314,7 +314,7 @@ talk to the flash chip.</p>
     <span class="na">-mfix-esp32-psram-cache-issue</span>
 </pre></div>
 </div>
-<p>Framework <a class="reference internal" href="../F/espidf.html#espidf"><span class="std std-ref">ESP-IDF</span></a>:</p>
+<p>Framework <a class="reference internal" href="../framework/espidf.html#espidf"><span class="std std-ref">ESP-IDF</span></a>:</p>
 <div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span>
 <span class="na">platform</span> <span class="o">=</span> <span class="s">espressif32</span>
 <span class="na">framework</span> <span class="o">=</span> <span class="s">espidf</span>
@@ -379,9 +379,9 @@ flash chip (all data replaced with 0xFF bytes):</p>
 <div class="section" id="partition-tables">
 <h3><a class="toc-backref" href="#id19">Partition Tables</a><a class="headerlink" href="#partition-tables" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">default.csv</span></code> for <a class="reference internal" href="../F/arduino.html#framework-arduino"><span class="std std-ref">Arduino</span></a>
+<li><p><code class="docutils literal notranslate"><span class="pre">default.csv</span></code> for <a class="reference internal" href="../framework/arduino.html#framework-arduino"><span class="std std-ref">Arduino</span></a>
 (<a class="reference external" href="https://github.com/espressif/arduino-esp32/blob/master/tools/partitions">show pre-configured partition tables</a>)</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">partitions_singleapp.csv</span></code> for <a class="reference internal" href="../F/espidf.html#espidf"><span class="std std-ref">ESP-IDF</span></a>
+<li><p><code class="docutils literal notranslate"><span class="pre">partitions_singleapp.csv</span></code> for <a class="reference internal" href="../framework/espidf.html#espidf"><span class="std std-ref">ESP-IDF</span></a>
 (<a class="reference external" href="https://github.com/espressif/esp-idf/blob/master/components/partition_table">show pre-configured partition tables</a>)</p></li>
 </ul>
 <div class="admonition warning">
@@ -827,17 +827,11 @@ manufacturer</p>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><a class="reference internal" href="../F/arduino.html#framework-arduino"><span class="std std-ref">Arduino</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../framework/arduino.html#framework-arduino"><span class="std std-ref">Arduino</span></a></p></td>
 <td><p>Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../F/espidf.html#espidf"><span class="std std-ref">ESP-IDF</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../framework/espidf.html#espidf"><span class="std std-ref">ESP-IDF</span></a></p></td>
 <td><p>ESP-IDF is the official development framework for the ESP32 and ESP32-S Series SoCs.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../F/pumbaa.html#framework-pumbaa"><span class="std std-ref">Pumbaa</span></a></p></td>
-<td><p>Pumbaa is Python on top of Simba. The implementation is a port of MicroPython, designed for embedded devices with limited amount of RAM and code memory</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../F/simba.html#framework-simba"><span class="std std-ref">Simba</span></a></p></td>
-<td><p>Simba is an RTOS and build framework with aims to make embedded programming easy and portable</p></td>
 </tr>
 </tbody>
 </table>
@@ -943,8 +937,15 @@ horizontally.</p></li>
               <li role="menuitem"><a href="https://www.soc.xin"><i class="fa fa-home"></i>探索芯世界</a></li>\
               <li role="separator" class="divider"></li>\
               <li role="menuitem"><a href="https://docs.soc.xin"><i class="fa fa-graduation-cap"></i>Docs</a></li>\
-              <li role="separator" class="divider"></li>\
               <li role="menuitem"><a href="https://www.github.com/socxin"><i class="fa fa-github"></i>GitHub</a></li>\
+            </ul>\
+          </li>\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://www.qitas.cn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user fa-lg"></i>QITAS<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://docs.qitas.cn"><i class="fa fa-graduation-cap"></i>Docs</a></li>\
+              <li role="menuitem"><a href="https://www.github.com/qitas"><i class="fa fa-github"></i>GitHub</a></li>\
             </ul>\
           </li>\
           <li class="dropdown">\

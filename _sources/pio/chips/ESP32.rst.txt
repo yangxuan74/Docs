@@ -85,9 +85,3 @@ Frameworks
 
     * - :ref:`espidf`
       - ESP-IDF is the official development framework for the ESP32 and ESP32-S Series SoCs.
-
-    * - :ref:`framework_pumbaa`
-      - Pumbaa is Python on top of Simba. The implementation is a port of MicroPython, designed for embedded devices with limited amount of RAM and code memory
-
-    * - :ref:`framework_simba`
-      - Simba is an RTOS and build framework with aims to make embedded programming easy and portable
