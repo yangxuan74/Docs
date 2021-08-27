@@ -205,9 +205,6 @@
 <li><p><a class="reference internal" href="#id1" id="id4">安装配置</a></p></li>
 </ul>
 </div>
-<p>Each release of <a class="reference internal" href="../pio/P511.html#p511"><span class="std std-ref">Espressif32</span></a> platform uses a specific version of ESP-IDF.
-The latest version of the platform only supports the latest stable version of the
-framework.</p>
 <div class="section" id="id1">
 <h2><a class="toc-backref" href="#id4">安装配置</a><a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
 <div class="contents local topic" id="id2">
@@ -225,30 +222,11 @@ of the project. This configuration file can be modified via a special target cal
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>pio run -t menuconfig
 </pre></div>
 </div>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>ESP-IDF requires some extra tools to be installed in your system in order to build
-firmware for supported chips. Most of these tools are available in PlatformIO
-ecosystem as standalone packages, but in order to use configuration tool called
-<code class="docutils literal notranslate"><span class="pre">menuconfig</span></code> several additional packages need to be installed on Linux-based
-systems:</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>libncurses5-dev flex bison
-</pre></div>
-</div>
-<p>More details about required packages can be found in the official ESP-IDF documentation -
-<a class="reference external" href="https://docs.espressif.com/projects/esp-idf/en/latest/get-started/linux-setup.html">Standard Setup of Toolchain for Linux</a>.</p>
-</div>
 <div class="admonition hint">
 <p class="admonition-title">Hint</p>
 <p>If menuconfig is not showed properly in the integrated VS Code terminal try changing
 the default terminal shell by clicking the dropdown menu on the top-right of the
 terminal panel and selectiing the <code class="docutils literal notranslate"><span class="pre">Select</span> <span class="pre">Default</span> <span class="pre">Shell</span></code> option.</p>
-</div>
-<div class="admonition hint">
-<p class="admonition-title">Hint</p>
-<p>In case the <code class="docutils literal notranslate"><span class="pre">UP</span></code> and <code class="docutils literal notranslate"><span class="pre">DOWN</span></code> arrows don’t work in menuconfig try using the <code class="docutils literal notranslate"><span class="pre">J</span></code>
-key to move the cursor down and <code class="docutils literal notranslate"><span class="pre">K</span></code> to move the cursor up. Another option is to use
-<code class="docutils literal notranslate"><span class="pre">-</span></code> and <code class="docutils literal notranslate"><span class="pre">+</span></code> keys on the numeric keypad.</p>
 </div>
 <div class="section" id="project-structure">
 <h3><a class="toc-backref" href="#id5">Project Structure</a><a class="headerlink" href="#project-structure" title="Permalink to this headline">¶</a></h3>
