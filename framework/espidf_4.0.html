@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>ESP-IDF &mdash; OS-Q 0.2 documentation</title>
+  <title>ESP-IDF v4.0 &mdash; OS-Q 0.2 documentation</title>
   
 
   
@@ -25,7 +25,7 @@
   
 
   
-    <link rel="canonical" href="https://docs.OS-Q.com/framework/espidf.html" />
+    <link rel="canonical" href="https://docs.OS-Q.com/framework/espidf_4.0.html" />
 
   
   <!--[if lt IE 9]>
@@ -44,8 +44,6 @@
     
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="CMSIS" href="cmsis.html" />
-    <link rel="prev" title="Arduino" href="arduino.html" />
  
 <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
 <script src="../_static/js/bootstrap.min.js"></script>
@@ -105,28 +103,8 @@
 <li class="toctree-l1"><a class="reference internal" href="../arduino/index.html">Arduino</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">开源框架</span></p>
-<ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="index.html">编程框架</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="arduino.html">Arduino</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">ESP-IDF</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id2">开发示例</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id3">运行平台</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#esp-idf-v4-0">ESP-IDF v4.0</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#id5">安装配置</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#esp-idf-v4-3">ESP-IDF v4.3</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#id9">安装配置</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="cmsis.html">CMSIS</a></li>
-<li class="toctree-l2"><a class="reference internal" href="libopencm3.html">libopencm3</a></li>
-<li class="toctree-l2"><a class="reference internal" href="stm32cube.html">STM32Cube</a></li>
-<li class="toctree-l2"><a class="reference internal" href="zephyr.html">Zephyr</a></li>
-</ul>
-</li>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="index.html">编程框架</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../lan/index.html">编程语言</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">开源模板</span></p>
@@ -199,16 +177,14 @@
     
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
         
-          <li><a href="index.html">开发框架</a> &raquo;</li>
-        
-      <li>ESP-IDF</li>
+      <li>ESP-IDF v4.0</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
           
             
-              <a href="https://github.com/OS-Q/Docs/blob/master/source/framework/espidf.rst" class="fa fa-github"> Edit on GitHub</a>
+              <a href="https://github.com/OS-Q/Docs/blob/master/source/framework/espidf_4.0.rst" class="fa fa-github"> Edit on GitHub</a>
             
           
         
@@ -222,54 +198,17 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="esp-idf">
-<span id="espidf"></span><h1>ESP-IDF<a class="headerlink" href="#esp-idf" title="Permalink to this headline">¶</a></h1>
-<p>ESP-IDF 是乐鑫官方的物联网开发框架，适用于 ESP32、ESP32-S 和 ESP32-C 系列 SoC。它基于 C/C++ 语言提供了一个自给自足的 SDK，方便用户在这些平台上开发通用应用程序。ESP-IDF 目前已服务支持数以亿计的物联网设备，并已开发构建了多种物联网产品，例如照明、消费电子大小家电、支付终端、工控等各类物联网设备。</p>
-<p><a class="reference external" href="https://docs.espressif.com/projects/esp-idf/zh_CN/latest/esp32/index.html">官方指南</a></p>
-<div class="contents local topic" id="contents">
-<ul class="simple">
-<li><p><a class="reference internal" href="#id2" id="id19">开发示例</a></p></li>
-<li><p><a class="reference internal" href="#id3" id="id20">运行平台</a></p></li>
-<li><p><a class="reference internal" href="#esp-idf-v4-0" id="id21">ESP-IDF v4.0</a></p></li>
-<li><p><a class="reference internal" href="#esp-idf-v4-3" id="id22">ESP-IDF v4.3</a></p></li>
-</ul>
-</div>
-<div class="section" id="id2">
-<h2><a class="toc-backref" href="#id19">开发示例</a><a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p><a class="reference external" href="https://github.com/platformio/platform-espressif32/tree/master/examples?utm_source=platformio.org&amp;utm_medium=docs">platform-espressif32</a></p></li>
-</ul>
-</div>
-<div class="section" id="id3">
-<h2><a class="toc-backref" href="#id20">运行平台</a><a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>Name</p></th>
-<th class="head"><p>Description</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><a class="reference internal" href="../pio/P511.html#p511"><span class="std std-ref">Espressif32</span></a></p></td>
-<td><p>Espressif Systems is a privately held fabless semiconductor company. They provide wireless communications and Wi-Fi chips which are widely used in mobile devices and the Internet of Things applications.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="section" id="esp-idf-v4-0">
-<h2><a class="toc-backref" href="#id21">ESP-IDF v4.0</a><a class="headerlink" href="#esp-idf-v4-0" title="Permalink to this headline">¶</a></h2>
+  <div class="section" id="esp-idf-v4-0">
+<h1>ESP-IDF v4.0<a class="headerlink" href="#esp-idf-v4-0" title="Permalink to this headline">¶</a></h1>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Starting with ESP-IDF v4.0, a CMake-based build system is used. Different
 configuration steps are required for ESP-IDF v3.x due to a legacy build system
 based on GNU Make.</p>
 </div>
-<div class="contents local topic" id="id4">
+<div class="contents local topic" id="contents">
 <ul class="simple">
-<li><p><a class="reference internal" href="#id5" id="id23">安装配置</a></p></li>
+<li><p><a class="reference internal" href="#id1" id="id4">安装配置</a></p></li>
 </ul>
 </div>
 <p>Each release of <a class="reference internal" href="../pio/P511.html#p511"><span class="std std-ref">Espressif32</span></a> platform uses a specific version of ESP-IDF.
@@ -280,14 +219,14 @@ framework.</p>
 <p>ESP-IDF v4.0 projects are not backwards-compatible with ESP-IDF v3.x projects in
 terms of project configuration process.</p>
 </div>
-<div class="section" id="id5">
-<h3><a class="toc-backref" href="#id23">安装配置</a><a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
-<div class="contents local topic" id="id6">
+<div class="section" id="id1">
+<h2><a class="toc-backref" href="#id4">安装配置</a><a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<div class="contents local topic" id="id2">
 <ul class="simple">
-<li><p><a class="reference internal" href="#project-structure" id="id24">Project Structure</a></p></li>
-<li><p><a class="reference internal" href="#esp-idf-components" id="id25">ESP-IDF components</a></p></li>
-<li><p><a class="reference internal" href="#ulp-coprocessor-programming" id="id26">ULP coprocessor programming</a></p></li>
-<li><p><a class="reference internal" href="#limitations" id="id27">Limitations</a></p></li>
+<li><p><a class="reference internal" href="#project-structure" id="id5">Project Structure</a></p></li>
+<li><p><a class="reference internal" href="#esp-idf-components" id="id6">ESP-IDF components</a></p></li>
+<li><p><a class="reference internal" href="#ulp-coprocessor-programming" id="id7">ULP coprocessor programming</a></p></li>
+<li><p><a class="reference internal" href="#limitations" id="id8">Limitations</a></p></li>
 </ul>
 </div>
 <p>The general project configuration (default optimization level, bootloader configuration
@@ -323,7 +262,7 @@ key to move the cursor down and <code class="docutils literal notranslate"><span
 <code class="docutils literal notranslate"><span class="pre">-</span></code> and <code class="docutils literal notranslate"><span class="pre">+</span></code> keys on the numeric keypad.</p>
 </div>
 <div class="section" id="project-structure">
-<h4><a class="toc-backref" href="#id24">Project Structure</a><a class="headerlink" href="#project-structure" title="Permalink to this headline">¶</a></h4>
+<h3><a class="toc-backref" href="#id5">Project Structure</a><a class="headerlink" href="#project-structure" title="Permalink to this headline">¶</a></h3>
 <p>The ESP-IDF framework requires an unusual project structure because most of the framework
 configuration is performed by the native for the ESP-IDF build system called <code class="docutils literal notranslate"><span class="pre">CMake</span></code>.</p>
 <p>A typical PlatformIO project for the ESP-IDF framework must have the following structure:</p>
@@ -385,7 +324,7 @@ is also used as the base build environment for project sources (including librar
 </div>
 </div>
 <div class="section" id="esp-idf-components">
-<h4><a class="toc-backref" href="#id25">ESP-IDF components</a><a class="headerlink" href="#esp-idf-components" title="Permalink to this headline">¶</a></h4>
+<h3><a class="toc-backref" href="#id6">ESP-IDF components</a><a class="headerlink" href="#esp-idf-components" title="Permalink to this headline">¶</a></h3>
 <p>ESP-IDF modules as modular pieces of standalone code might be useful for structuring
 reusable code or including third party components that aren’t part of ESP-IDF.</p>
 <p>These components contain either a single <code class="docutils literal notranslate"><span class="pre">CMakeLists.txt</span></code> file which controls the
@@ -417,10 +356,10 @@ characters (see <code class="docutils literal notranslate"><span class="pre">CMA
 to the project files.</p>
 </div>
 <div class="section" id="ulp-coprocessor-programming">
-<h4><a class="toc-backref" href="#id26">ULP coprocessor programming</a><a class="headerlink" href="#ulp-coprocessor-programming" title="Permalink to this headline">¶</a></h4>
+<h3><a class="toc-backref" href="#id7">ULP coprocessor programming</a><a class="headerlink" href="#ulp-coprocessor-programming" title="Permalink to this headline">¶</a></h3>
 <p>If you want to take measurements using ADC, internal temperature sensor or external
 I2C sensors, while the main processors are in deep sleep mode you need to use ULP
-coprocessor. At the moment ULP can be used only with the <a class="reference internal" href="#espidf"><span class="std std-ref">ESP-IDF</span></a>.</p>
+coprocessor. At the moment ULP can be used only with the <a class="reference internal" href="espidf.html#espidf"><span class="std std-ref">ESP-IDF</span></a>.</p>
 <p>All ULP code, usually written in assembly in files with <code class="docutils literal notranslate"><span class="pre">.S</span></code> extension,
 must be placed into a separate directory with the name <code class="docutils literal notranslate"><span class="pre">ulp</span></code> in the root folder
 of your project. So your project structure should look like this:</p>
@@ -468,7 +407,7 @@ for ULP:</p>
 <a class="reference external" href="https://docs.espressif.com/projects/esp-idf/en/latest/api-guides/ulp.html#accessing-ulp-program-variable">ULP coprocessor programming</a>.</p>
 </div>
 <div class="section" id="limitations">
-<h4><a class="toc-backref" href="#id27">Limitations</a><a class="headerlink" href="#limitations" title="Permalink to this headline">¶</a></h4>
+<h3><a class="toc-backref" href="#id8">Limitations</a><a class="headerlink" href="#limitations" title="Permalink to this headline">¶</a></h3>
 <p>At the moment several limitations are present:</p>
 <ul>
 <li><p>No whitespace characters allowed in project paths. This limitation is imposed by the
@@ -489,229 +428,6 @@ the project name. As a workaround. For example:</p>
 existing ESP-IDF projects. List of source files is specified in the project
 <code class="docutils literal notranslate"><span class="pre">CMakeLists.txt</span></code> file.</p></li>
 </ul>
-</div>
-</div>
-</div>
-<div class="section" id="esp-idf-v4-3">
-<h2><a class="toc-backref" href="#id22">ESP-IDF v4.3</a><a class="headerlink" href="#esp-idf-v4-3" title="Permalink to this headline">¶</a></h2>
-<div class="contents local topic" id="id8">
-<ul class="simple">
-<li><p><a class="reference internal" href="#id9" id="id28">安装配置</a></p></li>
-</ul>
-</div>
-<p>Each release of <a class="reference internal" href="../pio/P511.html#p511"><span class="std std-ref">Espressif32</span></a> platform uses a specific version of ESP-IDF.
-The latest version of the platform only supports the latest stable version of the
-framework.</p>
-<div class="section" id="id9">
-<h3><a class="toc-backref" href="#id28">安装配置</a><a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
-<div class="contents local topic" id="id10">
-<ul class="simple">
-<li><p><a class="reference internal" href="#id12" id="id29">Project Structure</a></p></li>
-<li><p><a class="reference internal" href="#id14" id="id30">ESP-IDF components</a></p></li>
-<li><p><a class="reference internal" href="#id15" id="id31">ULP coprocessor programming</a></p></li>
-<li><p><a class="reference internal" href="#id17" id="id32">Limitations</a></p></li>
-</ul>
-</div>
-<p>The general project configuration (default optimization level, bootloader configuration
-partition tables, etc) is set in a single file called <code class="docutils literal notranslate"><span class="pre">sdkconfig</span></code> in the root folder
-of the project. This configuration file can be modified via a special target called
-<code class="docutils literal notranslate"><span class="pre">menuconfig</span></code> (PlatformIO v4.3.0 greater is required):</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>pio run -t menuconfig
-</pre></div>
-</div>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>ESP-IDF requires some extra tools to be installed in your system in order to build
-firmware for supported chips. Most of these tools are available in PlatformIO
-ecosystem as standalone packages, but in order to use configuration tool called
-<code class="docutils literal notranslate"><span class="pre">menuconfig</span></code> several additional packages need to be installed on Linux-based
-systems:</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>libncurses5-dev flex bison
-</pre></div>
-</div>
-<p>More details about required packages can be found in the official ESP-IDF documentation -
-<a class="reference external" href="https://docs.espressif.com/projects/esp-idf/en/latest/get-started/linux-setup.html">Standard Setup of Toolchain for Linux</a>.</p>
-</div>
-<div class="admonition hint">
-<p class="admonition-title">Hint</p>
-<p>If menuconfig is not showed properly in the integrated VS Code terminal try changing
-the default terminal shell by clicking the dropdown menu on the top-right of the
-terminal panel and selectiing the <code class="docutils literal notranslate"><span class="pre">Select</span> <span class="pre">Default</span> <span class="pre">Shell</span></code> option.</p>
-</div>
-<div class="admonition hint">
-<p class="admonition-title">Hint</p>
-<p>In case the <code class="docutils literal notranslate"><span class="pre">UP</span></code> and <code class="docutils literal notranslate"><span class="pre">DOWN</span></code> arrows don’t work in menuconfig try using the <code class="docutils literal notranslate"><span class="pre">J</span></code>
-key to move the cursor down and <code class="docutils literal notranslate"><span class="pre">K</span></code> to move the cursor up. Another option is to use
-<code class="docutils literal notranslate"><span class="pre">-</span></code> and <code class="docutils literal notranslate"><span class="pre">+</span></code> keys on the numeric keypad.</p>
-</div>
-<div class="section" id="id12">
-<h4><a class="toc-backref" href="#id29">Project Structure</a><a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h4>
-<p>The ESP-IDF framework requires an unusual project structure because most of the framework
-configuration is performed by the native for the ESP-IDF build system called <code class="docutils literal notranslate"><span class="pre">CMake</span></code>.</p>
-<p>A typical PlatformIO project for the ESP-IDF framework must have the following structure:</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>project_dir
-├── include
-├── src
-│    ├── CMakeLists.txt
-│    └── main.c
-├── CMakeLists.txt
-└── platformio.ini
-
-.. code-block:: ini
-
-    [platformio]
-    src_dir = main
-
-    [env:esp32dev]
-    platform = espressif32
-    framework = espidf
-    board = esp32dev
-</pre></div>
-</div>
-<div class="highlight-cmake notranslate"><div class="highlight"><pre><span></span><span class="c"># The following lines of boilerplate have to be in your project&#39;s CMakeLists</span>
-<span class="c"># in this exact order for cmake to work correctly</span>
-<span class="nb">cmake_minimum_required</span><span class="p">(</span><span class="s">VERSION</span> <span class="s">3.16.0</span><span class="p">)</span>
-
-<span class="nb">include</span><span class="p">(</span><span class="o">$ENV{</span><span class="nv">IDF_PATH</span><span class="o">}</span><span class="s">/tools/cmake/project.cmake</span><span class="p">)</span>
-<span class="nb">project</span><span class="p">(</span><span class="s">project-name</span><span class="p">)</span>
-</pre></div>
-</div>
-<div class="highlight-cmake notranslate"><div class="highlight"><pre><span></span><span class="nb">idf_component_register</span><span class="p">(</span><span class="s">SRCS</span> <span class="s2">&quot;foo.c&quot;</span> <span class="s2">&quot;bar.c&quot;</span><span class="p">)</span>
-</pre></div>
-</div>
-<p>The files specified using <code class="docutils literal notranslate"><span class="pre">idf_component_register</span></code> are used <strong>ONLY</strong> for generating
-build configurations, but it’s highly recommended to specify all application source
-files in order to keep the project compatible with the usual ESP-IDF workflow.</p>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>By default PlatformIO expects source files to be located in the <code class="docutils literal notranslate"><span class="pre">src</span></code> folder. At
-the same time, the default location for source files within the ESP-IDF build system
-is a special folder with the name <code class="docutils literal notranslate"><span class="pre">main</span></code>. Renaming the main component may require
-users to manually specify additional dependencies:</p>
-<div class="highlight-cmake notranslate"><div class="highlight"><pre><span></span><span class="nb">idf_component_register</span><span class="p">(</span><span class="s">SRCS</span> <span class="s2">&quot;main.c&quot;</span> <span class="s">REQUIRES</span> <span class="s">idf::mbedtls</span><span class="p">)</span>
-</pre></div>
-</div>
-<p>More details in the official ESP-IDF documentation -
-<a class="reference external" href="https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-guides/build-system.html?highlight=rename#renaming-main-component">Renaming main component</a>.</p>
-</div>
-<p>Due to the current limitations of CMake file-based API, there is no way of generating
-build configuration for source files written in various programming languages if they
-are not specified in  <code class="docutils literal notranslate"><span class="pre">idf_component_register</span></code> command. If your project contains
-libraries written in languages that differ from the language used for the main
-application you need to create an empty file with the desired extension (e.g. <code class="docutils literal notranslate"><span class="pre">*.cpp</span></code>
-for <code class="docutils literal notranslate"><span class="pre">C++</span></code>) in order to force CMake generate build configuration for this language.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Build configuration generated for source files specified in <code class="docutils literal notranslate"><span class="pre">idf_component_register</span></code>
-is also used as the base build environment for project sources (including libraries).</p>
-</div>
-</div>
-<div class="section" id="id14">
-<h4><a class="toc-backref" href="#id30">ESP-IDF components</a><a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h4>
-<p>ESP-IDF modules as modular pieces of standalone code might be useful for structuring
-reusable code or including third party components that aren’t part of ESP-IDF.</p>
-<p>These components contain either a single <code class="docutils literal notranslate"><span class="pre">CMakeLists.txt</span></code> file which controls the
-build process of the component and its integration into the overall project. An
-optional <code class="docutils literal notranslate"><span class="pre">Kconfig</span></code> file defines the component configuration options that can be set
-via <code class="docutils literal notranslate"><span class="pre">menuconfig</span></code>. Some components may also include <code class="docutils literal notranslate"><span class="pre">Kconfig.projbuild</span></code> and
-<code class="docutils literal notranslate"><span class="pre">project_include.cmake</span></code> files, which are special files for overriding parts of the
-project. All valid components will be compiled as static libraries and linked to the
-final firmware. There are two possible ways of adding extra components to PlatformIO
-project:</p>
-<ul class="simple">
-<li><p>By adding a new component to an optional folder called <code class="docutils literal notranslate"><span class="pre">components</span></code> in the root of
-your project. This folder will be automatically scanned for valid components.</p></li>
-<li><p>Using <code class="docutils literal notranslate"><span class="pre">EXTRA_COMPONENT_DIRS</span></code> option in the root <code class="docutils literal notranslate"><span class="pre">CMakeLists.txt</span></code> file. This option
-represents a list of extra directories to search for components.</p></li>
-</ul>
-<p>An example of specifying <code class="docutils literal notranslate"><span class="pre">esp-aws-iot</span></code> as an extra component:</p>
-<div class="highlight-cmake notranslate"><div class="highlight"><pre><span></span><span class="c"># The following lines of boilerplate have to be in your project&#39;s CMakeLists</span>
-<span class="c"># in this exact order for cmake to work correctly</span>
-<span class="nb">cmake_minimum_required</span><span class="p">(</span><span class="s">VERSION</span> <span class="s">3.16</span><span class="p">)</span>
-
-<span class="nb">include</span><span class="p">(</span><span class="o">$ENV{</span><span class="nv">IDF_PATH</span><span class="o">}</span><span class="s">/tools/cmake/project.cmake</span><span class="p">)</span>
-<span class="nb">list</span><span class="p">(</span><span class="s">APPEND</span> <span class="s">EXTRA_COMPONENT_DIRS</span> <span class="s">esp-aws-iot</span><span class="p">)</span>
-<span class="nb">project</span><span class="p">(</span><span class="s">subscribe_publish</span><span class="p">)</span>
-</pre></div>
-</div>
-<p>Since the build may not work correctly if the full path to sources is greater than 250
-characters (see <code class="docutils literal notranslate"><span class="pre">CMAKE_OBJECT_PATH_MAX</span></code>) it might be a good idea to keep modules close
-to the project files.</p>
-</div>
-<div class="section" id="id15">
-<h4><a class="toc-backref" href="#id31">ULP coprocessor programming</a><a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h4>
-<p>If you want to take measurements using ADC, internal temperature sensor or external
-I2C sensors, while the main processors are in deep sleep mode you need to use ULP
-coprocessor. At the moment ULP can be used only with the <a class="reference internal" href="#espidf"><span class="std std-ref">ESP-IDF</span></a>.</p>
-<p>All ULP code, usually written in assembly in files with <code class="docutils literal notranslate"><span class="pre">.S</span></code> extension,
-must be placed into a separate directory with the name <code class="docutils literal notranslate"><span class="pre">ulp</span></code> in the root folder
-of your project. So your project structure should look like this:</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>project_dir
-├── include
-├── src
-│    ├── CMakeLists.txt
-│    └── main.c
-├── ulp
-│    └── ulp_code.S
-├── CMakeLists.txt
-└── platformio.ini
-</pre></div>
-</div>
-<p>Since PlatformIO uses the code model generated by CMake it’s mandatory to specify ULP
-source files in <code class="docutils literal notranslate"><span class="pre">CMakeLists.txt</span></code> as well. An example of typical <code class="docutils literal notranslate"><span class="pre">CMakeLists.txt</span></code>
-for ULP:</p>
-<div class="highlight-cmake notranslate"><div class="highlight"><pre><span></span><span class="nb">idf_component_register</span><span class="p">(</span><span class="s">SRCS</span> <span class="s2">&quot;ulp_adc_example_main.c&quot;</span><span class="p">)</span>
-<span class="c">#</span>
-<span class="c"># ULP support additions to component CMakeLists.txt.</span>
-<span class="c">#</span>
-<span class="c"># 1. The ULP app name must be &quot;ulp_main&quot;</span>
-<span class="nb">set</span><span class="p">(</span><span class="s">ulp_app_name</span> <span class="s">ulp_main</span><span class="p">)</span>
-<span class="c">#</span>
-<span class="c"># 2. Specify all assembly source files.</span>
-<span class="c">#    Paths are relative because ULP files are placed into a special directory &quot;ulp&quot;</span>
-<span class="c">#    in the root of the project</span>
-<span class="nb">set</span><span class="p">(</span><span class="s">ulp_s_sources</span> <span class="s2">&quot;../ulp/adc.S&quot;</span><span class="p">)</span>
-<span class="c">#</span>
-<span class="c"># 3. List all the component source files which include automatically</span>
-<span class="c">#    generated ULP export file, ${ulp_app_name}.h:</span>
-<span class="nb">set</span><span class="p">(</span><span class="s">ulp_exp_dep_srcs</span> <span class="s2">&quot;ulp_adc_example_main.c&quot;</span><span class="p">)</span>
-<span class="c">#</span>
-<span class="c"># 4. Call function to build ULP binary and embed in project using the argument</span>
-<span class="c">#    values above.</span>
-<span class="nb">ulp_embed_binary</span><span class="p">(</span><span class="o">${</span><span class="nv">ulp_app_name</span><span class="o">}</span> <span class="o">${</span><span class="nv">ulp_s_sources</span><span class="o">}</span> <span class="o">${</span><span class="nv">ulp_exp_dep_srcs</span><span class="o">}</span><span class="p">)</span>
-</pre></div>
-</div>
-<p>See full examples with ULP coprocessor programming:</p>
-<ul class="simple">
-<li><p><a class="reference external" href="https://github.com/platformio/platform-espressif32/tree/develop/examples/espidf-ulp-adc">https://github.com/platformio/platform-espressif32/tree/develop/examples/espidf-ulp-adc</a></p></li>
-<li><p><a class="reference external" href="https://github.com/platformio/platform-espressif32/tree/develop/examples/espidf-ulp-pulse">https://github.com/platformio/platform-espressif32/tree/develop/examples/espidf-ulp-pulse</a></p></li>
-</ul>
-<p>More details are located in the official ESP-IDF documentation -
-<a class="reference external" href="https://docs.espressif.com/projects/esp-idf/en/latest/api-guides/ulp.html#accessing-ulp-program-variable">ULP coprocessor programming</a>.</p>
-</div>
-<div class="section" id="id17">
-<h4><a class="toc-backref" href="#id32">Limitations</a><a class="headerlink" href="#id17" title="Permalink to this headline">¶</a></h4>
-<p>At the moment several limitations are present:</p>
-<ul>
-<li><p>No whitespace characters allowed in project paths. This limitation is imposed by the
-<a class="reference external" href="https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/index.html?highlight=spaces#step-2-get-esp-idf">native ESP-IDF build system</a>.
-This affects users that have a whitespace in their username or added a whitespace to
-the project name. As a workaround. For example:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[platformio]</span>
-<span class="na">core_dir</span> <span class="o">=</span> <span class="s">C:/.platformio</span>
-
-<span class="k">[env:esp32dev]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">espressif32</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">espidf</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">esp32dev</span>
-</pre></div>
-</div>
-</li>
-<li><p>The <code class="docutils literal notranslate"><span class="pre">src_filter</span></code> option cannot be used. It’s done to preserve compatibility with
-existing ESP-IDF projects. List of source files is specified in the project
-<code class="docutils literal notranslate"><span class="pre">CMakeLists.txt</span></code> file.</p></li>
-</ul>
-</div>
 </div>
 </div>
 </div>
@@ -721,10 +437,6 @@ existing ESP-IDF projects. List of source files is specified in the project
            
           </div>
           <footer>
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="cmsis.html" class="btn btn-neutral float-right" title="CMSIS" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-        <a href="arduino.html" class="btn btn-neutral float-left" title="Arduino" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-    </div>
 
   <hr/>
 
@@ -863,8 +575,8 @@ existing ESP-IDF projects. List of source files is specified in the project
     <dl>
       <dt>By Qtias</dt>
       <img src="../_static/images/weixin.jpg">
-        <dd><a href="https://github.com/OS-Q/Docs/blob/master/source/framework/espidf.rst"> View</a></dd>
-        <dd><a href="https://github.com/OS-Q/Docs/edit/master/source/framework/espidf.rst"> Edit</a></dd>
+        <dd><a href="https://github.com/OS-Q/Docs/blob/master/source/framework/espidf_4.0.rst"> View</a></dd>
+        <dd><a href="https://github.com/OS-Q/Docs/edit/master/source/framework/espidf_4.0.rst"> Edit</a></dd>
     </dl>
   </div>
 </div>
