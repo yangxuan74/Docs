@@ -22,26 +22,21 @@ ESP-IDF 目前已服务支持数以亿计的物联网设备，并已开发构建
     :header-rows:  1
 
     * - Name
-      - Description
-      - wifi
-      - ble
-      - usb
-      - can
-      - eth
-    * - :ref:`p511`
-      - YES
-      - YES
-      - YES
-      - YES
-      - YES
-      - YES
+      - Core
+      - RAM
+      - WiFi
+      - BLE
+      - USB
+      - TWAI
+      - ETH
     * - :ref:`esp32`
+      - 600 DMIPS
+      - 520 KB
+      - 802.11 b/g/n
+      - v4.2
+      - NO
       - YES
-      - YES
-      - YES
-      - YES
-      - YES
-      - YES
+      - MAC 100 Mbps
 
 
 开发工具
