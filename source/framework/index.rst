@@ -12,6 +12,4 @@
     cmsis
     libopencm3
     stm32cube
-    zephyr
-    simba
-    pumbaa
+    Zephyr <zephyr>

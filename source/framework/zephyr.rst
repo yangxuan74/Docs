@@ -1,6 +1,6 @@
 .. _framework_zephyr:
 
-Zephyr RTOS
+Zephyr
 ===============
 
 The Zephyr Project is a scalable real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with safety and security in mind
