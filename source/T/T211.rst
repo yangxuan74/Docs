@@ -3,10 +3,20 @@
 STM32模板
 ===========
 
+* 关键词：``STM32`` ``FreeRTOS`` ``Modbus``
+* 资源库：`GitHub <https://github.com/OS-Q/T211>`_
+
+.. contents::
+    :local:
+
 Modbus + FreeRTOS
 -------------------
 
+工程示例
+~~~~~~~~~~~~~~
+
 .. code-block:: ini
+
     Examples
     ├── ModbusBluepill --> STM32F103C8 USART Slave
     ├── ModbusBluepillUSB --> STM32F103C8 USART + USB-CDC Master and Slave
@@ -20,12 +30,14 @@ Modbus + FreeRTOS
     ├── ModbusF303 --> NUCLEO-F303RE Modbus Slavee
     ├── ModbusSTM32F4-discovery --> STM32F4-discovery TouchGFX + Modbus Master
     MODBUS-LIB --> Library Folder
-    ├── Inc
-    │   └── Modbus.h
-    ├── Config
-    │   └── ModbusConfigTemplate.h --> Configuration Template
-    └── Src
-        ├── Modbus.c
-        └── UARTCallback.c
+       ├── Inc
+       │   └── Modbus.h
+       ├── Config
+        │   └── ModbusConfigTemplate.h --> Configuration Template
+       └── Src
+           ├── Modbus.c
+           └── UARTCallback.c
 
 
+.. hint::
+    :ref:`t211` 适配STM32平台
