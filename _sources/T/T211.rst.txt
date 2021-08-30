@@ -1,7 +1,7 @@
 .. _t211:
 
-STM32模板
-===========
+T211
+==============
 
 * 关键词：``STM32`` ``FreeRTOS`` ``Modbus``
 * 资源库：`GitHub <https://github.com/OS-Q/T211>`_
@@ -9,8 +9,19 @@ STM32模板
 .. contents::
     :local:
 
-Modbus + FreeRTOS
+.. note::
+    意法半导体ST是全球最大的半导体公司之一，是MCU领域的王者，STM32 HAL库具有很好的迁移适配能力。
+
+STM32 HAL
 -------------------
+
+FreeRTOS
+-------------------
+
+Modbus
+-------------------
+.. note::
+    Modbus协议包括RTU和TCP。
 
 工程示例
 ~~~~~~~~~~~~~~
