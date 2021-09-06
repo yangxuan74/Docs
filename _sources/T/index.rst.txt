@@ -12,7 +12,7 @@ Modbus
 .. toctree::
     :maxdepth: 1
 
-    T211 <T211>
+    T21 <T21>
 
 
 项目模板
