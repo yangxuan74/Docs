@@ -10,6 +10,11 @@
 `Facebook <https://www.facebook.com/qitast>`_
 
 .. toctree::
+    :maxdepth: 1
+
+    开源协议 <license>
+
+.. toctree::
     :caption: 开源工具
     :maxdepth: 1
 

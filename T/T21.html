@@ -1,47 +1,23 @@
-
-
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" />
-  
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
   <title>T21 &mdash; OS-Q 0.2 documentation</title>
-  
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-
-  
-  
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
-  
-
-  
-  
-
-  
     <link rel="canonical" href="https://docs.OS-Q.com/T/T21.html" />
-
-  
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
         <script src="../_static/doctools.js"></script>
-    
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-
-    
+    <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="技术方案" href="../S/index.html" />
@@ -54,26 +30,13 @@
 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
-
-          
             <a href="../index.html" class="icon icon-home"> OS-Q
-          
-
-          
           </a>
-
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -81,20 +44,12 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
 
-          
-        </div>
-
-        
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-
-            
-            
-              
-            
-            
-              <p class="caption" role="heading"><span class="caption-text">开源工具</span></p>
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../license.html">开源协议</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">开源工具</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../arduino/ide.html">Arduino</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../pio/index.html">PlatformIO</a></li>
@@ -129,8 +84,6 @@
 <li class="toctree-l1"><a class="reference internal" href="../faq.html">常见问题</a></li>
 </ul>
 
-            
-          
 <p style="margin-top: 15px;">
     <!-- Docs: Side Navigation -->
     <ins class="adsbygoogle ads"
@@ -145,73 +98,31 @@
 </p>
 
         </div>
-        
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../index.html">OS-Q</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-        
           <li><a href="index.html">工程模板</a> &raquo;</li>
-        
       <li>T21</li>
-    
-    
       <li class="wy-breadcrumbs-aside">
-        
-          
-            
               <a href="https://github.com/OS-Q/Docs/blob/master/source/T/T21.rst" class="fa fa-github"> Edit on GitHub</a>
-            
-          
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
-  <div class="section" id="t21">
+             
+  <section id="t21">
 <span id="id1"></span><h1>T21<a class="headerlink" href="#t21" title="Permalink to this headline">¶</a></h1>
 <ul class="simple">
 <li><p>关键词：<code class="docutils literal notranslate"><span class="pre">STM32</span></code> <code class="docutils literal notranslate"><span class="pre">FreeRTOS</span></code> <code class="docutils literal notranslate"><span class="pre">Modbus</span></code></p></li>
@@ -233,27 +144,27 @@
 <p class="admonition-title">Note</p>
 <p>意法半导体ST是全球最大的半导体公司之一，是MCU领域的王者，STM32 HAL库具有很好的迁移适配能力。</p>
 </div>
-<div class="section" id="stm32-hal">
+<section id="stm32-hal">
 <h2><a class="toc-backref" href="#id4">STM32 HAL</a><a class="headerlink" href="#stm32-hal" title="Permalink to this headline">¶</a></h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Modbus协议包括RTU和TCP。</p>
 </div>
-</div>
-<div class="section" id="freertos">
+</section>
+<section id="freertos">
 <h2><a class="toc-backref" href="#id5">FreeRTOS</a><a class="headerlink" href="#freertos" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="id2">
+<section id="id2">
 <h3><a class="toc-backref" href="#id6">任务分配</a><a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
-</div>
-</div>
-<div class="section" id="modbus">
+</section>
+</section>
+<section id="modbus">
 <h2><a class="toc-backref" href="#id7">Modbus</a><a class="headerlink" href="#modbus" title="Permalink to this headline">¶</a></h2>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>目前的串口DMA和TCP无法同时使用，需要更新。</p>
 </div>
-</div>
-<div class="section" id="id3">
+</section>
+<section id="id3">
 <h2><a class="toc-backref" href="#id8">工程示例</a><a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="na">Examples</span>
 <span class="na">├── STM32F103 --&gt; USB-CDC Master/Slave</span>
@@ -270,27 +181,22 @@
 <p class="admonition-title">Hint</p>
 <p><a class="reference internal" href="#t21"><span class="std std-ref">T21</span></a> 适配STM32平台</p>
 </div>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>
-           
           </div>
-          <footer>
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="../S/index.html" class="btn btn-neutral float-right" title="技术方案" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="index.html" class="btn btn-neutral float-left" title="工程模板" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../S/index.html" class="btn btn-neutral float-right" title="技术方案" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
 
-    <p>
-        &#169; Copyright 2021, www.OS-Q.com.
-
-    </p>
+    <p>&#169; Copyright 2021, www.OS-Q.com.</p>
 <p>
   <!-- Docs: Page bottom -->
   <ins class="adsbygoogle ads"
@@ -305,6 +211,8 @@
 </p>
 
   </div>
+
+  
  
 <script>
   var navBarHTML = '\
@@ -404,9 +312,7 @@
 </footer>
         </div>
       </div>
-
     </section>
-
   </div>
   
 
@@ -424,31 +330,22 @@
         <dd><a href="https://github.com/OS-Q/Docs/edit/master/source/T/T21.rst"> Edit</a></dd>
     </dl>
   </div>
-</div>
-
-  <script type="text/javascript">
+</div><script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
   </script>
-
-  
-  
-    
     <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1768265-7"></script>
     <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-    ga('create', 'UA-1768265-7', 'auto');
-    
-    ga('send', 'pageview');
-    </script>
-
-    
-   
+      gtag('config', 'UA-1768265-7', {
+          'anonymize_ip': false,
+      });
+    </script> 
 
 </body>
 </html>
