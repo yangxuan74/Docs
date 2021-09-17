@@ -1,9 +1,9 @@
 .. _t21:
 
-STM32F4
+STM32通信连接
 ======================
 
-* 关键词：``STM32`` ``FreeRTOS`` ``Modbus``
+* 关键词：``STM32`` ``FreeRTOS`` ``Modbus`` ``LWIP`` ``MQTT``
 * 资源库：`GitHub <https://github.com/OS-Q/T21>`_
 
 .. contents::
