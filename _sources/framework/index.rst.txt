@@ -1,7 +1,7 @@
 
 .. _frameworks:
 
-开发框架
+开源框架
 ============
 
 .. contents::
@@ -14,11 +14,11 @@
 .. toctree::
     :maxdepth: 1
 
-    Arduino  <arduino>
-    ESP-IDF  <espidf>
-    cmsis
-    libopencm3
-    stm32cube
+    Arduino <arduino>
+    ESP-IDF <espidf>
+    cmsis   <cmsis>
+    libopencm3  <libopencm3>
+    stm32cube   <stm32cube>
 
 系统框架
 -----------

@@ -15,7 +15,7 @@
     开源协议 <license>
 
 .. toctree::
-    :caption: 开源工具
+    :caption: 开发平台
     :maxdepth: 1
 
     Arduino <arduino/ide>
@@ -30,7 +30,7 @@
     Pi <Pi/index>
     Arduino <arduino/index>
 
-用于搭建基本硬件原型
+硬件运行环境，拥有开源的硬件设计文件和标准接口定义
 
 .. toctree::
     :caption: 开源框架

@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>modbus &mdash; OS-Q 0.2 documentation</title>
+  <title>Modbus &mdash; OS-Q 0.2 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
@@ -49,7 +49,7 @@
               <ul>
 <li class="toctree-l1"><a class="reference internal" href="../license.html">开源协议</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">开源工具</span></p>
+<p class="caption" role="heading"><span class="caption-text">开发平台</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../arduino/ide.html">Arduino</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../pio/index.html">PlatformIO</a></li>
@@ -70,18 +70,11 @@
 <li class="toctree-l2 current"><a class="reference internal" href="index.html#id2">通信连接</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="lwip.html">LWIP</a></li>
 <li class="toctree-l3"><a class="reference internal" href="mqtt.html">MQTT</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Modbus</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#freertos">FreeRTOS</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id3">Modbus</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id4">工程示例</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Modbus</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mbedtls.html">mbedtls</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="index.html#lwip">LWIP</a></li>
-<li class="toctree-l3"><a class="reference internal" href="index.html#modbus">Modbus</a></li>
-<li class="toctree-l3"><a class="reference internal" href="index.html#mqtt">MQTT</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="index.html#id3">数据处理</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#id3">数据管理</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="index.html#id4">项目模板</a></li>
@@ -120,7 +113,7 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
           <li><a href="index.html">开源组件</a> &raquo;</li>
-      <li>modbus</li>
+      <li>Modbus</li>
       <li class="wy-breadcrumbs-aside">
               <a href="https://github.com/OS-Q/Docs/blob/master/source/T/modbus.rst" class="fa fa-github"> Edit on GitHub</a>
       </li>
@@ -131,57 +124,10 @@
            <div itemprop="articleBody">
              
   <section id="modbus">
-<span id="id1"></span><h1>modbus<a class="headerlink" href="#modbus" title="Permalink to this headline">¶</a></h1>
+<span id="id1"></span><h1>Modbus<a class="headerlink" href="#modbus" title="Permalink to this headline">¶</a></h1>
 <ul class="simple">
 <li><p>关键词：<code class="docutils literal notranslate"><span class="pre">STM32</span></code> <code class="docutils literal notranslate"><span class="pre">FreeRTOS</span></code> <code class="docutils literal notranslate"><span class="pre">Modbus</span></code></p></li>
-<li><p>资源库：<a class="reference external" href="https://github.com/OS-Q/T21">GitHub</a></p></li>
 </ul>
-<div class="contents local topic" id="contents">
-<ul class="simple">
-<li><p><a class="reference internal" href="#freertos" id="id5">FreeRTOS</a></p>
-<ul>
-<li><p><a class="reference internal" href="#id2" id="id6">任务分配</a></p></li>
-</ul>
-</li>
-<li><p><a class="reference internal" href="#id3" id="id7">Modbus</a></p></li>
-<li><p><a class="reference internal" href="#id4" id="id8">工程示例</a></p></li>
-</ul>
-</div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>意法半导体ST是全球最大的半导体公司之一，是MCU领域的王者，STM32 HAL库具有很好的迁移适配能力。</p>
-</div>
-<section id="freertos">
-<h2><a class="toc-backref" href="#id5">FreeRTOS</a><a class="headerlink" href="#freertos" title="Permalink to this headline">¶</a></h2>
-<section id="id2">
-<h3><a class="toc-backref" href="#id6">任务分配</a><a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
-</section>
-</section>
-<section id="id3">
-<h2><a class="toc-backref" href="#id7">Modbus</a><a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>目前的串口DMA和TCP无法同时使用，需要更新。</p>
-</div>
-</section>
-<section id="id4">
-<h2><a class="toc-backref" href="#id8">工程示例</a><a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="na">Examples</span>
-<span class="na">├── STM32F103 --&gt; USB-CDC Master/Slave</span>
-<span class="na">├── STM32F429 --&gt; NUCLEO-F429ZI Modbus TCP/RTU (DMA) master/slave</span>
-<span class="na">LIB --&gt; Library Folder</span>
-    <span class="na">├── Inc</span>
-    <span class="na">│    └── Modbus.h</span>
-    <span class="na">└── Src</span>
-        <span class="na">├── Modbus.c</span>
-        <span class="na">└── UARTCallback.c</span>
-</pre></div>
-</div>
-<div class="admonition hint">
-<p class="admonition-title">Hint</p>
-<p><a class="reference internal" href="T21.html#t21"><span class="std std-ref">STM32 FreeRTOS Modbus</span></a> 适配STM32平台</p>
-</div>
-</section>
 </section>
 
 

@@ -1,9 +1,9 @@
 .. _t21:
 
-STM32 FreeRTOS Modbus
+STM32通信连接
 ======================
 
-* 关键词：``STM32`` ``FreeRTOS`` ``Modbus``
+* 关键词：``STM32`` ``FreeRTOS`` ``Modbus`` ``LWIP`` ``MQTT``
 * 资源库：`GitHub <https://github.com/OS-Q/T21>`_
 
 .. contents::
@@ -21,12 +21,19 @@ STM32 HAL
 FreeRTOS
 --------------
 
+ :ref:`freertos`
 
-任务分配
-~~~~~~~~~~~~~~
+
+MQTT
+---------------
+
+ :ref:`mqtt`
 
 Modbus
 ---------------
+
+ :ref:`modbus`
+
 .. warning::
     Modbus协议包括RTU和TCP，目前的串口DMA和TCP无法同时使用，需要更新。
 

@@ -4,27 +4,27 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PlatformIO Remote CLI &mdash; OS-Q 0.2 documentation</title>
-      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
-    <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
-    <link rel="canonical" href="https://docs.OS-Q.com/pio/userguide/remote/index.html" />
+  <title>FatFS &mdash; OS-Q 0.2 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="canonical" href="https://docs.OS-Q.com/T/fatfs.html" />
   <!--[if lt IE 9]>
-    <script src="../../../_static/js/html5shiv.min.js"></script>
+    <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
-        <script src="../../../_static/jquery.js"></script>
-        <script src="../../../_static/underscore.js"></script>
-        <script src="../../../_static/doctools.js"></script>
-    <script src="../../../_static/js/theme.js"></script>
-    <link rel="index" title="Index" href="../../../genindex.html" />
-    <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="PlatformIO Remote Agent" href="cmd_agent.html" />
-    <link rel="prev" title="pio project init" href="../project/cmd_init.html" />
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="STM32通信连接" href="T21.html" />
+    <link rel="prev" title="mbedtls" href="mbedtls.html" />
  
-<link rel="stylesheet" href="../../../_static/css/extra.css" type="text/css" />
-<script src="../../../_static/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
+<script src="../_static/js/bootstrap.min.js"></script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7398081349378542" crossorigin="anonymous"></script>
 <!-- <script src="http://dl.platformio.org/misc/abplus.js"></script> -->
 
@@ -35,10 +35,10 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../../index.html" class="icon icon-home"> OS-Q
+            <a href="../index.html" class="icon icon-home"> OS-Q
           </a>
 <div role="search">
-  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
@@ -47,46 +47,42 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
 
               <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../../license.html">开源协议</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../license.html">开源协议</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">开发平台</span></p>
-<ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../../arduino/ide.html">Arduino</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">PlatformIO</a><ul class="current">
-<li class="toctree-l2 current"><a class="reference internal" href="../../index.html#id1">使用说明</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="../../config/index.html">配置文件</a></li>
-<li class="toctree-l3 current"><a class="reference internal" href="../index.html">CLI Guide</a><ul class="current">
-<li class="toctree-l4"><a class="reference internal" href="../index.html#usage">Usage</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../index.html#options">Options</a></li>
-<li class="toctree-l4 current"><a class="reference internal" href="../index.html#commands">Commands</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../../index.html#id2">开发平台</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../index.html#id3">芯片平台</a></li>
-</ul>
-</li>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../arduino/ide.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pio/index.html">PlatformIO</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">开源硬件</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../../Pi/index.html">Pi</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../arduino/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Pi/index.html">Pi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../arduino/index.html">Arduino</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">开源框架</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../../framework/index.html">开发框架</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../lan/index.html">编程语言</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../framework/index.html">开发框架</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lan/index.html">编程语言</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">开源模板</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../../../T/index.html">开源组件</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../T/index.html#id4">项目模板</a></li>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">开源组件</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="index.html#id2">通信连接</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html#id3">数据管理</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">FatFS</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id2">简介</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#id4">项目模板</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">开源方案</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../../S/index.html">技术方案</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../faq.html">常见问题</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../S/index.html">技术方案</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">常见问题</a></li>
 </ul>
 
 <p style="margin-top: 15px;">
@@ -108,19 +104,18 @@
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../../index.html">OS-Q</a>
+          <a href="../index.html">OS-Q</a>
       </nav>
 
       <div class="wy-nav-content">
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../../index.html">PlatformIO</a> &raquo;</li>
-          <li><a href="../index.html">CLI Guide</a> &raquo;</li>
-      <li>PlatformIO Remote CLI</li>
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="index.html">开源组件</a> &raquo;</li>
+      <li>FatFS</li>
       <li class="wy-breadcrumbs-aside">
-              <a href="https://github.com/OS-Q/Docs/blob/master/source/pio/userguide/remote/index.rst" class="fa fa-github"> Edit on GitHub</a>
+              <a href="https://github.com/OS-Q/Docs/blob/master/source/T/fatfs.rst" class="fa fa-github"> Edit on GitHub</a>
       </li>
   </ul>
   <hr/>
@@ -128,58 +123,30 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="platformio-remote-cli">
-<span id="cmd-remote"></span><h1>PlatformIO Remote CLI<a class="headerlink" href="#platformio-remote-cli" title="Permalink to this headline">¶</a></h1>
-<p>To print all available commands and options use:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pio remote --help
-pio remote COMMAND --help
-
-<span class="c1"># run command on the specified PlatformIO Remote Agents</span>
-pio remote --agent NAME_1 --agent NAME_N COMMAND
-</pre></div>
-</div>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="cmd_agent.html">PlatformIO Remote Agent</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="cmd_agent.html#pio-remote-agent-list">pio remote agent list</a></li>
-<li class="toctree-l2"><a class="reference internal" href="cmd_agent.html#pio-remote-agent-start">pio remote agent start</a></li>
+  <section id="fatfs">
+<span id="id1"></span><h1>FatFS<a class="headerlink" href="#fatfs" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>关键词：<code class="docutils literal notranslate"><span class="pre">STM32</span></code> <code class="docutils literal notranslate"><span class="pre">FreeRTOS</span></code> <code class="docutils literal notranslate"><span class="pre">FatFS</span></code></p></li>
+<li><p>资源库：<a class="reference external" href="https://github.com/OS-Q/T22">GitHub</a></p></li>
 </ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="cmd_device.html">pio remote device</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="cmd_device.html#pio-remote-device-list">pio remote device list</a></li>
-<li class="toctree-l2"><a class="reference internal" href="cmd_device.html#pio-remote-device-monitor">pio remote device monitor</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="cmd_run.html">pio remote run</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="cmd_run.html#usage">Usage</a></li>
-<li class="toctree-l2"><a class="reference internal" href="cmd_run.html#description">Description</a></li>
-<li class="toctree-l2"><a class="reference internal" href="cmd_run.html#options">Options</a></li>
-<li class="toctree-l2"><a class="reference internal" href="cmd_run.html#example">Example</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="cmd_test.html">pio remote test</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="cmd_test.html#usage">Usage</a></li>
-<li class="toctree-l2"><a class="reference internal" href="cmd_test.html#description">Description</a></li>
-<li class="toctree-l2"><a class="reference internal" href="cmd_test.html#options">Options</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="cmd_update.html">pio remote update</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="cmd_update.html#usage">Usage</a></li>
-<li class="toctree-l2"><a class="reference internal" href="cmd_update.html#description">Description</a></li>
-<li class="toctree-l2"><a class="reference internal" href="cmd_update.html#options">Options</a></li>
-<li class="toctree-l2"><a class="reference internal" href="cmd_update.html#examples">Examples</a></li>
-</ul>
-</li>
+<div class="contents local topic" id="contents">
+<ul class="simple">
+<li><p><a class="reference internal" href="#id2" id="id3">简介</a></p></li>
 </ul>
 </div>
+<section id="id2">
+<h2><a class="toc-backref" href="#id3">简介</a><a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>FatFs是用于小型嵌入式系统的通用FAT / exFAT文件系统模块。FatFs模块是按照ANSI C（C89）编写的，并且与磁盘I/O层完全分开。
+因此，它独立于平台。它可以并入资源有限的小型微控制器中，例如8051，PIC，AVR，ARM，Z80，RX等。</p>
+</section>
 </section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="../project/cmd_init.html" class="btn btn-neutral float-left" title="pio project init" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="cmd_agent.html" class="btn btn-neutral float-right" title="PlatformIO Remote Agent" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="mbedtls.html" class="btn btn-neutral float-left" title="mbedtls" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="T21.html" class="btn btn-neutral float-right" title="STM32通信连接" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
@@ -316,8 +283,8 @@ pio remote --agent NAME_1 --agent NAME_N COMMAND
     <dl>
       <dt>By Qtias</dt>
       <img src="../_static/images/weixin.jpg">
-        <dd><a href="https://github.com/OS-Q/Docs/blob/master/source/pio/userguide/remote/index.rst"> View</a></dd>
-        <dd><a href="https://github.com/OS-Q/Docs/edit/master/source/pio/userguide/remote/index.rst"> Edit</a></dd>
+        <dd><a href="https://github.com/OS-Q/Docs/blob/master/source/T/fatfs.rst"> View</a></dd>
+        <dd><a href="https://github.com/OS-Q/Docs/edit/master/source/T/fatfs.rst"> Edit</a></dd>
     </dl>
   </div>
 </div><script>
