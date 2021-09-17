@@ -1,4 +1,4 @@
-﻿# [OS-Q Docs](https://github.com/OS-Q/Docs)
+﻿# [OS-Q文档](https://github.com/OS-Q/Docs)
 
 [![sites](http://182.61.61.133/link/resources/SoC.png)](http://www.OS-Q.com)
 

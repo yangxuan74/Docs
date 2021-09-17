@@ -12,15 +12,6 @@
     MQTT <mqtt>
     Modbus <modbus>
 
-LWIP
-~~~~~~~~~~~~
-
-Modbus
-~~~~~~~~~~~~
-
-MQTT
-~~~~~~~~~~~~
-
 
 数据处理
 -----------
@@ -29,8 +20,6 @@ MQTT
 
     mbedtls <mbedtls>
 
-SSL
-~~~~~~~~~~~~
 
 
 
@@ -42,4 +31,4 @@ SSL
 .. toctree::
     :maxdepth: 1
 
-    STM32 Modbus <T21>
+    STM32F429 <T21>

@@ -1,4 +1,4 @@
-.. _framework_libopencm3:
+.. _libopencm3:
 
 libopencm3
 ==========
