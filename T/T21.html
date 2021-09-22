@@ -74,6 +74,7 @@
 <li class="toctree-l4"><a class="reference internal" href="#freertos">FreeRTOS</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#mqtt">MQTT</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#modbus">Modbus</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#fsm">FSM有限状态机</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#id1">工程示例</a></li>
 </ul>
 </li>
@@ -138,7 +139,8 @@
 <li><p><a class="reference internal" href="#freertos" id="id3">FreeRTOS</a></p></li>
 <li><p><a class="reference internal" href="#mqtt" id="id4">MQTT</a></p></li>
 <li><p><a class="reference internal" href="#modbus" id="id5">Modbus</a></p></li>
-<li><p><a class="reference internal" href="#id1" id="id6">工程示例</a></p></li>
+<li><p><a class="reference internal" href="#fsm" id="id6">FSM有限状态机</a></p></li>
+<li><p><a class="reference internal" href="#id1" id="id7">工程示例</a></p></li>
 </ul>
 </div>
 <div class="admonition note">
@@ -173,8 +175,13 @@
 <p>Modbus协议包括RTU和TCP，目前的串口DMA和TCP无法同时使用，需要更新。</p>
 </div>
 </section>
+<section id="fsm">
+<h2><a class="toc-backref" href="#id6">FSM有限状态机</a><a class="headerlink" href="#fsm" title="Permalink to this headline">¶</a></h2>
+<p>有限状态机（finite state machine）简称FSM，表示有限个状态及在这些状态之间的转移和动作等行为的数学模型，在计算机领域有着广泛的应用。FSM是一种逻辑单元内部的一种高效编程方法，在服务器编程中，服务器可以根据不同状态或者消息类型进行相应的处理逻辑，使得程序逻辑清晰易懂。</p>
+<p>使用if/else if语句是实现的FSM最简单最易懂的方法，我们只需要通过大量的if /else if语句来判断状态值来执行相应的逻辑处理。</p>
+</section>
 <section id="id1">
-<h2><a class="toc-backref" href="#id6">工程示例</a><a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id7">工程示例</a><a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="na">Examples</span>
 <span class="na">├── STM32F103 --&gt; USB-CDC Master/Slave</span>
 <span class="na">├── STM32F429 --&gt; NUCLEO-F429ZI Modbus</span>
