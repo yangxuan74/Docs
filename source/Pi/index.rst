@@ -1,13 +1,24 @@
-.. _hardware:
+.. _pi:
 
-开源硬件
+Pi
 ===========
 
 .. contents::
     :local:
 
+.. _raspberrypi:
+
 Raspberry Pi
 -------------
 
+Rock64
+-------------
+
 Nano Pi
+-------------
+
+Banana Pi
+-------------
+
+Orange Pi
 -------------
