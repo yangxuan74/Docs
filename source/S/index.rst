@@ -1,20 +1,14 @@
-.. _solution:
+.. _part:
 
-技术方案
+技术组件
 ===========
 
-.. contents::
-    :local:
-
-trezor
-------------
-
-.. image:: ./images/trezor.png
-    :target: https://github.com/trezor
-
+.. _mcuboot:
 
 mcuboot
 ------------
+
+``MCU`` ``bootloader`` ``MEMS``
 
 MCUboot is a secure bootloader for 32-bit MCUs. The goal of MCUboot is to
 define a common infrastructure for the bootloader, system flash layout on
@@ -38,3 +32,22 @@ target with a complete port planned.
     boot/espressif: Bootloader application and MCUboot port for Espressif SoCs.
     imgtool: A tool to securely sign firmware images for booting by MCUboot.
     sim: A bootloader simulator for testing and regression
+
+
+.. _solution:
+
+技术方案
+===========
+
+.. contents::
+    :local:
+
+.. _trezor:
+
+trezor
+------------
+
+``MCU`` ``MPU`` ``MEMS``
+
+.. image:: ./images/trezor.png
+    :target: https://github.com/trezor

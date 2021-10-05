@@ -1,10 +1,8 @@
-.. _template:
+.. _standard:
 
-开源组件
+协议标准
 ===========
 
-通信连接
------------
 .. toctree::
     :maxdepth: 1
 
@@ -12,17 +10,10 @@
     MQTT <mqtt>
     Modbus <modbus>
     mbedtls <mbedtls>
-
-
-数据管理
------------
-.. toctree::
-    :maxdepth: 1
-
     FatFS <fatfs>
 
 
-
+.. _template:
 
 项目模板
 ===========
