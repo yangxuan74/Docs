@@ -77,6 +77,7 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="#solution">技术方案</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#trezor">trezor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#rufus">Rufus</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../faq.html">常见问题</a></li>
@@ -150,13 +151,26 @@ sim: A bootloader simulator <span class="k">for</span> testing and regression
 <span id="id3"></span><h1>技术方案<a class="headerlink" href="#solution" title="Permalink to this headline">¶</a></h1>
 <div class="contents local topic" id="contents">
 <ul class="simple">
-<li><p><a class="reference internal" href="#trezor" id="id5">trezor</a></p></li>
+<li><p><a class="reference internal" href="#trezor" id="id6">trezor</a></p></li>
+<li><p><a class="reference internal" href="#rufus" id="id7">Rufus</a></p></li>
 </ul>
 </div>
 <section id="trezor">
-<span id="id4"></span><h2><a class="toc-backref" href="#id5">trezor</a><a class="headerlink" href="#trezor" title="Permalink to this headline">¶</a></h2>
-<p><code class="docutils literal notranslate"><span class="pre">MCU</span></code> <code class="docutils literal notranslate"><span class="pre">MPU</span></code> <code class="docutils literal notranslate"><span class="pre">MEMS</span></code></p>
+<span id="id4"></span><h2><a class="toc-backref" href="#id6">trezor</a><a class="headerlink" href="#trezor" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">MCU</span></code> <code class="docutils literal notranslate"><span class="pre">STM32</span></code> <code class="docutils literal notranslate"><span class="pre">Bitcoin</span></code></p>
 <a class="reference external image-reference" href="https://github.com/trezor"><img alt="../_images/trezor.png" src="../_images/trezor.png" /></a>
+</section>
+<section id="rufus">
+<span id="id5"></span><h2><a class="toc-backref" href="#id7">Rufus</a><a class="headerlink" href="#rufus" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://github.com/pbatard/rufus">GitHub</a> |
+<a class="reference external" href="http://rufus.ie/zh/">Website</a></p>
+<p>可以帮助格式化和创建可引导USB闪存盘的工具</p>
+<ul class="simple">
+<li><p>需要把一些可引导的ISO格式的镜像（Windows，Linux，UEFI等）创建成USB安装盘的时候</p></li>
+<li><p>需要使用一个还没有安装操作系统的设备的时候</p></li>
+<li><p>需要从DOS系统刷写BIOS或者其他固件的时候</p></li>
+<li><p>需要运行一个非常底层的工具的时候</p></li>
+</ul>
 </section>
 </section>
 

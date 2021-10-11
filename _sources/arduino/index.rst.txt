@@ -14,6 +14,7 @@ library
 SimpleFOC
 ~~~~~~~~~~~
 
- `GitHub <https://github.com/simplefoc>`_
+`GitHub <https://GitHub.com/simplefoc>`_ |
+`Website <https://docs.simplefoc.com//>`_
 
 Arduino Simple Field Oriented Control (FOC) library
