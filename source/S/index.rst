@@ -8,7 +8,11 @@
 mcuboot
 ------------
 
-``MCU`` ``bootloader`` ``MEMS``
+``MCU`` ``bootloader``
+
+`GitHub <https://GitHub.com/simplefoc>`_ |
+`Website <https://docs.simplefoc.com//>`_
+
 
 MCUboot is a secure bootloader for 32-bit MCUs. The goal of MCUboot is to
 define a common infrastructure for the bootloader, system flash layout on
