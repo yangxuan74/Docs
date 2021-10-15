@@ -4,11 +4,11 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>libopencm3 &mdash; OS-Q 0.2 documentation</title>
+  <title>Ymodem方案 &mdash; OS-Q 0.2 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
-    <link rel="canonical" href="https://docs.OS-Q.com/framework/libopencm3.html" />
+    <link rel="canonical" href="https://docs.OS-Q.com/T/T23.html" />
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
@@ -20,8 +20,8 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="STM32Cube" href="stm32cube.html" />
-    <link rel="prev" title="CMSIS" href="cmsis.html" />
+    <link rel="next" title="技术组件" href="../S/index.html" />
+    <link rel="prev" title="以太网总成" href="T21.html" />
  
 <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
 <script src="../_static/js/bootstrap.min.js"></script>
@@ -60,26 +60,24 @@
 <li class="toctree-l1"><a class="reference internal" href="../arduino/index.html">Arduino</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">开源框架</span></p>
-<ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="index.html">开发框架</a><ul class="current">
-<li class="toctree-l2 current"><a class="reference internal" href="index.html#id2">编程框架</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="arduino.html">Arduino</a></li>
-<li class="toctree-l3"><a class="reference internal" href="espidf.html">ESP-IDF</a></li>
-<li class="toctree-l3"><a class="reference internal" href="cmsis.html">cmsis</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">libopencm3</a></li>
-<li class="toctree-l3"><a class="reference internal" href="stm32cube.html">stm32cube</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="index.html#id3">系统框架</a></li>
-<li class="toctree-l2"><a class="reference internal" href="index.html#id4">图形框架</a></li>
-</ul>
-</li>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../framework/index.html">开发框架</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../lan/index.html">编程语言</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">开源模板</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../T/index.html">协议标准</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../T/index.html#template">项目模板</a></li>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="index.html">协议标准</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html#template">项目模板</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="index.html#id3">综合应用</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="T21.html">以太网总成</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Ymodem方案</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id1">简介</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">开源方案</span></p>
 <ul>
@@ -114,10 +112,10 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="index.html">开源框架</a> &raquo;</li>
-      <li>libopencm3</li>
+          <li><a href="index.html">协议标准</a> &raquo;</li>
+      <li>Ymodem方案</li>
       <li class="wy-breadcrumbs-aside">
-              <a href="https://github.com/OS-Q/Docs/blob/master/source/framework/libopencm3.rst" class="fa fa-github"> Edit on GitHub</a>
+              <a href="https://github.com/OS-Q/Docs/blob/master/source/T/T23.rst" class="fa fa-github"> Edit on GitHub</a>
       </li>
   </ul>
   <hr/>
@@ -125,18 +123,51 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="libopencm3">
-<span id="id1"></span><h1>libopencm3<a class="headerlink" href="#libopencm3" title="Permalink to this headline">¶</a></h1>
-<p>The libOpenCM3 framework aims to create a free and open-source firmware library for various ARM Cortex-M0(+)/M3/M4 microcontrollers, including ST STM32, Ti Tiva and Stellaris, NXP LPC, Atmel SAM3, Energy Micro EFM32 and others</p>
-<p>For more detailed information please visit <a class="reference external" href="http://www.libopencm3.org?utm_source=platformio.org&amp;utm_medium=docs">vendor site</a>.</p>
+  <section id="ymodem">
+<span id="t23"></span><h1>Ymodem方案<a class="headerlink" href="#ymodem" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>关键词：<code class="docutils literal notranslate"><span class="pre">STM32</span></code> <code class="docutils literal notranslate"><span class="pre">FreeRTOS</span></code> <code class="docutils literal notranslate"><span class="pre">Modbus</span></code> <code class="docutils literal notranslate"><span class="pre">LWIP</span></code> <code class="docutils literal notranslate"><span class="pre">Ymodem</span></code></p></li>
+<li><p>资源库：<a class="reference external" href="https://github.com/OS-Q/T23">GitHub</a></p></li>
+</ul>
+<div class="contents local topic" id="contents">
+<ul class="simple">
+<li><p><a class="reference internal" href="#id1" id="id2">简介</a></p></li>
+</ul>
+</div>
+<section id="id1">
+<h2><a class="toc-backref" href="#id2">简介</a><a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<p>YModem-1K用1024字节信息块传输取代标准的128字节传输，数据的发送回使用CRC校验，保证数据传输的正确性。它每传输一个信息块数据时，就会等待接收端回应ACK信号，接收到回应后，才会继续传输下一个信息块，保证数据已经全部接收。Ymodem用于</p>
+<p>它可以一次传输1024字节的信息块，同时还支持传输多个文件。平常所说的Ymodem协议是指的Ymodem-1K，除此还有Ymodem-g（没有CRC校验，不常用）。</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>/* YModem <span class="o">(</span><span class="m">128</span> bytes<span class="o">)</span> packet format
+* Byte  <span class="m">0</span>:         Header
+* Byte  <span class="m">1</span>:         Packet number
+* Byte  <span class="m">2</span>:         Packet number complement
+* Bytes <span class="m">3</span>-132:     Data
+* Bytes <span class="m">132</span>-133:   CRC
+*/
+
+/* YModem <span class="o">(</span><span class="m">1024</span> bytes<span class="o">)</span> packet format
+* Byte  <span class="m">0</span>:         Header
+* Byte  <span class="m">1</span>:         Packet number
+* Byte  <span class="m">2</span>:         Packet number complement
+* Bytes <span class="m">3</span>-1026:    Data
+* Bytes <span class="m">1027</span>-1028: CRC
+*/
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><a class="reference internal" href="#t23"><span class="std std-ref">Ymodem方案</span></a> 当前已适配STM32平台</p>
+</div>
+</section>
 </section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="cmsis.html" class="btn btn-neutral float-left" title="CMSIS" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="stm32cube.html" class="btn btn-neutral float-right" title="STM32Cube" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="T21.html" class="btn btn-neutral float-left" title="以太网总成" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../S/index.html" class="btn btn-neutral float-right" title="技术组件" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
@@ -273,8 +304,8 @@
     <dl>
       <dt>By Qtias</dt>
       <img src="../_static/images/weixin.jpg">
-        <dd><a href="https://github.com/OS-Q/Docs/blob/master/source/framework/libopencm3.rst"> View</a></dd>
-        <dd><a href="https://github.com/OS-Q/Docs/edit/master/source/framework/libopencm3.rst"> Edit</a></dd>
+        <dd><a href="https://github.com/OS-Q/Docs/blob/master/source/T/T23.rst"> View</a></dd>
+        <dd><a href="https://github.com/OS-Q/Docs/edit/master/source/T/T23.rst"> Edit</a></dd>
     </dl>
   </div>
 </div><script>

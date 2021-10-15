@@ -15,6 +15,7 @@ PlatformIO
 
     config/index
     userguide/index
+    FAQ <faq>
 
 
 开发平台
