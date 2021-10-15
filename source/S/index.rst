@@ -37,6 +37,8 @@ target with a complete port planned.
     imgtool: A tool to securely sign firmware images for booting by MCUboot.
     sim: A bootloader simulator for testing and regression
 
+.. note::
+    该方案已被STM32 CubeMX支持，集成在相关示例中
 
 .. _solution:
 

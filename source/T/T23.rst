@@ -17,6 +17,23 @@ YModem-1K用1024字节信息块传输取代标准的128字节传输，数据的�
 
 它可以一次传输1024字节的信息块，同时还支持传输多个文件。平常所说的Ymodem协议是指的Ymodem-1K，除此还有Ymodem-g（没有CRC校验，不常用）。
 
+.. code-block:: bash
+
+    /* YModem (128 bytes) packet format
+    * Byte  0:         Header
+    * Byte  1:         Packet number
+    * Byte  2:         Packet number complement
+    * Bytes 3-132:     Data
+    * Bytes 132-133:   CRC
+    */
+
+    /* YModem (1024 bytes) packet format
+    * Byte  0:         Header
+    * Byte  1:         Packet number
+    * Byte  2:         Packet number complement
+    * Bytes 3-1026:    Data
+    * Bytes 1027-1028: CRC
+    */
 
 .. note::
     :ref:`t23` 当前已适配STM32平台
