@@ -1,13 +1,10 @@
 
 .. _faq:
 
-常见问题
+FAQ
 ===================
 
-.. note::
-    社区尚未建立起来，相关问题通过文档汇总或在代码库中管理 `源圈社区 <https://community.OS-Q.com/faq>`_.
-
-.. contents:: 目录索引
+.. contents::
     :local:
 
 .. _faq_install_python:
