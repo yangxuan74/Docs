@@ -6,7 +6,7 @@ Arduino
 
 .. _library:
 
-library
+Library
 ------------
 
 .. _simplefoc:
@@ -20,23 +20,30 @@ SimpleFOC
 Arduino Simple Field Oriented Control (FOC) library
 
 
-Portenta H7
-
 .. list-table::
     :header-rows:  1
 
-    * - Name
-      - DMIPS
-      - RAM
-      - Cache
-      - GPU
-      - SPI
-      - USB
-      - Ethernet
-      - Interface
-    * - :ref:`stm32h730`
-      - 1177
-      - 564KB
-      - 32+32
-      - ART
-      - 2 Octo
+    * - Solution
+      - MCU
+      - Driver
+      - PID(Max)
+      - Power
+      - Cost
+    * - SimpleFOC
+      - ATmega328P
+      - L6234
+      - 830Hz
+      - 120W
+      - ¥100
+    * - ODrive
+      - STM32F405
+      - DRV8301
+      - 8kHz
+      - 960W
+      - ¥300
+    * - miniFOC
+      - GD32F130
+      - EG2133
+      - 30kHz
+      - 90W
+      - ¥30

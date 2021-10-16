@@ -1,3 +1,6 @@
-/P215.html -> P/P215.html
 /espidf.html -> framework/espidf.html
+/modbus.html -> T/modbus.html
+/Pi.html -> Pi/index.html
 /T21.html -> T/T21.html
+/T23.html -> T/T23.html
+/P215.html -> P/P215.html
