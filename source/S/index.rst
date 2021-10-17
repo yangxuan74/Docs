@@ -3,6 +3,21 @@
 技术组件
 ===========
 
+.. _openblt:
+
+OpenBLT
+-----------------
+
+``MCU`` ``bootloader``
+
+`Rufus Repo <https://github.com/feaser/openblt>`_ |
+`Rufus Home <https://www.feaser.com/openblt>`_
+
+OpenBLT is an open source bootloader for STM32, XMC, HCS12 and other microcontroller targets.
+
+OpenBLT enables you and your customers to update the firmware on your microcontroller based product. A major benefit of OpenBLT being open source is that you can customize and tweak the bootloader to your specific needs.
+
+
 .. _mcuboot:
 
 mcuboot
@@ -60,8 +75,8 @@ trezor
 Rufus
 ------------
 
-`GitHub <https://github.com/pbatard/rufus>`_ |
-`Website <http://rufus.ie/zh/>`_
+`Rufus GitHub <https://github.com/pbatard/rufus>`_ |
+`Rufus Website <http://rufus.ie/zh/>`_
 
 可以帮助格式化和创建可引导USB闪存盘的工具
 
