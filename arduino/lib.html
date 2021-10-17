@@ -4,11 +4,11 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>开源框架 &mdash; OS-Q 0.2 documentation</title>
+  <title>Library &mdash; OS-Q 0.2 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
-    <link rel="canonical" href="https://docs.OS-Q.com/framework/index.html" />
+    <link rel="canonical" href="https://docs.OS-Q.com/arduino/lib.html" />
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
@@ -20,8 +20,8 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Arduino" href="arduino.html" />
-    <link rel="prev" title="Library" href="../arduino/lib.html" />
+    <link rel="next" title="开源框架" href="../framework/index.html" />
+    <link rel="prev" title="Arduino" href="index.html" />
  
 <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
 <script src="../_static/js/bootstrap.min.js"></script>
@@ -51,37 +51,23 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">开发平台</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../arduino/ide.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ide.html">Arduino</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../pio/index.html">PlatformIO</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">开源硬件</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../Pi/index.html">Pi</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../arduino/index.html">Arduino</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Arduino</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Library</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#simplefoc">SimpleFOC</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">开源框架</span></p>
-<ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">开发框架</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#id2">编程框架</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="arduino.html">Arduino</a></li>
-<li class="toctree-l3"><a class="reference internal" href="espidf.html">ESP-IDF</a></li>
-<li class="toctree-l3"><a class="reference internal" href="cmsis.html">cmsis</a></li>
-<li class="toctree-l3"><a class="reference internal" href="libopencm3.html">libopencm3</a></li>
-<li class="toctree-l3"><a class="reference internal" href="stm32cube.html">stm32cube</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#id3">系统框架</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="zephyr.html">Zephyr</a></li>
-<li class="toctree-l3"><a class="reference internal" href="freertos.html">freeRTOS</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#id4">图形框架</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="touchgfx.html">TouchGFX</a></li>
-<li class="toctree-l3"><a class="reference internal" href="littlevgl.html">LittlevGL</a></li>
-</ul>
-</li>
-</ul>
-</li>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../framework/index.html">开发框架</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../lan/index.html">编程语言</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">开源模板</span></p>
@@ -122,9 +108,10 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-      <li>开源框架</li>
+          <li><a href="index.html">Arduino</a> &raquo;</li>
+      <li>Library</li>
       <li class="wy-breadcrumbs-aside">
-              <a href="https://github.com/OS-Q/Docs/blob/master/source/framework/index.rst" class="fa fa-github"> Edit on GitHub</a>
+              <a href="https://github.com/OS-Q/Docs/blob/master/source/arduino/lib.rst" class="fa fa-github"> Edit on GitHub</a>
       </li>
   </ul>
   <hr/>
@@ -132,51 +119,55 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="frameworks">
-<span id="id1"></span><h1>开源框架<a class="headerlink" href="#frameworks" title="Permalink to this headline">¶</a></h1>
-<div class="contents local topic" id="contents">
-<ul class="simple">
-<li><p><a class="reference internal" href="#id2" id="id5">编程框架</a></p></li>
-<li><p><a class="reference internal" href="#id3" id="id6">系统框架</a></p></li>
-<li><p><a class="reference internal" href="#id4" id="id7">图形框架</a></p></li>
-</ul>
-</div>
-<section id="id2">
-<h2><a class="toc-backref" href="#id5">编程框架</a><a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="arduino.html">Arduino</a></li>
-<li class="toctree-l1"><a class="reference internal" href="espidf.html">ESP-IDF</a></li>
-<li class="toctree-l1"><a class="reference internal" href="cmsis.html">cmsis</a></li>
-<li class="toctree-l1"><a class="reference internal" href="libopencm3.html">libopencm3</a></li>
-<li class="toctree-l1"><a class="reference internal" href="stm32cube.html">stm32cube</a></li>
-</ul>
-</div>
-</section>
-<section id="id3">
-<h2><a class="toc-backref" href="#id6">系统框架</a><a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="zephyr.html">Zephyr</a></li>
-<li class="toctree-l1"><a class="reference internal" href="freertos.html">freeRTOS</a></li>
-</ul>
-</div>
-</section>
-<section id="id4">
-<h2><a class="toc-backref" href="#id7">图形框架</a><a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="touchgfx.html">TouchGFX</a></li>
-<li class="toctree-l1"><a class="reference internal" href="littlevgl.html">LittlevGL</a></li>
-</ul>
-</div>
-<p>在单片机领域的GUI框架有：ucgui（STemWin/emwin）、TouchGFX、GuiLite、LittlevGL等。</p>
-<p>emwin提供的更多是一些较底层的函数（如：画线、画圆），而且不能拖控件，做出来的界面更接近像素时代的产物。在emwin的开发中，要想显示图片，需要把图片转成bmp格式，再用BmpCvt转成数组，最后才用emwin的函数去调用这个数组，这是比较麻烦的。</p>
-<p>TouchGFX都可以很好的解决这些问题，但是只能用于STM32的单片机上，TouchGFX还支持直接生成MDK/IAR工程。</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>GUI(Graphical User Interface) 图形用户界面。</p>
-</div>
+  <section id="library">
+<span id="id1"></span><h1>Library<a class="headerlink" href="#library" title="Permalink to this headline">¶</a></h1>
+<section id="simplefoc">
+<span id="id2"></span><h2>SimpleFOC<a class="headerlink" href="#simplefoc" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://GitHub.com/simplefoc">GitHub</a> |
+<a class="reference external" href="https://docs.simplefoc.com//">Website</a></p>
+<p>Arduino Simple Field Oriented Control (FOC) library</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Solution</p></th>
+<th class="head"><p>MCU</p></th>
+<th class="head"><p>Driver</p></th>
+<th class="head"><p>PID(Max)</p></th>
+<th class="head"><p>Power</p></th>
+<th class="head"><p>Cost</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>SimpleFOC</p></td>
+<td><p>ATmega328P</p></td>
+<td><p>L6234</p></td>
+<td><p>830Hz</p></td>
+<td><p>120W</p></td>
+<td><p>¥100</p></td>
+</tr>
+<tr class="row-odd"><td><p>ODrive</p></td>
+<td><p>STM32F405</p></td>
+<td><p>DRV8301</p></td>
+<td><p>8kHz</p></td>
+<td><p>960W</p></td>
+<td><p>¥300</p></td>
+</tr>
+<tr class="row-even"><td><p>miniFOC</p></td>
+<td><p>GD32F130</p></td>
+<td><p>EG2133</p></td>
+<td><p>30kHz</p></td>
+<td><p>90W</p></td>
+<td><p>¥30</p></td>
+</tr>
+</tbody>
+</table>
 </section>
 </section>
 
@@ -184,8 +175,8 @@
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="../arduino/lib.html" class="btn btn-neutral float-left" title="Library" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="arduino.html" class="btn btn-neutral float-right" title="Arduino" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="index.html" class="btn btn-neutral float-left" title="Arduino" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../framework/index.html" class="btn btn-neutral float-right" title="开源框架" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
@@ -322,8 +313,8 @@
     <dl>
       <dt>By Qtias</dt>
       <img src="../_static/images/weixin.jpg">
-        <dd><a href="https://github.com/OS-Q/Docs/blob/master/source/framework/index.rst"> View</a></dd>
-        <dd><a href="https://github.com/OS-Q/Docs/edit/master/source/framework/index.rst"> Edit</a></dd>
+        <dd><a href="https://github.com/OS-Q/Docs/blob/master/source/arduino/lib.rst"> View</a></dd>
+        <dd><a href="https://github.com/OS-Q/Docs/edit/master/source/arduino/lib.rst"> Edit</a></dd>
     </dl>
   </div>
 </div><script>
