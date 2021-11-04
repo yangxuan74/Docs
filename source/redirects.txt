@@ -4,3 +4,6 @@
 /T21.html -> T/T21.html
 /T23.html -> T/T23.html
 /P215.html -> P/P215.html
+/rust.html -> lan/rust.html
+/lua.html -> lan/lua.html
+/mpy.html -> lan/mpy.html
