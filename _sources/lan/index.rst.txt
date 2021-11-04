@@ -13,6 +13,6 @@
 .. toctree::
     :maxdepth: 1
 
-    MicroPython  <mpy>
-    Rust  <rust>
     Lua  <lua>
+    Rust  <rust>
+    MicroPython  <mpy>
