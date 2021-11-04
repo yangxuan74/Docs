@@ -15,16 +15,17 @@
     开源协议 <license>
 
 .. toctree::
-    :caption: 开发平台
+    :caption: 工具平台
     :maxdepth: 1
 
     Arduino <arduino/ide>
-    PlatformIO <pio/index>
+    PIO <pio/index>
+    QIO <qio/index>
 
 开发环境指用于编译固件和原型验证
 
 .. toctree::
-    :caption: 开源硬件
+    :caption: 硬件平台
     :maxdepth: 1
 
     Pi <Pi/index>
@@ -42,7 +43,7 @@
 用于开发的框架结构
 
 .. toctree::
-    :caption: 开源模板
+    :caption: 工程模板
     :maxdepth: 1
 
     工程模板 <T/index>

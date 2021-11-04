@@ -1,6 +1,6 @@
 .. _t23:
 
-Ymodem方案
+Ymodem
 ============
 
 * 关键词：``STM32`` ``FreeRTOS`` ``Modbus`` ``LWIP`` ``Ymodem``
@@ -36,6 +36,6 @@ YModem-1K用1024字节信息块传输取代标准的128字节传输，数据的�
     */
 
 .. note::
-    :ref:`t23` 当前已适配STM32平台
+    :ref:`t23` 工程当前已适配STM32G030平台
 
 
