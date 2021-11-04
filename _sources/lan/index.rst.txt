@@ -7,18 +7,12 @@
 .. contents::
     :local:
 
-MicroPython
+嵌入式开发
 ----------------
 
 .. toctree::
     :maxdepth: 1
 
     MicroPython  <mpy>
-
-Lua
-----------------
-
-.. toctree::
-    :maxdepth: 1
-
+    Rust  <rust>
     Lua  <lua>
